@@ -1,3 +1,5 @@
-.main {
-    /* background-image: url("/pozadina1.jpg"); */
+.containerWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

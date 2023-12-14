@@ -1,3 +1,9 @@
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
 .navContainer {
     display: flex;
     flex-direction: row;
@@ -5,16 +11,16 @@
     align-items: center;
     padding: 10px 30px;
     background-color: transparent;
-    transition: all 0.3s ease-in-out;
     font-size: 24px;
     width: 80%;
     margin: auto;
 }
 
 .fixed {
-    position: fixed;
     border-bottom: 1px solid #e5e5e5;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: #f1f1f1;
+    transition: all 0.3s linear;
 }
 
 .links {

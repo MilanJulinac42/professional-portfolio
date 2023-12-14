@@ -13,10 +13,11 @@ const Hero = () => {
                 Hi. I’m Milan, a freelance Front-end Developer with 12 years
                 commercial experience creating successful websites.
             </p>
-            <img className={styles.heroImage} src={"/stock.jpg"}></img>
             <Link className={styles.contact} href="/contact">
                 Contact me
             </Link>
+
+            <img className={styles.heroImage} src={"/stock.jpg"}></img>
         </div>
     );
 };

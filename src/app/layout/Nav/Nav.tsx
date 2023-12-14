@@ -1,11 +1,35 @@
+"use client";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import styles from "./Nav.module.scss";
 import { roboto } from "../../layout";
 import Image from "next/image";
 
 const Navbar = () => {
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollPosition = window.scrollY;
+            const scrollThreshold = 50;
+
+            if (scrollPosition > scrollThreshold) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+    const navClass = `${styles.nav} ${isScrolled ? styles.fixed : ""}`;
+
     return (
-        <nav className={styles.nav}>
+        <nav className={navClass}>
             <div className={styles.navContainer}>
                 <div className={styles.logo}>
                     <img
