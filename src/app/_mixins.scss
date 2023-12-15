@@ -1,0 +1,50 @@
+@mixin font-size($size) {
+    font-size: $size;
+
+    @include breakpoint(medium) {
+        font-size: $size * 1.2;
+    }
+
+    @include breakpoint(large) {
+        font-size: $size * 1.5;
+    }
+}
+
+@mixin aspect-ratio($width, $height) {
+    position: relative;
+    width: 100%;
+
+    &::before {
+        content: "";
+        display: block;
+        padding-top: percentage($height / $width);
+    }
+
+    > * {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+$breakpoints: (
+    small: 576px,
+    medium: 768px,
+    large: 992px,
+    xlarge: 1200px,
+    xxlarge: 1500px,
+);
+
+@mixin breakpoint($point) {
+    @media only screen and (min-width: map-get($breakpoints, $point)) {
+        @content;
+    }
+}
+
+@mixin media-query($size) {
+    @media only screen and ($size) {
+        @content;
+    }
+}

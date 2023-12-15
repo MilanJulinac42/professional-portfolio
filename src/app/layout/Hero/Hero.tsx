@@ -1,11 +1,11 @@
-import { roboto } from "@/app/layout";
+import { inter, roboto } from "@/app/layout";
 import React from "react";
 import styles from "./Hero.module.scss";
 import Link from "next/link";
 
 const Hero = () => {
     return (
-        <div className={styles.container}>
+        <div className={`${styles.container} ${inter.className}`}>
             <h1 className={roboto.className}>
                 Your Vision, Your Website, Your Success Journey
             </h1>

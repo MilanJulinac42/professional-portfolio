@@ -1,3 +1,5 @@
+@import "../../mixins";
+
 .container {
     display: flex;
     flex-direction: column;
@@ -6,36 +8,67 @@
     gap: 20px;
     position: relative;
     height: 60vh;
+    margin-top: 100px;
     text-align: center;
+    padding: 10px;
+    overflow: hidden;
+
+    @include breakpoint(medium) {
+        overflow: initial;
+    }
 
     h1 {
-        font-size: 64px;
-        width: 70%;
+        width: 100%;
         color: #333;
+
+        @include breakpoint(medium) {
+            width: 70%;
+            font-size: 32px;
+        }
+
+        @include breakpoint(large) {
+            width: 70%;
+            font-size: 54px;
+        }
+
+        @include breakpoint("xlarge") {
+            font-size: 64px;
+        }
     }
 
     p {
-        font-size: 24px;
-        width: 60%;
+        width: 100%;
         text-align: center;
         line-height: 1.5;
         color: #333333ec;
+        font-size: 14px;
+
+        @include breakpoint(medium) {
+            width: 80%;
+            font-size: 20px;
+        }
+
+        @include breakpoint(xlarge) {
+            width: 70%;
+            font-size: 24px;
+        }
     }
 }
 
 .heroImage {
-    width: auto;
-    height: auto;
-    object-fit: cover;
+    object-fit: contain;
     opacity: 0.15;
     position: absolute;
-    top: 0;
-    left: 0;
     z-index: -1;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
+
+    @include breakpoint(medium) {
+        width: auto;
+        height: auto;
+    }
 }
 
 .contact {

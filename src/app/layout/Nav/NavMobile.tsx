@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { roboto } from "../../layout";
-import styles from "./Nav.module.scss";
+import styles from "./NavMobile.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
@@ -67,6 +67,7 @@ const NavbarMobile = () => {
                             </li>
                         </ul>
                     </div>
+                    <div className={styles.opacityDiv}></div>
                 </div>
             )}
         </div>

@@ -1,12 +1,14 @@
 import Navbar from "@/app/layout/Nav/Nav";
 import Footer from "@/app/layout/Footer/Footer";
+import NavbarMobile from "@/app/layout/Nav/NavMobile";
+import Hero from "@/app/layout/Hero/Hero";
 
 const work = () => {
     return (
         <div>
-            <Navbar />
-            <h1></h1>
-            <Footer />
+            {/* <NavbarMobile /> */}
+            <Hero />
+            {/* <Footer /> */}
         </div>
     );
 };
