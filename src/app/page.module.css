@@ -3,3 +3,12 @@
     justify-content: center;
     align-items: center;
 }
+
+.containerWrapperHelp {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}

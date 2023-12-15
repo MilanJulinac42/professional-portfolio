@@ -22,6 +22,7 @@ const Container: React.FC<ContainerProps> = ({
                 <h3 className={roboto.className}>{title}</h3>
                 {children}
             </div>
+            <div className={styles.triangleContainer}></div>
         </div>
     );
 };

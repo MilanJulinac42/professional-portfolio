@@ -1,0 +1,97 @@
+.helpCardWrapper {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    background-color: #333;
+    width: 300px;
+    height: 450px;
+
+    button {
+        width: 220px;
+        padding: 10px 30px;
+        background-color: #333;
+        color: white;
+        font-size: 20px;
+    }
+
+    img {
+        object-fit: contain;
+        width: 250px;
+        height: 250px;
+    }
+
+    h5 {
+        color: white;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.85);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        animation: slide-up 0.5s ease-in-out forwards;
+
+        &.closing {
+            animation: slide-down 0.5s ease-in-out forwards;
+        }
+
+        h5 {
+            color: white;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: white;
+            font-size: 18px;
+            margin-bottom: 20px;
+            padding: 20px;
+            text-align: left;
+            line-height: 1.5;
+        }
+
+        button {
+            width: 150px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            font-size: 16px;
+        }
+    }
+
+    .overlayHidden {
+        display: none;
+    }
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-down {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100%);
+    }
+}
