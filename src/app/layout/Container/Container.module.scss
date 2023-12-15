@@ -1,12 +1,18 @@
+@import "../../mixins";
+
 .wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
     margin: auto;
     padding-top: 30px;
     padding-bottom: 50px;
+
+    @include breakpoint(medium) {
+        width: 80%;
+    }
 
     h3 {
         font-size: 48px;

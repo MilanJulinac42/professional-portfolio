@@ -11,8 +11,10 @@ const HeroCard: React.FC<HeroCardProps> = ({ title, image, description }) => {
     return (
         <div className={styles.heroCardContainer}>
             <img src={image}></img>
-            <h5 className={roboto.className}>{title}</h5>
-            <p>{description}</p>
+            <div>
+                <h5 className={roboto.className}>{title}</h5>
+                <p>{description}</p>
+            </div>
         </div>
     );
 };

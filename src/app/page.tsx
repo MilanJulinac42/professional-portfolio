@@ -11,6 +11,7 @@ import HeroWork from "./layout/HeroWork/HeroWork";
 import WorkContainer from "./layout/WorkContainer/WorkContainer";
 import Footer from "./layout/Footer/Footer";
 import NavMobile from "./layout/Nav/NavMobile";
+import WhatIDo from "./layout/WhatIDo/WhatIDo";
 
 export default function Home() {
     return (
@@ -18,29 +19,7 @@ export default function Home() {
             <Nav />
             <Hero />
             <Container title={"What I do"}>
-                <div className={styles.containerWrapper}>
-                    <HeroCard
-                        image={"/mobila.svg"}
-                        title={"Responsive design"}
-                        description={
-                            "Make your website fast, easy to find, and reach the widest audience possible."
-                        }
-                    />
-                    <HeroCard
-                        image={"/htmlcss.svg"}
-                        title={"Front-end development"}
-                        description={
-                            "Responsive websites built for an optimal user experience that achieves your business goals."
-                        }
-                    />
-                    <HeroCard
-                        image={"/analitika.svg"}
-                        title={"Business analitics"}
-                        description={
-                            "Make your website fast, easy to find, and reach the widest audience possible. asy to find, and reach "
-                        }
-                    />
-                </div>
+                <WhatIDo />
             </Container>
             <TechStack />
             <Container title={"How can I help"} background="#b2afe731">

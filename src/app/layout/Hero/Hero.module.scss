@@ -8,7 +8,6 @@
     gap: 20px;
     position: relative;
     height: 60vh;
-    margin-top: 100px;
     text-align: center;
     padding: 10px;
     overflow: hidden;
@@ -49,7 +48,7 @@
         }
 
         @include breakpoint(xlarge) {
-            width: 70%;
+            width: 60%;
             font-size: 24px;
         }
     }

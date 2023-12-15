@@ -1,0 +1,13 @@
+@import "../../mixins";
+
+.containerWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+    @include breakpoint(large) {
+        flex-direction: row;
+    }
+}
