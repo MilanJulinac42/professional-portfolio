@@ -43,3 +43,40 @@
 .active {
     border-bottom: 3px solid #333;
 }
+
+.closedNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    border-bottom: 1px solid #333;
+}
+
+.hamburger {
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.overlay {
+    display: flex;
+}
+
+.mobileContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.overlay {
+    background-color: #fff;
+    height: 100vh;
+    width: 200px;
+}
+
+.mobileLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 32px;
+    padding: 10px;
+}

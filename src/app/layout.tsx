@@ -17,6 +17,14 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
+            <head>
+                <link rel="icon" href="/next.svg" />
+                <title>Milan Julinac Portfolio</title>
+                <meta
+                    name="description"
+                    content="Portfolio for a full stack developer"
+                />
+            </head>
             <body className={inter.className}>{children}</body>
         </html>
     );

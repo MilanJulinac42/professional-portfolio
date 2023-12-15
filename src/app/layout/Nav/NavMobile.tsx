@@ -1,48 +1,36 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
-import styles from "./Nav.module.scss";
 import { roboto } from "../../layout";
-import NavbarMobile from "./NavMobile";
+import styles from "./Nav.module.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-const Navbar = () => {
-    const [isScrolled, setIsScrolled] = useState(false);
+const NavbarMobile = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const scrollPosition = window.scrollY;
-            const scrollThreshold = 50;
-
-            if (scrollPosition > scrollThreshold) {
-                setIsScrolled(true);
-            } else {
-                setIsScrolled(false);
-            }
-        };
-
-        window.addEventListener("scroll", handleScroll);
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
-
-    const navClass = `${styles.nav} ${isScrolled ? styles.fixed : ""}`;
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
 
     return (
-        <>
-            {window.innerWidth < 768 ? (
-                <NavbarMobile />
-            ) : (
-                <nav className={navClass}>
-                    <div className={styles.navContainer}>
-                        <div className={styles.logo}>
-                            <img
-                                className={styles.logoImage}
-                                alt="logo"
-                                src={"/logo.png"}
-                            ></img>
-                        </div>
-                        <ul className={styles.links}>
+        <div className={styles.mobileContainer}>
+            <div className={styles.closedNav}>
+                <div className={styles.logo}>
+                    <img
+                        className={styles.logoImage}
+                        alt="logo"
+                        src={"/logo.png"}
+                    ></img>
+                </div>
+                <div className={styles.hamburger}>
+                    <FontAwesomeIcon icon={faBars} onClick={toggleMenu} />
+                </div>
+            </div>
+            {isMenuOpen && (
+                <div className={styles.overlay} onClick={toggleMenu}>
+                    <div className={styles.wrapper}>
+                        <ul className={styles.mobileLinks}>
                             <li className={styles.active}>
                                 <Link className={roboto.className} href="/">
                                     Home
@@ -79,10 +67,10 @@ const Navbar = () => {
                             </li>
                         </ul>
                     </div>
-                </nav>
+                </div>
             )}
-        </>
+        </div>
     );
 };
 
-export default Navbar;
+export default NavbarMobile;
