@@ -9,7 +9,6 @@ import styles from "./Footer.module.scss";
 import Link from "next/link";
 import { inter, roboto } from "@/app/layout";
 import { faEnvelope, faHome, faPhone } from "@fortawesome/free-solid-svg-icons";
-import { faMailReplyAll } from "@fortawesome/free-solid-svg-icons/faMailReplyAll";
 
 const Footer = () => {
     return (
@@ -59,17 +58,6 @@ const Footer = () => {
                         src={"/logo.png"}
                     ></img>
                 </div>
-                {/* <div className={styles.myWork}>
-                    <ul className={styles.footerList}>
-                        <li>
-                            <h5 className={roboto.className}>Previous work</h5>
-                            <span className={styles.border}></span>
-                        </li>
-                        <li>Millions</li>
-                        <li>Regalo</li>
-                        <li>Cofee Shop</li>
-                    </ul>
-                </div> */}
                 <div className={styles.links}>
                     <ul className={styles.footerList}>
                         <li>

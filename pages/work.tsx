@@ -17,7 +17,7 @@ const work = () => {
                 <WhatIDo />
             </Container>
             <TechStack />
-            {/* <Footer /> */}
+            <Footer />
         </div>
     );
 };

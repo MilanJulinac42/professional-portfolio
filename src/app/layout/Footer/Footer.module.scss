@@ -1,3 +1,5 @@
+@import "../../mixins.scss";
+
 .footerContainer {
     display: flex;
     flex-direction: column;
@@ -5,36 +7,62 @@
 
 .social {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     background-color: #6c63ff;
     color: white;
-    padding: 20px 80px;
-    font-size: 20px;
+    padding: 10px 10px;
+    font-size: 16px;
+    gap: 10px;
+
+    @include breakpoint(medium) {
+        flex-direction: row;
+        padding: 20px 80px;
+        font-size: 20px;
+        gap: 0px;
+    }
 }
 
 .socialList {
     display: flex;
     gap: 20px;
     list-style: none;
-    font-size: 24px;
+    font-size: 20px;
+
+    @include breakpoint(medium) {
+        flex-direction: row;
+        gap: 20px;
+        font-size: 24px;
+    }
 }
 
 .mainContent {
-    padding: 40px 80px;
+    padding: 10px 10px;
     display: flex;
+    gap: 20px;
+    flex-direction: column;
     justify-content: space-between;
-    background-color: #333;
     background-color: #f0f0fa;
     color: #333;
+
+    @include breakpoint(medium) {
+        padding: 40px 80px;
+        gap: 0px;
+        flex-direction: row;
+    }
 }
 
 .logoDiv {
-    width: 10%;
+    width: 50%;
     img {
         width: 100%;
         height: auto;
         object-fit: cover;
+    }
+
+    @include breakpoint(medium) {
+        width: 10%;
     }
 }
 
@@ -42,7 +70,7 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 5px;
 
     h5 {
         font-size: 18px;
@@ -54,6 +82,10 @@
         height: 2px;
         width: 30px;
         background-color: #6c63ff;
+    }
+
+    @include breakpoint(medium) {
+        gap: 15px;
     }
 }
 
