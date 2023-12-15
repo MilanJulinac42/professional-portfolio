@@ -4,9 +4,15 @@ import Link from "next/link";
 import styles from "./Nav.module.scss";
 import { roboto } from "../../layout";
 import NavbarMobile from "./NavMobile";
+import { useRouter, usePathname } from "next/navigation";
 
 const Navbar = () => {
+    const router = usePathname();
     const [isScrolled, setIsScrolled] = useState(false);
+
+    const isLinkActive = (href: string) => {
+        return router === href;
+    };
 
     useEffect(() => {
         const handleScroll = () => {
@@ -40,27 +46,43 @@ const Navbar = () => {
                         ></img>
                     </div>
                     <ul className={styles.links}>
-                        <li className={styles.active}>
+                        <li className={isLinkActive("/") ? styles.active : ""}>
                             <Link className={roboto.className} href="/">
                                 Home
                             </Link>
                         </li>
-                        <li>
+                        <li
+                            className={
+                                isLinkActive("/work") ? styles.active : ""
+                            }
+                        >
                             <Link className={roboto.className} href="/work">
                                 Work
                             </Link>
                         </li>
-                        <li>
+                        <li
+                            className={
+                                isLinkActive("/services") ? styles.active : ""
+                            }
+                        >
                             <Link className={roboto.className} href="/services">
                                 Services
                             </Link>
                         </li>
-                        <li>
+                        <li
+                            className={
+                                isLinkActive("/about") ? styles.active : ""
+                            }
+                        >
                             <Link className={roboto.className} href="/about">
                                 About
                             </Link>
                         </li>
-                        <li>
+                        <li
+                            className={
+                                isLinkActive("/contact") ? styles.active : ""
+                            }
+                        >
                             <Link className={roboto.className} href="/contact">
                                 Contact
                             </Link>
