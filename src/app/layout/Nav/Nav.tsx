@@ -30,57 +30,44 @@ const Navbar = () => {
 
     return (
         <>
-            {window.innerWidth < 768 ? (
-                <NavbarMobile />
-            ) : (
-                <nav className={navClass}>
-                    <div className={styles.navContainer}>
-                        <div className={styles.logo}>
-                            <img
-                                className={styles.logoImage}
-                                alt="logo"
-                                src={"/logo.png"}
-                            ></img>
-                        </div>
-                        <ul className={styles.links}>
-                            <li className={styles.active}>
-                                <Link className={roboto.className} href="/">
-                                    Home
-                                </Link>
-                            </li>
-                            <li>
-                                <Link className={roboto.className} href="/work">
-                                    Work
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    className={roboto.className}
-                                    href="/services"
-                                >
-                                    Services
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    className={roboto.className}
-                                    href="/about"
-                                >
-                                    About
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    className={roboto.className}
-                                    href="/contact"
-                                >
-                                    Contact
-                                </Link>
-                            </li>
-                        </ul>
+            <nav className={navClass}>
+                <div className={styles.navContainer}>
+                    <div className={styles.logo}>
+                        <img
+                            className={styles.logoImage}
+                            alt="logo"
+                            src={"/logo.png"}
+                        ></img>
                     </div>
-                </nav>
-            )}
+                    <ul className={styles.links}>
+                        <li className={styles.active}>
+                            <Link className={roboto.className} href="/">
+                                Home
+                            </Link>
+                        </li>
+                        <li>
+                            <Link className={roboto.className} href="/work">
+                                Work
+                            </Link>
+                        </li>
+                        <li>
+                            <Link className={roboto.className} href="/services">
+                                Services
+                            </Link>
+                        </li>
+                        <li>
+                            <Link className={roboto.className} href="/about">
+                                About
+                            </Link>
+                        </li>
+                        <li>
+                            <Link className={roboto.className} href="/contact">
+                                Contact
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </>
     );
 };

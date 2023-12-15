@@ -7,13 +7,13 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import styles from "./Footer.module.scss";
 import Link from "next/link";
-import { roboto } from "@/app/layout";
+import { inter, roboto } from "@/app/layout";
 import { faEnvelope, faHome, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faMailReplyAll } from "@fortawesome/free-solid-svg-icons/faMailReplyAll";
 
 const Footer = () => {
     return (
-        <div className={styles.footerContainer}>
+        <div className={`${styles.footerContainer} ${inter.className}`}>
             <div className={styles.social}>
                 <p>Get connected with me on social media</p>
                 <ul className={styles.socialList}>
@@ -76,7 +76,7 @@ const Footer = () => {
                             <h5 className={roboto.className}>Usefull links</h5>
                             <span className={styles.border}></span>
                         </li>
-                        <li>Home</li>
+                        <li className={inter.className}>Home</li>
                         <li>Work</li>
                         <li>About me</li>
                         <li>Contact</li>
