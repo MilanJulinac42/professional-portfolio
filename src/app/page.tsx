@@ -9,6 +9,7 @@ import TechStack from "./layout/TechStack/TechStack";
 import HelpCard from "./components/HelpCard/HelpCard";
 import HeroWork from "./layout/HeroWork/HeroWork";
 import WorkContainer from "./layout/WorkContainer/WorkContainer";
+import Footer from "./layout/Footer/Footer";
 
 export default function Home() {
     return (
@@ -90,6 +91,7 @@ export default function Home() {
                 </div>
             </Container>
             <WorkContainer />
+            <Footer />
         </main>
     );
 }

@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import styles from "./Nav.module.scss";
 import { roboto } from "../../layout";
-import Image from "next/image";
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
