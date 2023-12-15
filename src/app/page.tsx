@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "./page.module.scss";
 import Nav from "./layout/Nav/Nav";
 import Hero from "./layout/Hero/Hero";
 import Container from "./layout/Container/Container";

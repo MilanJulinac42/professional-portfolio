@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { roboto } from "../../layout";
 import styles from "./NavMobile.module.scss";
@@ -12,6 +12,15 @@ const NavbarMobile = () => {
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
+
+    useEffect(() => {
+        const body = document.body;
+        body.style.overflow = isMenuOpen ? "hidden" : "visible";
+
+        return () => {
+            body.style.overflow = "visible";
+        };
+    }, [isMenuOpen]);
 
     return (
         <div className={styles.mobileContainer}>

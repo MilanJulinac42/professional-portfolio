@@ -1,3 +1,5 @@
+@import "../../mixins.scss";
+
 .techContainer {
     background-color: #7a7a7a;
     display: flex;
@@ -7,26 +9,46 @@
     color: white;
     padding: 30px 0;
     gap: 10px;
+    width: 100%;
 
     h3 {
-        font-size: 48px;
+        font-size: 24px;
         border-bottom: 5px solid #fff;
+
+        @include breakpoint(medium) {
+            font-size: 36px;
+        }
     }
 
     p {
-        font-size: 22px;
+        font-size: 14px;
+        text-align: center;
+
+        @include breakpoint(medium) {
+            font-size: 22px;
+        }
     }
 }
 
 .techList {
     display: flex;
-    gap: 80px;
+    gap: 40px;
     list-style: none;
     margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include breakpoint(medium) {
+        gap: 80px;
+    }
 }
 
 .techStackIcon {
-    font-size: 64px;
+    font-size: 32px;
+
+    @include breakpoint(medium) {
+        font-size: 64px;
+    }
 }
 
 .listItem {

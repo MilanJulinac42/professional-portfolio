@@ -1,3 +1,5 @@
+@import "./_mixins.scss";
+
 .containerWrapper {
     display: flex;
     justify-content: center;
@@ -6,9 +8,13 @@
 
 .containerWrapperHelp {
     display: flex;
-    gap: 50px;
+    gap: 20px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     position: relative;
+
+    @include breakpoint(medium) {
+        gap: 50px;
+    }
 }
