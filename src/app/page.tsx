@@ -7,6 +7,8 @@ import HeroCard from "./components/HeroCard/HeroCard";
 import Break from "./components/Break/Break";
 import TechStack from "./layout/TechStack/TechStack";
 import HelpCard from "./components/HelpCard/HelpCard";
+import HeroWork from "./layout/HeroWork/HeroWork";
+import WorkContainer from "./layout/WorkContainer/WorkContainer";
 
 export default function Home() {
     return (
@@ -39,7 +41,7 @@ export default function Home() {
                 </div>
             </Container>
             <TechStack />
-            <Container title={"How can I help"}>
+            <Container title={"How can I help"} background="#b2afe731">
                 <div className={styles.helpContainer}>
                     <div className={styles.containerWrapperHelp}>
                         <HelpCard
@@ -87,6 +89,7 @@ export default function Home() {
                     </div>
                 </div>
             </Container>
+            <WorkContainer />
         </main>
     );
 }

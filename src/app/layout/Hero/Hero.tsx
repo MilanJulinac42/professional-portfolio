@@ -7,11 +7,14 @@ const Hero = () => {
     return (
         <div className={styles.container}>
             <h1 className={roboto.className}>
-                Successful Front-end Development
+                Your Vision, Your Website, Your Success Journey
             </h1>
             <p className={styles.heroParagraph}>
-                Hi. I’m Milan, a freelance Front-end Developer with 12 years
-                commercial experience creating successful websites.
+                Hello, I'm Milan, a freelance website developer passionate about
+                turning digital dreams into reality. I specialize in building
+                robust and visually appealing e-commerce platforms that not only
+                showcase your products but also drive sales. From sleek designs
+                to seamless user experiences, I bring your vision to life.
             </p>
             <Link className={styles.contact} href="/contact">
                 Contact me

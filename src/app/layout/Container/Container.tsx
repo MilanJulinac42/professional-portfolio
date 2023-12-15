@@ -6,12 +6,14 @@ type ContainerProps = {
     children: ReactNode;
     title: string;
     background?: string;
+    clippy?: boolean;
 };
 
 const Container: React.FC<ContainerProps> = ({
     children,
     title,
     background,
+    clippy,
 }) => {
     return (
         <div
@@ -23,6 +25,7 @@ const Container: React.FC<ContainerProps> = ({
                 {children}
             </div>
             <div className={styles.triangleContainer}></div>
+            {clippy && <div className={styles.clippy}></div>}
         </div>
     );
 };

@@ -68,7 +68,7 @@ const TechStack = () => {
                         className={styles.techStackIcon}
                         icon={faAws}
                     />
-                    Amazon Web Servie
+                    Amazon Web Service
                 </li>
             </ul>
         </div>

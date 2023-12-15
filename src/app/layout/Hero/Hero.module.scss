@@ -6,15 +6,17 @@
     gap: 20px;
     position: relative;
     height: 60vh;
+    text-align: center;
 
     h1 {
         font-size: 64px;
+        width: 70%;
         color: #333;
     }
 
     p {
-        font-size: 32px;
-        width: 900px;
+        font-size: 24px;
+        width: 60%;
         text-align: center;
         line-height: 1.5;
         color: #333333ec;
@@ -25,7 +27,7 @@
     width: auto;
     height: auto;
     object-fit: cover;
-    opacity: 0.2;
+    opacity: 0.15;
     position: absolute;
     top: 0;
     left: 0;
