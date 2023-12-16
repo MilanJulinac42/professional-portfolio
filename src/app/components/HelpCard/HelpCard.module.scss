@@ -1,3 +1,5 @@
+@import "../../mixins.scss";
+
 .helpCardWrapper {
     position: relative;
     overflow: hidden;
@@ -8,21 +10,34 @@
     gap: 20px;
     padding: 30px;
     background-color: #333;
-    width: 300px;
-    height: 450px;
+    width: 250px;
+    max-width: 100vw;
+    height: auto;
+    width: auto;
+    height: 400px;
+
+    @include breakpoint(medium) {
+        width: 300px;
+        height: 400px;
+    }
 
     button {
         width: 220px;
         padding: 10px 30px;
         background-color: #333;
         color: white;
-        font-size: 20px;
+        font-size: 16px;
     }
 
     img {
-        object-fit: contain;
-        width: 250px;
-        height: 250px;
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+
+        @include breakpoint(medium) {
+            width: 250px;
+            height: 250px;
+        }
     }
 
     h5 {
@@ -52,17 +67,29 @@
         h5 {
             color: white;
             font-size: 24px;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+
+            @include breakpoint(medium) {
+                font-size: 18px;
+                line-height: 1.5;
+                margin-bottom: 0px;
+            }
         }
 
         p {
             color: white;
-            font-size: 18px;
-            margin-bottom: 20px;
-            padding: 20px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            padding: 0 20px;
             text-align: left;
             line-height: 1.5;
             width: 80%;
+
+            @include breakpoint(medium) {
+                font-size: 18px;
+                line-height: 1.5;
+                margin-bottom: 0px;
+            }
         }
 
         button {
