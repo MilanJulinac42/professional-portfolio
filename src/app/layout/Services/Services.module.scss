@@ -1,0 +1,20 @@
+@import "../../mixins.scss";
+
+.containerWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerWrapperHelp {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    @include breakpoint(medium) {
+        gap: 50px;
+    }
+}

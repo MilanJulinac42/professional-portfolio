@@ -1,0 +1,82 @@
+@import "../../mixins";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    background-image: linear-gradient(
+        to right top,
+        #000000e5,
+        rgba(24, 3, 3, 0.205)
+    );
+
+    @include breakpoint(medium) {
+        overflow: initial;
+    }
+
+    h1 {
+        width: 100%;
+        color: white;
+
+        @include breakpoint(medium) {
+            width: 70%;
+            font-size: 32px;
+        }
+
+        @include breakpoint(large) {
+            width: 70%;
+            font-size: 54px;
+        }
+
+        @include breakpoint("xlarge") {
+            font-size: 64px;
+        }
+    }
+
+    p {
+        width: 100%;
+        text-align: center;
+        line-height: 1.5;
+        color: white;
+        font-size: 14px;
+
+        @include breakpoint(medium) {
+            width: 80%;
+            font-size: 20px;
+        }
+
+        @include breakpoint(xlarge) {
+            width: 60%;
+            font-size: 24px;
+        }
+    }
+}
+
+.heroImage {
+    object-fit: cover;
+    opacity: 0.85;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    max-width: 100%;
+    min-height: 100%;
+
+    @include breakpoint(medium) {
+        width: auto;
+        height: auto;
+    }
+}
+
+.contact {
+    padding: 20px 30px;
+    color: white;
+    background-color: #333;
+}
