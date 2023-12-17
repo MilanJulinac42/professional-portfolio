@@ -109,7 +109,7 @@ const ContactForm = () => {
                         className={styles.contactTextArea}
                         name="name"
                         id="name"
-                        rows={10}
+                        rows={5}
                     />
                 </div>
                 <button
