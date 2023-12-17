@@ -1,13 +1,17 @@
 import Navbar from "@/app/layout/Nav/Nav";
 import Footer from "@/app/layout/Footer/Footer";
+import ContactHero from "@/app/layout/ContactHero/ContactHero";
+import "../src/app/globals.css";
+import ContactForm from "@/app/components/ContactForm/ContactForm";
 
 const contact = () => {
     return (
-        <div>
+        <>
             <Navbar />
-            <h1></h1>
+            <ContactHero />
+            <ContactForm />
             <Footer />
-        </div>
+        </>
     );
 };
 

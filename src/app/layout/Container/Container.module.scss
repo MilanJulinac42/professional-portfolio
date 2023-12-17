@@ -9,6 +9,7 @@
     margin: auto;
     padding-top: 30px;
     padding-bottom: 0px;
+    position: relative;
 
     @include breakpoint(medium) {
         padding-bottom: 50px;
