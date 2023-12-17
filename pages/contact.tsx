@@ -9,7 +9,7 @@ const contact = () => {
         <>
             <Navbar />
             <ContactHero />
-            <ContactForm />
+            {/* <ContactForm /> */}
             <Footer />
         </>
     );

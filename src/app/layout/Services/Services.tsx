@@ -4,7 +4,7 @@ import styles from "./Services.module.scss";
 
 const Services = () => {
     return (
-        <Container title="My Services" background="#fff">
+        <Container title="My Services" background="#e3e2f1">
             <div className={styles.helpContainer}>
                 <div className={styles.containerWrapperHelp}>
                     <HelpCard

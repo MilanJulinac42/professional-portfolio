@@ -47,10 +47,71 @@ const ContactForm = () => {
                     </span>{" "}
                     and I’ll get back to you within 2 business days
                 </p>
-                <ContactTextBox />
-                <ContactTextBox />
-                <ContactTextBox />
-                <ContactTextBox />
+                <div
+                    className={`${styles.contactTextBoxContainer} ${inter.className}`}
+                >
+                    <label className={styles.contactLabel} htmlFor="name">
+                        Name <span>(required)</span>
+                    </label>
+                    <input
+                        className={styles.contactInput}
+                        type="text"
+                        name="name"
+                        id="name"
+                    />
+                </div>
+                <div
+                    className={`${styles.contactTextBoxContainer} ${inter.className}`}
+                >
+                    <label className={styles.contactLabel} htmlFor="name">
+                        Company name
+                    </label>
+                    <input
+                        className={styles.contactInput}
+                        type="text"
+                        name="name"
+                        id="name"
+                    />
+                </div>
+                <div
+                    className={`${styles.contactTextBoxContainer} ${inter.className}`}
+                >
+                    <label className={styles.contactLabel} htmlFor="name">
+                        Your website
+                    </label>
+                    <input
+                        className={styles.contactInput}
+                        type="text"
+                        name="name"
+                        id="name"
+                    />
+                </div>
+                <div
+                    className={`${styles.contactTextBoxContainer} ${inter.className}`}
+                >
+                    <label className={styles.contactLabel} htmlFor="name">
+                        E-mail <span>(required)</span>
+                    </label>
+                    <input
+                        className={styles.contactInput}
+                        type="text"
+                        name="name"
+                        id="name"
+                    />
+                </div>
+                <div
+                    className={`${styles.contactTextBoxContainer} ${inter.className}`}
+                >
+                    <label className={styles.contactLabel} htmlFor="name">
+                        How can I help you? <span>(required)</span>
+                    </label>
+                    <textarea
+                        className={styles.contactTextArea}
+                        name="name"
+                        id="name"
+                        rows={10}
+                    />
+                </div>
                 <button
                     className={`${styles.submitButton} ${roboto.className}`}
                 >

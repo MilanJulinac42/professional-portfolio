@@ -30,6 +30,14 @@
     gap: 30px;
     list-style: none;
     color: #333;
+
+    li {
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            color: #4c46b7c4;
+        }
+    }
 }
 
 .logo {
@@ -43,7 +51,7 @@
 }
 
 .active {
-    border-bottom: 3px solid #333;
+    border-bottom: 3px solid #4c46b7c4;
 }
 
 .closedNav {

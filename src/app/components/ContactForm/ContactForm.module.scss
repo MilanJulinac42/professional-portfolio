@@ -14,12 +14,17 @@
 
     h3 {
         font-size: 32px;
-        color: #333;
         color: #6c63ff;
     }
 
     p {
         color: #333333ec;
+
+        span {
+            color: #6b63ffc5;
+            font-weight: bold;
+            font-style: italic;
+        }
     }
 }
 
@@ -52,4 +57,33 @@
         color: #6b63ffc5;
         font-weight: bold;
     }
+}
+
+.contactTextBoxContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contactLabel {
+    display: flex;
+    align-items: end;
+    gap: 10px;
+    color: #333;
+    font-size: 20px;
+
+    span {
+        font-size: 12px;
+        color: #3333335d;
+        margin-bottom: 3px;
+    }
+}
+
+.contactInput,
+.contactTextArea {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #3333335d;
+    background-color: #f1f1f1;
+    font-size: 18px;
 }
