@@ -1,0 +1,41 @@
+.serviceContainer {
+    width: 100%;
+    background-color: white;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.serviceWrapper {
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.serviceContent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 5%;
+    padding-top: 20px;
+}
+
+.serviceContent,
+.imageContainer {
+    width: 50%;
+}
+
+.serviceImg {
+    width: auto;
+    max-width: 100%;
+    padding: 20px;
+}
+
+.imageContainer {
+    background-color: #333;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

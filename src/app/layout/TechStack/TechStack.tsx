@@ -6,7 +6,6 @@ import {
     faCss3,
     faJs,
     faReact,
-    faNodeJs,
     faAws,
     faNode,
 } from "@fortawesome/free-brands-svg-icons";

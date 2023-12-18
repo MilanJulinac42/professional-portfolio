@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+    background-color: #e3eff5;
+}
+
+.wrapper {
+    width: 70%;
+    padding: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+    gap: 100px;
+    display: flex;
+    flex-direction: column;
+    background-color: #6c63ff;
+    border-radius: 30px;
+    position: relative;
+
+    h3 {
+        font-size: 36px;
+        color: #fff;
+        width: 70%;
+    }
+
+    p {
+        font-size: 24px;
+        color: #ffffff;
+        width: 70%;
+    }
+
+    span {
+        position: absolute;
+        top: 0;
+        right: 30px;
+        color: white;
+        font-size: 12em;
+    }
+}
