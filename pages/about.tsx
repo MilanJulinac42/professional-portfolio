@@ -3,12 +3,13 @@ import Footer from "@/app/layout/Footer/Footer";
 import TechContainer from "@/app/layout/TechContainer/TechContainer";
 import "../src/app/page.module.scss";
 import ContactHero from "@/app/layout/ContactHero/ContactHero";
+import AboutMeHero from "@/app/layout/AboutMeHero/AboutMeHero";
 
 const about = () => {
     return (
         <div>
             <Navbar />
-            <ContactHero
+            <AboutMeHero
                 title="Dreemers meet doer"
                 description="You’ve got a big idea – and we’re here to help you turn it into reality. We adapt to your needs, whether you need to use a few engineers to extend your in-house capability, or you want to spin up a whole product development team to ship the next big thing. Whatever it is, we’ve got the specialists to bring it to life."
                 image="/hello.svg"
