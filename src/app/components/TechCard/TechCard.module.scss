@@ -4,12 +4,30 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 30%;
+    width: 85%;
     gap: 80px;
     border-radius: 30px;
     background-color: black;
     color: white;
     padding: 20px;
+    position: relative;
+    overflow: hidden;
+
+    @include breakpoint(medium) {
+        width: 70%;
+    }
+
+    @include breakpoint(medium) {
+        width: 43%;
+    }
+
+    @include breakpoint(xlarge) {
+        width: 40%;
+    }
+
+    @include breakpoint(xxlarge) {
+        width: 30%;
+    }
 
     h2 {
         font-size: 2em;
@@ -51,5 +69,70 @@
 
     span {
         font-size: 78px;
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    animation: slide-up 0.5s ease-in-out forwards;
+
+    &.closing {
+        animation: slide-down 0.5s ease-in-out forwards;
+    }
+
+    h5 {
+        color: white;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: white;
+        font-size: 16px;
+        margin-bottom: 10px;
+        padding: 0 20px;
+        text-align: left;
+        line-height: 1.5;
+        width: 80%;
+    }
+
+    button {
+        width: 150px;
+        padding: 5px;
+        background-color: #333;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
+
+.overlayHidden {
+    display: none;
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-down {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
     }
 }

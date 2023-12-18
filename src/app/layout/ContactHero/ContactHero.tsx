@@ -2,24 +2,30 @@ import { inter, roboto } from "@/app/layout";
 import styles from "./ContactHero.module.scss";
 import Link from "next/link";
 
-const ContactHero = () => {
+type contactHeroProps = {
+    title?: string;
+    image?: string;
+    description?: string;
+};
+
+const ContactHero: React.FC<contactHeroProps> = ({
+    title,
+    image,
+    description,
+}) => {
     return (
         <div className={`${styles.container} ${inter.className}`}>
             <div className={styles.wrapper}>
                 <div className={styles.imageWrapper}>
                     <img
                         className={styles.image}
-                        src="/contact.jpg"
+                        src={image}
                         alt="contact me"
                     />
                 </div>
                 <div className={styles.contentWrapper}>
-                    <h1 className={roboto.className}>Want to get in touch?</h1>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Hic ipsam commodi quos tempore maxime odio laborum
-                        voluptas at sit rerum?
-                    </p>
+                    <h1 className={roboto.className}>{title}</h1>
+                    <p>{description}</p>
                     <Link className={styles.contact} href="/contact">
                         Contact me
                     </Link>
