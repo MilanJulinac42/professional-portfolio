@@ -21,20 +21,24 @@ export default function Home() {
         <main className={styles.main}>
             <Nav />
             <Hero />
-            <PopCard
-                title="I can help you make profit"
-                description="Select the right service for you bla bla bla Select the right service for you bla bla bla Select the right service for you bla bla bla Select the right service for you bla bla bla Select the right service for you bla bla bla"
-                icon={faCoins}
-            />
             <Container title={"What I do"}>
                 <WhatIDo />
             </Container>
-            <TechStack />
-            <Services />
             <PopCard
-                title="I can help you make profit"
-                description="Select the right service for you bla bla bla Select the right service for you bla bla bla Select the right service for you bla bla bla Select the right service for you bla bla bla Select the right service for you bla bla bla"
+                title="Build your vision. Boost your business."
+                description="We’re software development partners working at the cutting edge of digital product development. Our clients love us for our technical expertise, deep sector knowledge, and relentless passion – all the ingredients your business needs to thrive."
+                icon={faCoins}
+                background="#68a063"
+                containerBackground="#fff"
+                linkText="Lean more about me"
+            />
+            <TechStack />
+            <PopCard
+                title="Innovators, not just problem-solvers"
+                description="We’re not the kind of software partner who just sits back and solves tickets. We take time to learn everything about your business: your dreams, hopes, fears, challenges. And together we find new and inventive ways to solve the problems you face. It leads to innovations that can unlock a whole new future for your business."
                 icon={faMoneyBill}
+                background="#001e2b"
+                linkText="Check out my services"
             />
             <Footer />
         </main>

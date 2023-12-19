@@ -1,13 +1,16 @@
 import { roboto } from "@/app/layout";
 import styles from "./PopCard.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoins, faMoneyBill } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 type PopCardProps = {
     title: string;
     description: string;
     background?: string;
     icon?: any;
+    link?: string;
+    linkText?: string;
+    containerBackground?: string;
 };
 
 const PopCard: React.FC<PopCardProps> = ({
@@ -15,18 +18,27 @@ const PopCard: React.FC<PopCardProps> = ({
     description,
     background,
     icon,
+    linkText,
+    link,
+    containerBackground,
 }) => {
     return (
         <div
             className={styles.container}
-            style={{ backgroundColor: `${background}` }}
+            style={{ backgroundColor: `${containerBackground}` }}
         >
-            <div className={styles.wrapper}>
+            <div
+                className={styles.wrapper}
+                style={{ backgroundColor: `${background}` }}
+            >
                 <h3 className={roboto.className}>{title}</h3>
-                <p>{description}</p>
-                <span>
-                    <FontAwesomeIcon icon={icon} />
-                </span>
+                <div className={styles.bottomWrapper}>
+                    <p>{description}</p>
+                    <span>
+                        <FontAwesomeIcon icon={icon} />
+                    </span>
+                    <Link href={"#"}>{linkText}</Link>
+                </div>
             </div>
         </div>
     );

@@ -1,11 +1,17 @@
 import HelpCard from "@/app/components/HelpCard/HelpCard";
 import Container from "../Container/Container";
 import styles from "./Services.module.scss";
+import Break from "@/app/components/Break/Break";
+import { roboto } from "@/app/layout";
 
 const Services = () => {
     return (
-        <Container title="My Services" background="#e3e2f1">
+        <>
             <div className={styles.helpContainer}>
+                <h2 className={`${styles.heading} ${roboto.className}`}>
+                    My services
+                </h2>
+                <Break />
                 <div className={styles.containerWrapperHelp}>
                     <HelpCard
                         title={"Advanced Analitics"}
@@ -51,7 +57,7 @@ const Services = () => {
                     />
                 </div>
             </div>
-        </Container>
+        </>
     );
 };
 
