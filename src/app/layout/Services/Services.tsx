@@ -110,13 +110,15 @@ const Services = () => {
                 </h2>
                 <ul className={styles.serviceList}>
                     {servicesData.map((service, index) => (
-                        <li key={index}>
+                        <li
+                            key={index}
+                            className={
+                                selectedService === index
+                                    ? styles.activeLink
+                                    : ""
+                            }
+                        >
                             <Link
-                                className={
-                                    selectedService === index
-                                        ? styles.activeLink
-                                        : ""
-                                }
                                 shallow={true}
                                 href="#"
                                 onClick={(e) => handleServiceClick(index, e)}
