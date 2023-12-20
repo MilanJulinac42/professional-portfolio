@@ -8,6 +8,7 @@ import { inter } from "@/app/layout";
 import "../src/app/globals.css";
 import PopCard from "@/app/components/PopCard/PopCard";
 import { faMoneyBill, faRocket } from "@fortawesome/free-solid-svg-icons";
+import Break from "@/app/components/Break/Break";
 
 const services = () => {
     return (

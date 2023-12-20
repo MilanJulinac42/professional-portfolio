@@ -1,18 +1,41 @@
+@import "../../mixins.scss";
+
 .container {
     max-width: 100%;
     padding: 40px 0;
     background-color: #f0f0fa;
+    overflow: hidden;
 }
 
 .wrapper {
-    width: 80%;
+    max-width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    gap: 150px;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+    flex-direction: column;
+
+    @include breakpoint(medium) {
+        max-width: 100%;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    @include breakpoint(xlarge) {
+        align-items: normal;
+        width: 80%;
+        padding: 0;
+        gap: 150px;
+    }
 
     img {
-        max-width: 40%;
+        max-width: 70%;
+
+        @include breakpoint(xlarge) {
+            max-width: 40%;
+        }
     }
 }
 
@@ -24,13 +47,21 @@
     width: 100%;
 
     h5 {
-        font-size: 24px;
+        font-size: 18px;
         color: #6c63ff;
+
+        @include breakpoint(xlarge) {
+            font-size: 24px;
+        }
     }
 
     p {
         color: #333;
-        font-size: 18px;
+        font-size: 14px;
+
+        @include breakpoint(xlarge) {
+            font-size: 24px;
+        }
     }
 
     ul {
@@ -39,6 +70,11 @@
         flex-direction: column;
         gap: 20px;
         padding-left: 30px;
+        font-size: 14px;
+
+        @include breakpoint(xlarge) {
+            font-size: 18px;
+        }
 
         li {
             color: #333333f0;
