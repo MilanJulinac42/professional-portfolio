@@ -33,3 +33,24 @@
     padding: 30px 0;
     background-color: #f0f0fa;
 }
+
+.serviceList {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+
+    li {
+        padding: 10px;
+        color: #333;
+        border: 1px solid #333;
+        border-radius: 50px;
+    }
+}
+
+.activeLink {
+    background-color: #333;
+    color: #fff;
+}

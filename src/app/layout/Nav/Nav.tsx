@@ -4,17 +4,13 @@ import Link from "next/link";
 import styles from "./Nav.module.scss";
 import { roboto } from "../../layout";
 import NavbarMobile from "./NavMobile";
-import { useRouter, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 import useWindowSize from "@/app/hooks/useWindowSize";
 
 const Navbar = () => {
     const router = usePathname();
     const [isScrolled, setIsScrolled] = useState(false);
     const size = useWindowSize();
-
-    useEffect(() => {
-        console.log(size);
-    }, [size]);
 
     const isLinkActive = (href: string) => {
         return router === href;
