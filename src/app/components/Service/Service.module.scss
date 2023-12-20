@@ -11,20 +11,25 @@
     max-width: 100%;
     margin: auto;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
     padding: 0 20px;
-    flex-direction: column;
 
     @include breakpoint(medium) {
         max-width: 100%;
         gap: 20px;
         flex-direction: column;
+
+        @include breakpoint(large) {
+            flex-direction: row;
+        }
     }
 
     @include breakpoint(xlarge) {
         align-items: normal;
+        flex-direction: row;
         width: 80%;
         padding: 0;
         gap: 150px;
@@ -32,6 +37,10 @@
 
     img {
         max-width: 70%;
+
+        @include breakpoint(large) {
+            max-width: 40%;
+        }
 
         @include breakpoint(xlarge) {
             max-width: 40%;
