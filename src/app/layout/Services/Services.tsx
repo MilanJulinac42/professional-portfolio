@@ -83,7 +83,7 @@ const servicesData = [
         title: "Turbocharge Your Website: Speed & Mobile Magic for Lasting Impact",
         description:
             "Say goodbye to sluggish loading times and frustrating mobile browsing! We unlock your website's full potential with expert speed optimization and seamless mobile responsiveness. Imagine:",
-        image: "/analitics.svg",
+        image: "/turbo.svg",
         extraParagraph:
             "Don't settle for a sluggish website holding you back. Our speed optimization and mobile magic go beyond technical tweaks. We understand the intricate relationship between website performance, user experience, and business success. Let us transform your website into a high-performance powerhouse that engages visitors, converts leads, and propels your business forward. Your online success starts with a website that delivers, and we're here to make that happen.",
         listItems: [
@@ -95,7 +95,7 @@ const servicesData = [
 ];
 
 const Services = () => {
-    const [selectedService, setSelectedService] = useState(null);
+    const [selectedService, setSelectedService] = useState<number | null>(0);
 
     const handleServiceClick = (index: any, event: React.MouseEvent) => {
         setSelectedService(index);

@@ -7,17 +7,22 @@ import ServiceSection from "@/app/components/ServiceSerction/ServiceSection";
 import { inter } from "@/app/layout";
 import "../src/app/globals.css";
 import PopCard from "@/app/components/PopCard/PopCard";
+import { faMoneyBill, faRocket } from "@fortawesome/free-solid-svg-icons";
 
 const services = () => {
     return (
         <div className={inter.className}>
             <Navbar />
             <ServiceHero />
-            <PopCard
-                title="I can help you make profit"
-                description="Select the right service for you bla bla bla Select the right service for you bla bla bla Select the right service for you bla bla bla Select the right service for you bla bla bla Select the right service for you bla bla bla"
-            />
             <Services />
+            <PopCard
+                title="Unlock the Power of Your Website"
+                description="Don't settle for an average online presence. We craft websites that captivate audiences, drive results, and fuel your business success. Let's talk about your vision and bring it to life."
+                linkText="Start Your Project Today"
+                link="/contact"
+                icon={faRocket}
+                background="#333"
+            />
             <Footer />
         </div>
     );
