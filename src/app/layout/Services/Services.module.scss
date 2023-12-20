@@ -34,16 +34,26 @@
 .serviceList {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 10px;
     justify-content: center;
     margin-top: 20px;
     flex-wrap: wrap;
+
+    @include breakpoint(medium) {
+        gap: 30px;
+    }
 
     li {
         padding: 10px;
         color: #333;
         border: 1px solid #333;
         border-radius: 50px;
+        text-align: center;
+        font-size: 14px;
+
+        @include breakpoint(medium) {
+            font-size: 16px;
+        }
     }
 }
 
