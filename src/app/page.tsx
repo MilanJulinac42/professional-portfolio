@@ -28,9 +28,10 @@ export default function Home() {
                 title="Build your vision. Boost your business."
                 description="We’re software development partners working at the cutting edge of digital product development. Our clients love us for our technical expertise, deep sector knowledge, and relentless passion – all the ingredients your business needs to thrive."
                 icon={faCoins}
-                background="#68a063"
+                background="#636cff"
                 containerBackground="#fff"
                 linkText="Lean more about me"
+                link="/about"
             />
             <TechStack />
             <PopCard
@@ -39,6 +40,7 @@ export default function Home() {
                 icon={faMoneyBill}
                 background="#001e2b"
                 linkText="Check out my services"
+                link="/services"
             />
             <Container title={"My services"} background="#f0f0fa">
                 <div className={styles.containerWrapperHelp}>

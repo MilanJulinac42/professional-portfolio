@@ -8,7 +8,7 @@ type PopCardProps = {
     description: string;
     background?: string;
     icon?: any;
-    link?: string;
+    link: string;
     linkText?: string;
     containerBackground?: string;
 };
@@ -37,7 +37,7 @@ const PopCard: React.FC<PopCardProps> = ({
                     <span>
                         <FontAwesomeIcon icon={icon} />
                     </span>
-                    <Link href={"#"}>{linkText}</Link>
+                    <Link href={link}>{linkText}</Link>
                 </div>
             </div>
         </div>
