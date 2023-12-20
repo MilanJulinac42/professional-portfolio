@@ -6,10 +6,13 @@ import "../src/app/globals.css";
 import ContactHero from "@/app/layout/ContactHero/ContactHero";
 import AboutMeHero from "@/app/layout/AboutMeHero/AboutMeHero";
 import AboutMeCards from "@/app/layout/AboutMeCards/AboutMeCards";
+import PopCard from "@/app/components/PopCard/PopCard";
+import { faPuzzlePiece } from "@fortawesome/free-solid-svg-icons";
+import { inter } from "@/app/layout";
 
 const about = () => {
     return (
-        <div>
+        <div className={inter.className}>
             <Navbar />
             <AboutMeHero
                 title="Dreemers meet doer"
@@ -17,6 +20,14 @@ const about = () => {
                 image="/hello.svg"
             />
             <AboutMeCards />
+            <PopCard
+                title="Ready to collaborate? Let's build something amazing together!"
+                description="I'm passionate about bringing ideas to life through [mention your core expertise, e.g., strategic design, impactful branding, or innovative web development]. My values of punctuality, clear communication, and proactive problem-solving ensure a smooth and successful partnership. Let's discuss your project and unlock its full potential."
+                icon={faPuzzlePiece}
+                linkText="Contact Me Now!"
+                link="/contact"
+                background="#001E2B"
+            />
             <TechContainer />
             <Footer />
         </div>

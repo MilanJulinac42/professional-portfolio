@@ -22,7 +22,7 @@ const services = () => {
                 linkText="Start Your Project Today"
                 link="/contact"
                 icon={faRocket}
-                background="#333"
+                background="#001E2B"
             />
             <Footer />
         </div>

@@ -8,6 +8,7 @@ import {
     faReact,
     faAws,
     faNode,
+    faDrupal,
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 
@@ -68,6 +69,13 @@ const TechStack = () => {
                         icon={faAws}
                     />
                     Amazon Web Service
+                </li>
+                <li className={styles.listItem}>
+                    <FontAwesomeIcon
+                        className={styles.techStackIcon}
+                        icon={faDrupal}
+                    />
+                    Drupal
                 </li>
             </ul>
         </div>
