@@ -70,7 +70,7 @@ const Navbar: React.FC<NavbarProps> = ({ transparent }) => {
                                     Home
                                 </Link>
                             </li>
-                            {/* <li
+                            <li
                                 className={
                                     isLinkActive("/work") ? styles.active : ""
                                 }
@@ -78,7 +78,7 @@ const Navbar: React.FC<NavbarProps> = ({ transparent }) => {
                                 <Link className={roboto.className} href="/work">
                                     Work
                                 </Link>
-                            </li> */}
+                            </li>
                             <li
                                 className={
                                     isLinkActive("/services")

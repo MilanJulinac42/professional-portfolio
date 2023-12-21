@@ -2,7 +2,7 @@
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: #e3eff5;
+    background-color: #f0f0fa;
 
     &.transparent {
         background-color: transparent;
@@ -16,7 +16,7 @@
     align-items: center;
     padding: 10px 30px;
     background-color: transparent;
-    background-color: #e3eff5;
+    background-color: #f0f0fa;
     font-size: 24px;
     width: 80%;
     margin: auto;
@@ -29,7 +29,7 @@
 .fixed {
     border-bottom: 1px solid #e5e5e5;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    background-color: #e3eff5;
+    background-color: #f0f0fa;
     transition: all 0.3s linear;
 }
 

@@ -7,9 +7,11 @@ import {
     faFacebookF,
     faLinkedinIn,
     faInstagram,
+    faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import Link from "next/link";
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -68,13 +70,40 @@ const ContactForm = () => {
                     </p>
                     <div className={styles.social}>
                         <span>
-                            <FontAwesomeIcon icon={faFacebookF} />
+                            <Link
+                                href={
+                                    "https://www.facebook.com/milan.julinac.9/"
+                                }
+                                target="_blank"
+                            >
+                                <FontAwesomeIcon icon={faFacebookF} />
+                            </Link>
                         </span>
                         <span>
-                            <FontAwesomeIcon icon={faLinkedinIn} />
+                            <Link
+                                href={
+                                    "https://www.linkedin.com/in/milanjulinac/"
+                                }
+                                target="_blank"
+                            >
+                                <FontAwesomeIcon icon={faLinkedinIn} />
+                            </Link>
                         </span>
                         <span>
-                            <FontAwesomeIcon icon={faInstagram} />
+                            <Link
+                                href={"https://www.instagram.com/milanjulinac/"}
+                                target="_blank"
+                            >
+                                <FontAwesomeIcon icon={faInstagram} />
+                            </Link>
+                        </span>
+                        <span>
+                            <Link
+                                href={"https://github.com/MilanJulinac42"}
+                                target="_blank"
+                            >
+                                <FontAwesomeIcon icon={faGithub} />
+                            </Link>
                         </span>
                     </div>
                 </div>

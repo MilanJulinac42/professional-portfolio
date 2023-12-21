@@ -11,12 +11,8 @@ import { inter } from "@/app/layout";
 const work = () => {
     return (
         <div className={inter.className}>
-            <NavbarMobile />
-            <Hero />
-            <Container title="What I do">
-                <WhatIDo />
-            </Container>
-            <TechStack />
+            <Navbar />
+
             <Footer />
         </div>
     );
