@@ -2,7 +2,11 @@
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: #f1f1f1;
+    background-color: #e3eff5;
+
+    &.transparent {
+        background-color: transparent;
+    }
 }
 
 .navContainer {
@@ -12,16 +16,20 @@
     align-items: center;
     padding: 10px 30px;
     background-color: transparent;
-    background-color: #f1f1f1;
+    background-color: #e3eff5;
     font-size: 24px;
     width: 80%;
     margin: auto;
+
+    &.transparent {
+        background-color: transparent;
+    }
 }
 
 .fixed {
     border-bottom: 1px solid #e5e5e5;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    background-color: #f1f1f1;
+    background-color: #e3eff5;
     transition: all 0.3s linear;
 }
 

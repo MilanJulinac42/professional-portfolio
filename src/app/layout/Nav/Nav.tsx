@@ -1,5 +1,5 @@
 "use client";
-import React, { use, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import styles from "./Nav.module.scss";
 import { roboto } from "../../layout";
@@ -7,10 +7,21 @@ import NavbarMobile from "./NavMobile";
 import { usePathname } from "next/navigation";
 import useWindowSize from "@/app/hooks/useWindowSize";
 
-const Navbar = () => {
+type NavbarProps = {
+    transparent?: boolean;
+};
+
+const Navbar: React.FC<NavbarProps> = ({ transparent }) => {
     const router = usePathname();
     const [isScrolled, setIsScrolled] = useState(false);
     const size = useWindowSize();
+
+    const navClass = `${styles.nav} ${isScrolled ? styles.fixed : ""} ${
+        transparent ? styles.transparent : ""
+    }`;
+    const navContainerClass = `${styles.navContainer} ${
+        transparent ? styles.transparent : ""
+    }`;
 
     const isLinkActive = (href: string) => {
         return router === href;
@@ -35,15 +46,13 @@ const Navbar = () => {
         };
     }, []);
 
-    const navClass = `${styles.nav} ${isScrolled ? styles.fixed : ""}`;
-
     return (
         <>
             {size.isMobile ? (
                 <NavbarMobile />
             ) : (
                 <nav className={navClass}>
-                    <div className={styles.navContainer}>
+                    <div className={navContainerClass}>
                         <div className={styles.logo}>
                             <img
                                 className={styles.logoImage}
