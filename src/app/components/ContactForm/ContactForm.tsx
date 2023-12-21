@@ -1,3 +1,4 @@
+"use client";
 import { inter, roboto } from "@/app/layout";
 import ContactTextBox from "../ContactTextBox/ContactTextBox";
 import styles from "./ContactForm.module.scss";
@@ -8,8 +9,47 @@ import {
     faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 
 const ContactForm = () => {
+    const [formData, setFormData] = useState({
+        name: "",
+        companyName: "",
+        website: "",
+        email: "",
+        message: "",
+    });
+
+    const handleChange = (e: any) => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value,
+        });
+    };
+
+    const handleSubmit = async (e: any) => {
+        e.preventDefault();
+
+        try {
+            const response = await fetch("/api/send-email", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (response.ok) {
+                console.log("Email sent successfully!");
+            } else {
+                console.error("Error sending email");
+            }
+        } catch (error) {
+            console.error("Error:", error);
+        }
+    };
+
     return (
         <div className={`${styles.contactFormContainer} ${inter.className}`}>
             <div className={styles.wrapper}>
@@ -58,6 +98,9 @@ const ContactForm = () => {
                         type="text"
                         name="name"
                         id="name"
+                        value={formData.name}
+                        onChange={handleChange}
+                        required
                     />
                 </div>
                 <div
@@ -71,6 +114,8 @@ const ContactForm = () => {
                         type="text"
                         name="name"
                         id="name"
+                        value={formData.companyName}
+                        onChange={handleChange}
                     />
                 </div>
                 <div
@@ -84,6 +129,8 @@ const ContactForm = () => {
                         type="text"
                         name="name"
                         id="name"
+                        value={formData.website}
+                        onChange={handleChange}
                     />
                 </div>
                 <div
@@ -97,6 +144,9 @@ const ContactForm = () => {
                         type="text"
                         name="name"
                         id="name"
+                        value={formData.email}
+                        onChange={handleChange}
+                        required
                     />
                 </div>
                 <div
@@ -110,6 +160,9 @@ const ContactForm = () => {
                         name="name"
                         id="name"
                         rows={5}
+                        value={formData.message}
+                        onChange={handleChange}
+                        required
                     />
                 </div>
                 <button
