@@ -46,8 +46,11 @@ const NavbarMobile = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link className={roboto.className} href="/work">
-                                    Work
+                                <Link
+                                    className={roboto.className}
+                                    href="/portfolio"
+                                >
+                                    Portfolio
                                 </Link>
                             </li>
                             <li>

@@ -8,7 +8,7 @@ import Container from "@/app/layout/Container/Container";
 import TechStack from "@/app/layout/TechStack/TechStack";
 import { inter } from "@/app/layout";
 
-const work = () => {
+const portfolio = () => {
     return (
         <div className={inter.className}>
             <Navbar />
@@ -18,4 +18,4 @@ const work = () => {
     );
 };
 
-export default work;
+export default portfolio;
