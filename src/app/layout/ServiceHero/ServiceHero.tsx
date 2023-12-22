@@ -7,11 +7,10 @@ const ServiceHero = () => {
     return (
         <div className={`${styles.container} ${inter.className}`}>
             <h1 className={roboto.className}>
-                Building beautiful experiences, line by line.
+                Gradim impresivna iskustva, liniju po liniju.
             </h1>
             <p className={styles.heroParagraph}>
-                Full-stack development that bridges the gap between code and
-                creativity.
+                Full-stack razvoj koji spaja kod i kreativnost.
             </p>
             <HeroCta linkPath="/contact" linkText="kontaktirajte me" />
 

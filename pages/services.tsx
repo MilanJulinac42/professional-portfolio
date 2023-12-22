@@ -14,9 +14,9 @@ const services = () => {
             <ServiceHero />
             <Services />
             <PopCard
-                title="Unlock the Power of Your Website"
-                description="Don't settle for an average online presence. We craft websites that captivate audiences, drive results, and fuel your business success. Let's talk about your vision and bring it to life."
-                linkText="Start Your Project Today"
+                title="Oslobodi punu snagu svog veb sajta"
+                description="Ne zadovoljavaj se prosečnim online prisustvom. Mi kreiramo veb sajtove koji osvajaju publiku, donose rezultate i pokreću uspeh tvog biznisa. Pričajmo o tvojoj viziji i pretvorimo je u stvarnost."
+                linkText="Započnimo tvoj projekat danas"
                 link="/contact"
                 icon={faRocket}
                 background="#001E2B"

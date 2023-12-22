@@ -8,12 +8,23 @@ import Footer from "./layout/Footer/Footer";
 import WhatIDo from "./layout/WhatIDo/WhatIDo";
 import PopCard from "./components/PopCard/PopCard";
 import { faGears, faHandshake } from "@fortawesome/free-solid-svg-icons";
+import AboutMeHero from "./layout/AboutMeHero/AboutMeHero";
 
 export default function Home() {
     return (
         <main className={styles.main}>
             <Nav />
-            <Hero />
+            {/* <Hero /> */}
+            <AboutMeHero
+                title="Vaša vizija, Vaš sajt, Vaš put ka uspehu!"
+                description="Zdravo, ja sam Milan, samostalni veb developer koji uživa u
+                pretvaranju digitalnih snova u stvarnost. Specijalizovan sam za
+                kreiranje robusnih i vizuelno privlačnih e-commerce platformi
+                koje ne samo da predstavljaju vaše proizvode, već i povećavaju
+                prodaju. Od elegantnog dizajna do besprekornog korisničkog
+                iskustva, oživljavam vašu viziju."
+                image="/stock.jpg"
+            />
             <Container title={"Zajedno gradimo vašu viziju"}>
                 <WhatIDo />
             </Container>

@@ -8,87 +8,87 @@ import { useRouter } from "next/router";
 
 const servicesData = [
     {
-        heading: "Website Design",
-        title: "Craft Your Dream Website: Design that Connects and Converts",
+        heading: "Dizajn veb sajtova",
+        title: "Oblikujte veb sajt iz snova: Dizajn koji povezuje i pretvara posetioce u klijente",
         description:
-            "We don't just build websites, we create digital experiences that captivate your audience and drive results. From sleek modern designs to user-friendly navigation and conversion-focused layouts, we bring your vision to life.",
+            "Ne samo da izrađujemo veb sajtove, već kreiramo digitalna iskustva koja osvajaju vašu publiku i donose rezultate. Od elegantnih modernih dizajna do korisnički prihvatljive navigacije i rasporeda koji podstiču konverzije, pretvaramo vašu viziju u stvarnost.",
         image: "/dizajn.svg",
         extraParagraph:
-            "Your website is your digital storefront, your 24/7 salesperson, and your window to the world. We don't just build websites, we build powerful tools that propel your business forward. Let's create a website that turns visitors into loyal customers and exceeds your expectations.",
+            "Vaš veb sajt je vaša digitalna prodavnica, vaš 24/7 prodavac i vaš prozor u svet. Mi ne izrađujemo samo veb sajtove, već i moćne alate koji pokreću vaše poslovanje napred. Hajde da kreiramo veb sajt koji pretvara posetioce u lojalne klijente i premašuje vaša očekivanja.",
         listItems: [
-            "Strategic Design: Understand your target audience, business goals, and brand identity to craft a website that resonates and drives action.",
-            "Pixel-Perfect Design: Experience stunning visuals, intuitive layouts, and seamless user interfaces that leave a lasting impression.",
-            "Conversion-Focused Optimization: We design for results, ensuring your website guides visitors towards desired actions like purchases, subscriptions, or leads.",
+            "Strateški dizajn: Razumemo vašu ciljnu publiku, poslovne ciljeve i identitet brenda kako bismo kreirali veb sajt koji rezonira i podstiče akciju.",
+            "Savršen dizajn: Doživite zadivljujuće vizuelne efekte, intuitivne rasporede i besprekorna korisnička sučelja koja ostavljaju trajan utisak.",
+            "Optimizacija fokusirana na konverzije: Dizajniramo za rezultate, osiguravajući da vaš veb sajt vodi posetioce ka željenim akcijama poput kupovina, pretplata ili generisanja potencijalnih klijenata.",
         ],
     },
     {
-        heading: "Website Redesign",
-        title: "Breathe New Life into Your Website: Modern Upgrades for Maximum Impact",
+        heading: "Oživi svoj veb sajt",
+        title: "Zaboravi na zastareli veb sajt koji ne donosi rezultate! Udišimo mu novi život modernim dizajnom za bolje rezultate, zadovoljnije korisnike i puno procenata na tvom brojaču.",
         description:
-            "Is your website feeling outdated or failing to convert? We breathe new life into tired online presences, revamping your website for enhanced performance, user engagement, and bottom-line benefits.",
+            "Da li ti je veb sajt zastareo i više ne privlači ili zadržava klijente? Mi udišemo novi dah u umorne online prezentacije, modernizujući tvog veb sajta za poboljšane performanse, veće uključivanje korisnika i konkretne koristi za tvog biznis.",
         image: "/redesign.svg",
         extraParagraph:
-            "Don't settle for a website that's holding you back. Our website redesign solutions unlock your online potential, attracting new customers, boosting engagement, and driving real results. Let's transform your website into a powerful asset that fuels your business growth.",
+            "Ne zadovolji se veb sajtom koji te koči. Naša rešenja za preoblikovanje veb sajtova otključavaju tvoj online potencijal, privlače nove klijente, podižu angažman i donose stvarne rezultate. Hajde da pretvorimo tvoj veb sajt u moćno oružje koje će pokrenuti rast tvog biznisa.",
         listItems: [
-            "Fresh & Modern Design: We revamp your website with a modern aesthetic that aligns with your brand and resonates with your target audience.",
-            "Seamless User Experience: We optimize navigation, flow, and functionality to create a user-friendly experience that keeps visitors engaged.",
-            "Conversion-Driven Strategies: We analyze your existing website data and industry trends to implement targeted changes that boost conversions and ROI.Conversion-Driven Strategies: We analyze your existing website data and industry trends to implement targeted changes that boost conversions and ROI.",
+            "Sveže i moderno: Obnavljamo tvoj veb sajt savremenim estetskim izgledom koji se uklapa sa tvojim brendom i osvaja tvoju ciljnu publiku.",
+            "Bezbedno korisničko iskustvo: Optimizujemo navigaciju, protok i funkcionalnost kako bi stvorili prilagođeno korisničko iskustvo koje će zadržati posetioce.",
+            "Strategije za poboljšanje konverzija: Analiziramo podatke tvog postojećeg veb sajta i trendove u industriji kako bi implementirali ciljane promene koje podižu konverzije i povratak na uložena sredstva.",
         ],
     },
     {
-        heading: "Search Engine Optimization",
-        title: "Climb the Search Engine Ladder: Dominate Google with Our Proven SEO Strategies",
+        heading: "Penji se SEO lestvicom",
+        title: "Sitan ti je čamirenja na dnu pretraživača? Mi lansiramo tvoj veb sajt na vrh, dovodeći ti organski promet, angažujući potencijalne klijente i podižući tvu online vidljivost pomoću naše SEO ekspertize zasnovane na podacima.",
         description:
-            "Description: Tired of languishing in the depths of search results? We catapult your website to the top, driving organic traffic, engaging leads, and boosting your online visibility with our data-driven SEO expertise.",
+            "Zaboravi na skupe oglase i prolazne trendove. Naše SEO strategije donose održiv rast, privlače kvalifikovane potencijalne klijente, neguju odnose sa njima i pokreću organski uspeh tvog biznisa. Mi smo tvoji partneri u svetu pretraživača, posvećeni tome da tvoj brend odvedemo na vrh i još dalje.",
         image: "/SEO.svg",
         extraParagraph:
-            "Forget expensive ads and fleeting trends. Our SEO strategies deliver sustainable growth, attracting qualified leads, nurturing customer relationships, and driving organic success for your business. We're your search engine partners, dedicated to propelling your brand to the top and beyond.",
+            "Ne trpaj više da te Google ignoruje. Naše strategije ti otvaraju vrata prema besplatnom prometu i angažovanim posetiocima. Izgradimo ti solidan temelj sa pravim ključnim rečima, optimizovanim sadržajem i stalnim praćenjem kako bi tvoj veb sajt bio zvezda pretraživača.",
         listItems: [
-            "Keyword Research & Analysis: We uncover the golden gems of keywords your audience craves, crafting targeted strategies for maximum search engine impact.",
-            "On-Page & Off-Page Optimization: We optimize your website content, technical structure, and backlink profile, sending positive signals to search engines and increasing authority.",
-            "Continuous Monitoring & Analysis: We track your progress using cutting-edge tools, adapt strategies based on real-time data, and ensure ongoing growth and organic search domination.",
+            "Istraživanje i analiza ključnih reči: Otkopavamo zlatne reči koje tvoja publika traži, gradeći ciljane strategije za maksimalan dopad u pretraživačima.",
+            "On-page i off-page optimizacija: Optimizujemo sadržaj tvog veb sajta, tehničku strukturu i profil backlinkova, šaljući pozitivne signale pretraživačima i povećavajući autoritet.",
+            "Kontinuirano praćenje i analiza: Pratitimo tvoj napredak pomoću najsavremenijih alata, prilagođavamo strategije na osnovu podataka u realnom vremenu i osiguramo stalni rast i dominaciju u organskoj pretrazi.",
         ],
     },
     {
-        heading: "Content Management Service",
-        title: "Take Control of Your Content: Empowering You with the Perfect CMS Solution",
+        heading: "CMS za upravljanje sadržajem",
+        title: "Preuzmite kontrolu nad svojim sadržajem: Osvetate se idealnim CMS rešenjem",
         description:
-            "Ditch the content chaos! We unlock the power of content management systems, equipping you with a user-friendly platform to easily manage, update, and publish your website content, empowering you to tell your story and drive results.",
+            "Kažete zbogom zamršenim interfejima i tehničkim preprekama! Mi rušimo barijere u upravljanju sadržajem i pomažemo vam da preuzmete kontrolu nad svojim veb sajtom, lako objavljujete sveže sadržaje i bez napora angažujete publiku. Hajde da zajedno otključamo puni potencijal vašeg sadržaja sa savršenim CMS rešenjem.",
         image: "/cms.svg",
         extraParagraph:
-            "Say goodbye to clunky interfaces and technical hurdles. We break down content management barriers, empowering you to take control of your website, publish fresh content consistently, and engage your audience with ease. Let's unlock the full potential of your content with the perfect CMS solution.",
+            "Oprostite se od kaosa! Naše CMS rešenje vam daje ključeve za uređivanje, ažuriranje i objavu sadržaja na lak način, da pripovestate svoju priču i postižete željene rezultate. Vi upravljate, a mi pružamo podršku i savet da vaš veb sajt sjaji.",
         listItems: [
-            "CMS Selection & Implementation: We navigate the CMS landscape, recommending the perfect platform for your needs, skills, and budget, and ensuring seamless implementation.",
-            "Customization & Training: We tailor your CMS experience, customizing interfaces, workflows, and user roles, and providing comprehensive training for effortless content management.",
-            "Ongoing Support & Optimization: We're your ongoing content management partner, offering technical support, performance optimization, and strategic guidance to maximize your CMS potential.",
+            "Izbor i implementacija CMS-a: Plovićemo kroz svet CMS platforma i preporučujemo savršenu za vaše potrebe, veštine i budžet, osiguravajući bezproblemnu implementaciju.",
+            "Prilagođavanje i obuka: Prilagođavamo vaše CMS iskustvo, personalizujući interfejs, tok rada i uloge korisnika, i nudimo detaljne obuke za bestrudsno upravljanje sadržajem.",
+            "Kontinuirana podrška i optimizacija: Mi smo vaš partner i uvek blizu za podršku, optimizaciju performansi i strateške savete kako bi maksimizirali potencijal vašeg CMS-a.",
         ],
     },
     {
-        heading: "Online Payment",
-        title: "Seamless Transactions, Happy Customers: Streamline Your Payments with Confidence",
+        heading: "Bezbedne i brze transakcije",
+        title: "Neka checkout bude uživanje! Integrišemo sigurne i jednostavne platforme za online plaćanje koje grade poverenje kod klijenata, ubrzavaju transakcije i otvaraju nove izvore prihoda za vaš biznis.",
         description:
-            "Eliminate checkout friction and watch conversions soar. We integrate secure, user-friendly online payment solutions that boost customer confidence, accelerate transactions, and unlock new revenue streams for your business.",
+            "Zaboravite na zamršene i sporne plaćane processore. Omogućavamo besprekornu online transakciju, gradeći trust, podižući konverzije i otvarajući nove putanje za rast vašeg biznisa. Hajde da zajedno kreiramo glatko plaćanje koje će vaše klijente osrećiti i pogoniti vaš uspeh.",
         image: "/card.svg",
         extraParagraph:
-            "Don't let clunky payment systems hold you back. We power seamless online transactions, building trust, simplifying purchases, and unlocking new growth opportunities for your business. Let's create a smooth payment journey that delights your customers and fuels your success.",
+            "Neka vaš checkout bude brzina i sigurnost! Povezujemo vas sa najboljim procesorima plaćanja, osiguravajući da klijenti imaju jednostavan i bezbedan način da kupuju. Zajedno gradite lojalnost i otvarate vrata novim konverzijama.",
         listItems: [
-            "Diverse Payment Gateway Integration: We connect you with a range of trusted payment gateways and processors, accommodating your customers' preferred payment methods and maximizing convenience.",
-            "Frictionless Checkout Experience: We design and implement seamless checkout flows, optimizing every step from product selection to confirmation, leading to higher conversion rates.",
-            "Enhanced Security & Fraud Protection: We prioritize security, employing cutting-edge encryption and fraud prevention measures to ensure safe and secure transactions for both you and your customers.",
+            "Raznolikost platforme za plaćanje: Povezujemo vas sa različitim poverljivim platformama i processorima, prilagođavajući se željama vaših klijenata i povećavajući njihovo zadovoljstvo.",
+            "Glatko i brzo iskustvo checkout-a: Dizajniramo i implementiramo bezbedne procese plaćanja, optimizujući svaki korak od odabira proizvoda do potvrde, vodeći ka većim konverzijama.",
+            "Povećana sigurnost i zaštita od prevara: Sigurnost je naš prioritet. Koristimo najsavremenije šifrovanje i mere zaštite od prevara kako bi transakcije bile sigurne i bezbedne i za vas i za vaše klijente.",
         ],
     },
     {
-        heading: "Website Speed Optimization & Mobile Responsiveness",
-        title: "Turbocharge Your Website: Speed & Mobile Magic for Lasting Impact",
+        heading: "Ubrzajte i prilagodite veb sajt",
+        title: "Slobodan pad loadinga i sjajan izgled na svim ekranima? To je magija optimizacije!",
         description:
-            "Say goodbye to sluggish loading times and frustrating mobile browsing! We unlock your website's full potential with expert speed optimization and seamless mobile responsiveness. Imagine:",
+            "Zaboravite na sporost i frustraciju prilikom pregleda sa mobila! Otključujemo puni potencijal vašeg veb sajta sa stručnom optimizacijom brzine i besprekornom prilagođenošću za mobilne uređaje. Zamislite:...",
         image: "/turbo.svg",
         extraParagraph:
-            "Don't settle for a sluggish website holding you back. Our speed optimization and mobile magic go beyond technical tweaks. We understand the intricate relationship between website performance, user experience, and business success. Let us transform your website into a high-performance powerhouse that engages visitors, converts leads, and propels your business forward. Your online success starts with a website that delivers, and we're here to make that happen.",
+            "Neka vaš veb sajt leti! Naša optimizacija brzine i mobilna magija idu dalje od tehničkih trikova. Razumemo vezu između performansi veb sajta, korisničkog iskustva i uspeha biznisa. Pretvorimo vas veb sajt u mašinu za konverzije koja će pritegnuti posetioce, pretvoriti ih u klijente i pogoniti vaš biznis napred. Vaš online uspeh počinje sa odličnim veb sajtom, a mi smo tu da to ostvarimo.",
         listItems: [
-            "Lightning-fast loading times: Keep visitors engaged and avoid bounce rates with a website that zips.",
-            "Flawless mobile experience: Reach every customer, wherever they are, with a website that shines on any device.",
-            "Increased conversions: Turn your website into a conversion machine with optimized navigation and a smooth user experience.",
+            "Munjevit brzina učitavanja: Držite posetioce angažovanim i smanjite gubite sa veb sajtom koji leti.",
+            "Besprekorno iskustvo na mobilnim uređajima: Dajte svakom klijentu sjajan doživljaj, bez obzira na uređaj, sa veb sajtom koji sjaji na svakom ekranu.",
+            "Više konverzija: Pretvorite vaš veb sajt u mašinu za konverzije sa optimizovanom navigacijom i glatkim korisničkim iskustvom.",
         ],
     },
 ];

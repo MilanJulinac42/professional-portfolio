@@ -43,6 +43,11 @@
     max-width: 100%;
     position: relative;
     opacity: 1;
+    display: none;
+
+    @include breakpoint(small) {
+        display: block;
+    }
 }
 
 .image {
@@ -74,7 +79,7 @@
     }
 
     @include breakpoint(xlarge) {
-        max-width: 30%;
+        max-width: 40%;
     }
 
     h1 {
