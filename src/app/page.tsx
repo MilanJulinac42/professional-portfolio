@@ -75,6 +75,7 @@ export default function Home() {
                 description="Zaboravite na uobičajena rešenja. Zajedno sa vama otkrivamo skrivene potencijale i pokrećemo revolucionarne inovacije koje će transformirati vaše poslovanje. Gradimo vašu budućnost, zajedno."
                 icon={faGears}
                 background="#001e2b"
+                containerBackground="#F0F0FA"
                 linkText="Pogledajte sve moje usluge"
                 link="/services"
             />

@@ -6,13 +6,15 @@ import {
     faArrowLeftLong,
     faArrowRight,
 } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { motion, useAnimation, useInView } from "framer-motion";
 
 type TechCardProps = {
     tech: string;
     background: string;
     icon: any;
     description: string;
+    delay: number;
 };
 
 const TechCard: React.FC<TechCardProps> = ({
@@ -20,7 +22,10 @@ const TechCard: React.FC<TechCardProps> = ({
     background,
     icon,
     description,
+    delay,
 }) => {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true, margin: "-100px" });
     const [isOverlayOpen, setIsOverlayOpen] = useState(false);
     const [isClosing, setIsClosing] = useState(false);
 
@@ -36,8 +41,21 @@ const TechCard: React.FC<TechCardProps> = ({
         }, 500);
     };
 
+    const cardVariants = {
+        hidden: { opacity: 0, y: 50 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: 1.5, delay: delay },
+        },
+    };
+
     return (
-        <div
+        <motion.div
+            ref={ref}
+            variants={cardVariants}
+            initial="hidden"
+            animate={isInView ? "visible" : "hidden"}
             className={`${styles.techCardContainer} ${inter.className}`}
             style={{ backgroundColor: `${background}` }}
         >
@@ -66,7 +84,7 @@ const TechCard: React.FC<TechCardProps> = ({
                     </button>
                 </div>
             )}
-        </div>
+        </motion.div>
     );
 };
 

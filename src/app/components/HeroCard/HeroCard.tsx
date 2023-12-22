@@ -28,6 +28,7 @@ const HeroCard: React.FC<HeroCardProps> = ({
             transition: { duration: 1.5, delay: delay },
         },
     };
+
     return (
         <motion.div
             ref={ref}

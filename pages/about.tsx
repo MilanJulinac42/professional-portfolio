@@ -21,7 +21,7 @@ const about = () => {
             <AboutMeCards />
             <PopCard
                 title="Spremni za saradnju? Izgradićemo nešto neverovatno zajedno!"
-                description="Strastveno stvaram ideje kroz [pomenite svoju stručnost, npr. strateški dizajn, upečatljiv brending ili inovativni web razvoj]. Moje vrednosti su tačnost, jasna komunikacija i proaktivno rešavanje problema, što osigurava glatko i uspešno partnerstvo. Razgovarajmo o vašem projektu i otključajmo njegov puni potencijal."
+                description="Strastveno stvaram ideje kroz [pomenite svoju stručnost, npr. strateški dizajn, upečatljiv brending ili inovativni veb razvoj]. Moje vrednosti su tačnost, jasna komunikacija i proaktivno rešavanje problema, što osigurava glatko i uspešno partnerstvo. Razgovarajmo o vašem projektu i otključajmo njegov puni potencijal."
                 icon={faPuzzlePiece}
                 linkText="Kontaktirajte me odmah!"
                 link="/kontakt"
