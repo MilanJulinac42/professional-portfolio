@@ -27,33 +27,33 @@ export default function Home() {
         <main className={styles.main}>
             <Nav />
             <Hero />
-            <Container title={"Let's Build Your Vision. Together."}>
+            <Container title={"Zajedno gradimo vašu viziju"}>
                 <WhatIDo />
             </Container>
             <PopCard
-                title="Craft your dream website. Supercharge your online presence."
-                description="I'm not just a developer, I'm your digital growth partner. We'll collaborate to build a stunning website that attracts customers, drives sales, and skyrockets your business."
+                title="Saradite sajt iz snova. Razvitajte svoj digitalni potencijal."
+                description="Nisam samo developer, već i vaš partner u digitalnom rastu. Zajedno kreiramo izuzetan sajt koji privlači klijente, pokreće prodaju i uzdiže vaš biznis."
                 icon={faHandshake}
                 background="#001E2B"
                 containerBackground="#fff"
-                linkText="Discover my expertise"
+                linkText="Otkrijte moju stručnost"
                 link="/about"
             />
             <TechStack />
-            <Container title={"My services"} background="#f0f0fa">
+            <Container title={"Moje usluge"} background="#f0f0fa">
                 <div className={styles.containerWrapperHelp}>
                     <HelpCard
                         title={"Advanced Analitics"}
                         image={"/analitics.svg"}
                         description={
-                            "Harness the power of data with Advanced Analytics solutions tailored to your business needs. Uncover valuable insights, make informed decisions, and drive strategic growth through the mastery of data-driven strategies."
+                            "Iskoristite moć podataka uz napredna analitička rešenja prilagođena vašim poslovnim potrebama. Otkrijte vredne uvide, donesite informisane odluke i podstaknite strateški rast kroz vladanje strategijama baziranim na podacima."
                         }
                     />
                     <HelpCard
-                        title={"Online payments"}
+                        title={"Online plaćanja"}
                         image={"/card.svg"}
                         description={
-                            "Simplify transactions and elevate user experiences with seamless Online Payment solutions. From secure transactions to user-friendly interfaces, I specialize in crafting payment systems that enhance your online presence and customer satisfaction."
+                            "Pojednostavite transakcije i unapredite korisničko iskustvo uz besprekorna rešenja za online plaćanja. Od sigurnih transakcija do intuitivnih interfejsa, specijalizovan sam za kreiranje platnih sistema koji osnažuju vaše online prisustvo i zadovoljstvo klijenata."
                         }
                     />
                     <HelpCard
@@ -87,11 +87,11 @@ export default function Home() {
                 </div>
             </Container>
             <PopCard
-                title="Innovator, not just problem-solver"
-                description="Forget cookie-cutter solutions. We work closely with you to uncover hidden opportunities and unlock breakthrough innovations that transform your business. Let's build your future, together."
+                title="Više od rešenja problema, inovator"
+                description="Zaboravite na uobičajena rešenja. Zajedno sa vama otkrivamo skrivene potencijale i pokrećemo revolucionarne inovacije koje će transformirati vaše poslovanje. Gradimo vašu budućnost, zajedno."
                 icon={faGears}
                 background="#001e2b"
-                linkText="Check out all of my services"
+                linkText="Pogledajte sve moje usluge"
                 link="/services"
             />
             <Footer />

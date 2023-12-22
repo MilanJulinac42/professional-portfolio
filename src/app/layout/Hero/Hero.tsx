@@ -7,19 +7,19 @@ const Hero = () => {
     return (
         <div className={`${styles.container} ${inter.className}`}>
             <h1 className={roboto.className}>
-                Your Vision, Your Website, Your Success Journey
+                Vaša vizija, Vaš sajt, Vaš put ka uspehu!
             </h1>
             <p className={styles.heroParagraph}>
-                Hello, I'm Milan, a freelance website developer passionate about
-                turning digital dreams into reality. I specialize in building
-                robust and visually appealing e-commerce platforms that not only
-                showcase your products but also drive sales. From sleek designs
-                to seamless user experiences, I bring your vision to life.
+                Zdravo, ja sam Milan, samostalni veb developer koji uživa u
+                pretvaranju digitalnih snova u stvarnost. Specijalizovan sam za
+                kreiranje robusnih i vizuelno privlačnih e-commerce platformi
+                koje ne samo da predstavljaju vaše proizvode, već i povećavaju
+                prodaju. Od elegantnog dizajna do besprekornog korisničkog
+                iskustva, oživljavam vašu viziju.
             </p>
             <Link className={styles.contact} href="/contact">
-                Contact me
+                Kontaktirajte me
             </Link>
-
             <img className={styles.heroImage} src={"/stock.jpg"}></img>
         </div>
     );
