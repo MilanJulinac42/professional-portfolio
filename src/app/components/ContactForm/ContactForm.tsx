@@ -54,18 +54,21 @@ const ContactForm = () => {
     return (
         <div className={`${styles.contactFormContainer} ${inter.className}`}>
             <div className={styles.wrapper}>
-                <h3 className={roboto.className}>Looking to work together? </h3>
+                <h3 className={roboto.className}>Želite da sarađujemo?</h3>
                 <p>
-                    Feel free to call me at any time. My phone number is:{" "}
+                    Slobodno me pozovite u bilo kom trenutku. Moj broj telefona
+                    je:{" "}
                     <span>
                         <FontAwesomeIcon icon={faPhone} /> (+381) 63 83 84 196
                     </span>
                 </p>
-                <h3 className={roboto.className}>Want to hang out online?</h3>
+                <h3 className={roboto.className}>
+                    Želite da se družimo online?
+                </h3>
                 <div className={styles.socialContainer}>
                     <p>
-                        I mostly hang out in my Facebook group, but you can also
-                        find me below:
+                        Uglavnom se družim u svojoj Facebook grupi, ali možete
+                        me pronaći i ovde:
                     </p>
                     <div className={styles.social}>
                         <span>
@@ -106,20 +109,20 @@ const ContactForm = () => {
                         </span>
                     </div>
                 </div>
-                <h3 className={roboto.className}>Have another question?</h3>
+                <h3 className={roboto.className}>Imate neko pitanje?</h3>
                 <p>
-                    Complete the form below or just mail me at{" "}
+                    Popunite formular ispod ili mi pošaljite email na{" "}
                     <span>
                         <FontAwesomeIcon icon={faEnvelope} />{" "}
                         milanjulinac996@gmail.com
                     </span>{" "}
-                    and I’ll get back to you within 2 business days
+                    i odgovoriću vam u roku od 2 dana.
                 </p>
                 <div
                     className={`${styles.contactTextBoxContainer} ${inter.className}`}
                 >
                     <label className={styles.contactLabel} htmlFor="name">
-                        Name <span>(required)</span>
+                        Ime <span>(potrebno)</span>
                     </label>
                     <input
                         className={styles.contactInput}
@@ -135,7 +138,7 @@ const ContactForm = () => {
                     className={`${styles.contactTextBoxContainer} ${inter.className}`}
                 >
                     <label className={styles.contactLabel} htmlFor="name">
-                        Company name
+                        Ime kompanije
                     </label>
                     <input
                         className={styles.contactInput}
@@ -150,7 +153,7 @@ const ContactForm = () => {
                     className={`${styles.contactTextBoxContainer} ${inter.className}`}
                 >
                     <label className={styles.contactLabel} htmlFor="name">
-                        Your website
+                        Vaš vebsajt
                     </label>
                     <input
                         className={styles.contactInput}
@@ -165,7 +168,7 @@ const ContactForm = () => {
                     className={`${styles.contactTextBoxContainer} ${inter.className}`}
                 >
                     <label className={styles.contactLabel} htmlFor="name">
-                        E-mail <span>(required)</span>
+                        E-mail <span>(potrebno)</span>
                     </label>
                     <input
                         className={styles.contactInput}
@@ -181,7 +184,7 @@ const ContactForm = () => {
                     className={`${styles.contactTextBoxContainer} ${inter.className}`}
                 >
                     <label className={styles.contactLabel} htmlFor="name">
-                        How can I help you? <span>(required)</span>
+                        Kako mogu da vam pomognem? <span>(potrebno)</span>
                     </label>
                     <textarea
                         className={styles.contactTextArea}
@@ -196,7 +199,7 @@ const ContactForm = () => {
                 <button
                     className={`${styles.submitButton} ${roboto.className}`}
                 >
-                    CONTACT MILAN
+                    kontaktirajte me
                 </button>
             </div>
         </div>

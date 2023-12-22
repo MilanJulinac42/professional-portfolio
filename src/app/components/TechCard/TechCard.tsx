@@ -44,7 +44,7 @@ const TechCard: React.FC<TechCardProps> = ({
             <h2 className={roboto.className}>{tech}</h2>
             <div className={styles.bottomWrapper}>
                 <button onClick={handleLearnMoreClick}>
-                    Learn more <FontAwesomeIcon icon={faArrowRight} />
+                    Saznajte više <FontAwesomeIcon icon={faArrowRight} />
                 </button>
                 <span>
                     <FontAwesomeIcon icon={icon} />

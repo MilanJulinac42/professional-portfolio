@@ -68,7 +68,7 @@
     }
 
     @include breakpoint(medium) {
-        width: 320px;
+        width: fit-content;
         padding: 20px;
         font-size: 25px;
         letter-spacing: 5px;

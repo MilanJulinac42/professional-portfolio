@@ -11,18 +11,18 @@ const AboutMeCards = () => {
         >
             <div className={`${styles.containerWrapper} ${inter.className}`}>
                 <HeroCard
-                    title="Punctuality & Dedication"
-                    description="I meet deadlines consistently, prioritizing efficiency and organization. My dedication fuels my focus, ensuring every task receives my full attention."
+                    title="Tačnost i posvećenost"
+                    description="Redovno poštujem rokove, stavljajući efikasnost i organizaciju na prvo mesto. Moja posvećenost održava fokus i osigurava da svaki zadatak dobije punu pažnju."
                     image="/commit.svg"
                 />
                 <HeroCard
-                    title="Communication & Collaboration"
-                    description="I forge strong connections with colleagues and clients, fostering open communication and collaborative problem-solving. My clear and concise communication ensures everyone is on the same page."
+                    title="Komunikacija i saradnja"
+                    description="Gradim jake veze sa kolegama i klijentima, podstičući otvorenu komunikaciju i zajedničko rešavanje problema. Moja jasna i koncizna komunikacija osigurava da su svi na istoj strani."
                     image="/agreement.svg"
                 />
                 <HeroCard
-                    title="Problem-Solving & Initiative"
-                    description="I tackle obstacles with innovative solutions, thinking outside the box to devise effective strategies. My proactive approach keeps projects moving forward."
+                    title="Rešenje problema i inicijativa"
+                    description="Prepreke savladavam inovativnim rešenjima, razmišljajući izvan okvira i osmišljavajući efikasne strategije. Moj proaktivni pristup održava napredak projekata."
                     image="/lightbulb.svg"
                 />
             </div>

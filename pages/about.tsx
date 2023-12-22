@@ -14,17 +14,17 @@ const about = () => {
         <div className={inter.className}>
             <Navbar />
             <AboutMeHero
-                title="Dreemers meet doer"
-                description="You’ve got a big idea – and we’re here to help you turn it into reality. We adapt to your needs, whether you need to use a few engineers to extend your in-house capability, or you want to spin up a whole product development team to ship the next big thing. Whatever it is, we’ve got the specialists to bring it to life."
+                title="Sanjari, upoznajte realizatora"
+                description="Imate veliku ideju? Mi smo tu da je pretvorimo u stvarnost. Prilagođavamo se vašim potrebama, bilo da vam treba nekoliko stručnjaka za proširenje kapaciteta ili želite da sastavite ceo tim za razvoj proizvoda za sledeći veliki hit. Šta god da je, imamo stručnjake koji će to ostvariti."
                 image="/hello.svg"
             />
             <AboutMeCards />
             <PopCard
-                title="Ready to collaborate? Let's build something amazing together!"
-                description="I'm passionate about bringing ideas to life through [mention your core expertise, e.g., strategic design, impactful branding, or innovative web development]. My values of punctuality, clear communication, and proactive problem-solving ensure a smooth and successful partnership. Let's discuss your project and unlock its full potential."
+                title="Spremni za saradnju? Izgradićemo nešto neverovatno zajedno!"
+                description="Strastveno stvaram ideje kroz [pomenite svoju stručnost, npr. strateški dizajn, upečatljiv brending ili inovativni web razvoj]. Moje vrednosti su tačnost, jasna komunikacija i proaktivno rešavanje problema, što osigurava glatko i uspešno partnerstvo. Razgovarajmo o vašem projektu i otključajmo njegov puni potencijal."
                 icon={faPuzzlePiece}
-                linkText="Contact Me Now!"
-                link="/contact"
+                linkText="Kontaktirajte me odmah!"
+                link="/kontakt"
                 background="#001E2B"
             />
             <TechContainer />

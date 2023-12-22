@@ -12,6 +12,7 @@ const WhatIDo = () => {
                 description={
                     "Kreiram upečatljive veb sajtove, implementiram strateški SEO i pojednostavljujem online plaćanja kako bih povećao saobraćaj, konverzije i prihod vašeg poslovanja. Zajedno ćemo kreirati digitalna iskustva koja ostavljaju snažan utisak."
                 }
+                delay={0.3}
             />
             <HeroCard
                 image={"/htmlcss.svg"}
@@ -19,6 +20,7 @@ const WhatIDo = () => {
                 description={
                     "Povezujem dizajn i kod, kreirajući pixel-savršene veb sajtove koji oličavaju vašu viziju i pružaju izuzetno korisničko iskustvo na svim uređajima. Svaki detalj je važan, a ja sam posvećen tome da vaš digitalni identitet zablista."
                 }
+                delay={0.6}
             />
             <HeroCard
                 image={"/analitika.svg"}
@@ -26,6 +28,7 @@ const WhatIDo = () => {
                 description={
                     "Koristim moć analitike da otkrijem ključne uvide, donesem informisane odluke i optimiziram vaš veb sajt za maksimalne performanse. Zajedno ćemo kreirati strategiju baziranu na podacima koja će podstaknuti vaš uspeh na internetu."
                 }
+                delay={0.9}
             />
         </div>
     );

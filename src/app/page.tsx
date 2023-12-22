@@ -1,6 +1,5 @@
 import styles from "./page.module.scss";
 import Nav from "./layout/Nav/Nav";
-import Hero from "./layout/Hero/Hero";
 import Container from "./layout/Container/Container";
 import TechStack from "./layout/TechStack/TechStack";
 import HelpCard from "./components/HelpCard/HelpCard";
@@ -14,7 +13,6 @@ export default function Home() {
     return (
         <main className={styles.main}>
             <Nav />
-            {/* <Hero /> */}
             <AboutMeHero
                 title="Vaša vizija, Vaš sajt, Vaš put ka uspehu!"
                 description="Zdravo, ja sam Milan, samostalni veb developer koji uživa u
