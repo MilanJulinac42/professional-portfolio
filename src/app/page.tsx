@@ -32,44 +32,32 @@ export default function Home() {
                     <HelpCard
                         title={"Dizajn sajta"}
                         image={"/dizajn.svg"}
-                        description={
-                            "Iskoristite moć podataka uz napredna analitička rešenja prilagođena vašim poslovnim potrebama. Otkrijte vredne uvide, donesite informisane odluke i podstaknite strateški rast kroz vladanje strategijama baziranim na podacima."
-                        }
+                        linkPath={"/services?selectedService=0"}
                     />
                     <HelpCard
                         title={"Redizajn sajta"}
                         image={"/redesign.svg"}
-                        description={
-                            "Pojednostavite transakcije i unapredite korisničko iskustvo uz besprekorna rešenja za online plaćanja. Od sigurnih transakcija do intuitivnih interfejsa, specijalizovan sam za kreiranje platnih sistema koji osnažuju vaše online prisustvo i zadovoljstvo klijenata."
-                        }
+                        linkPath={"/services?selectedService=1"}
                     />
                     <HelpCard
                         title={"Optimizacija sajta"}
                         image={"/SEO.svg"}
-                        description={
-                            "Empower your online presence with efficient Content Management solutions. Streamline your workflow, organize digital assets, and maintain a dynamic website effortlessly. Elevate your content strategy with a tailored approach to content creation and distribution."
-                        }
+                        linkPath={"/services?selectedService=2"}
                     />
                     <HelpCard
                         title={"Servis za upravljanje podatcima"}
                         image={"/cms.svg"}
-                        description={
-                            "Transform your vision into a visually stunning reality with Website Design services. From user-centric interfaces to aesthetically pleasing layouts, I specialize in creating engaging websites that leave a lasting impression and resonate with your target audience."
-                        }
+                        linkPath={"/services?selectedService=3"}
                     />
                     <HelpCard
                         title={"Online placanja"}
                         image={"/card.svg"}
-                        description={
-                            "Boost your online visibility and climb the search engine ranks with Search Engine Optimization expertise. I implement strategic SEO techniques to enhance your website's performance, drive organic traffic, and ensure your brand stands out in the digital landscape."
-                        }
+                        linkPath={"/services?selectedService=4"}
                     />
                     <HelpCard
                         title={"Optimizacija sajta i responzivni dizajn"}
                         image={"/turbo.svg"}
-                        description={
-                            "Elevate your online store with comprehensive E-commerce Solutions. From intuitive user interfaces to secure payment gateways, I specialize in crafting tailored e-commerce experiences that drive sales, enhance customer satisfaction, and position your brand for success in the competitive online marketplace."
-                        }
+                        linkPath={"/services?selectedService=5"}
                     />
                 </div>
             </Container>

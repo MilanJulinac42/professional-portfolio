@@ -2,14 +2,15 @@
 import React, { useState } from "react";
 import { roboto } from "@/app/layout";
 import styles from "./HelpCard.module.scss";
+import Link from "next/link";
 
 type HelpCardProps = {
     title?: string;
     image?: string;
-    description?: string;
+    linkPath: string;
 };
 
-const HelpCard: React.FC<HelpCardProps> = ({ image, title, description }) => {
+const HelpCard: React.FC<HelpCardProps> = ({ image, title, linkPath }) => {
     const [isOverlayOpen, setIsOverlayOpen] = useState(false);
     const [isClosing, setIsClosing] = useState(false);
 
@@ -29,11 +30,11 @@ const HelpCard: React.FC<HelpCardProps> = ({ image, title, description }) => {
         <div className={styles.helpCardWrapper}>
             <h5 className={roboto.className}>{title}</h5>
             <img src={image} alt={title} />
-            <button className={roboto.className} onClick={handleLearnMoreClick}>
+            <Link href={linkPath} className={roboto.className}>
                 Learn more
-            </button>
+            </Link>
 
-            {isOverlayOpen && (
+            {/* {isOverlayOpen && (
                 <div
                     className={`${styles.overlay} ${
                         isClosing ? styles.closing : ""
@@ -48,7 +49,7 @@ const HelpCard: React.FC<HelpCardProps> = ({ image, title, description }) => {
                         Close
                     </button>
                 </div>
-            )}
+            )} */}
         </div>
     );
 };

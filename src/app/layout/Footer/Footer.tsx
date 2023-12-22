@@ -14,10 +14,13 @@ const Footer = () => {
     return (
         <div className={`${styles.footerContainer} ${inter.className}`}>
             <div className={styles.social}>
-                <p>Get connected with me on social media</p>
+                <p>Povežite se sa mnom na društvenim mrežama</p>
                 <ul className={styles.socialList}>
                     <li>
-                        <Link href={"#"}>
+                        <Link
+                            href={"https://www.facebook.com/milan.julinac.9/"}
+                            target="_blank"
+                        >
                             <FontAwesomeIcon
                                 icon={faFacebook}
                                 className={styles.socialIcon}
@@ -25,7 +28,10 @@ const Footer = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link href={"#"}>
+                        <Link
+                            href={"https://www.linkedin.com/in/milanjulinac/"}
+                            target="_blank"
+                        >
                             <FontAwesomeIcon
                                 icon={faLinkedin}
                                 className={styles.socialIcon}
@@ -33,7 +39,10 @@ const Footer = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link href={"#"}>
+                        <Link
+                            href={"https://www.instagram.com/milanjulinac/"}
+                            target="_blank"
+                        >
                             <FontAwesomeIcon
                                 icon={faInstagram}
                                 className={styles.socialIcon}
@@ -41,7 +50,10 @@ const Footer = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link href={"#"}>
+                        <Link
+                            href={"https://github.com/MilanJulinac42"}
+                            target="_blank"
+                        >
                             <FontAwesomeIcon
                                 icon={faGithub}
                                 className={styles.socialIcon}
@@ -61,33 +73,68 @@ const Footer = () => {
                 <div className={styles.links}>
                     <ul className={styles.footerList}>
                         <li>
-                            <h5 className={roboto.className}>Usefull links</h5>
+                            <h5 className={roboto.className}>
+                                Korisni linkovi
+                            </h5>
                             <span className={styles.border}></span>
                         </li>
-                        <li className={inter.className}>Home</li>
-                        <li>Work</li>
-                        <li>About me</li>
-                        <li>Contact</li>
-                        <li>Services</li>
+                        <li className={inter.className}>
+                            <Link href={"/"}>Početna </Link>
+                        </li>
+                        {/* <li>Portfolio</li> */}
+                        <li>
+                            <Link href={"/services"}>Usluge</Link>
+                        </li>
+                        <li>
+                            <Link href={"/about"}>O meni</Link>
+                        </li>
+                        <li>
+                            <Link href={"/contact"}>Kontakt</Link>
+                        </li>
                     </ul>
                 </div>
                 <div className={styles.services}>
                     <ul className={styles.footerList}>
                         <li>
-                            <h5 className={roboto.className}>My Services</h5>
+                            <h5 className={roboto.className}>Moje usluge</h5>
                             <span className={styles.border}></span>
                         </li>
-                        <li>SEO</li>
-                        <li>Online payment</li>
-                        <li>Website design</li>
-                        <li>Responsive design</li>
-                        <li>Analitics</li>
+                        <li>
+                            <Link href={"/services?selectedService=0"}>
+                                Dizajn sajta
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href={"/services?selectedService=1"}>
+                                Redizajn sajta
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href={"/services?selectedService=2"}>
+                                Optimizacija sajta
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href={"/services?selectedService=3"}>
+                                Servis za upravljanje podatcima
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href={"/services?selectedService=4"}>
+                                Online placanja
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href={"/services?selectedService=5"}>
+                                Optimizacija sajta i responzivni dizajn
+                            </Link>
+                        </li>
                     </ul>
                 </div>
                 <div className={styles.contact}>
                     <ul className={styles.footerList}>
                         <li>
-                            <h5 className={roboto.className}>Contact me</h5>
+                            <h5 className={roboto.className}>Kontakt</h5>
                             <span className={styles.border}></span>
                         </li>
                         <li>
@@ -95,7 +142,7 @@ const Footer = () => {
                                 className={styles.contactFooterIcon}
                                 icon={faHome}
                             />
-                            Backa Palanka Kralja Petra I 77
+                            Bačka Palanka, Kralja Petra I 77
                         </li>
                         <li>
                             <FontAwesomeIcon
@@ -116,7 +163,7 @@ const Footer = () => {
             </div>
             <div className={styles.copyright}>
                 <p className={roboto.className}>
-                    © 2023 Copyright: Milan Julinac
+                    © 2023 Sva prava zadržana: Milan Julinac
                 </p>
             </div>
         </div>

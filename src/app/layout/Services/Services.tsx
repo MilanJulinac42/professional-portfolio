@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import styles from "./Services.module.scss";
 import Break from "@/app/components/Break/Break";
 import { roboto } from "@/app/layout";
 import Link from "next/link";
 import Service from "@/app/components/Service/Service";
+import { useRouter } from "next/router";
 
 const servicesData = [
     {
@@ -93,8 +94,32 @@ const servicesData = [
 ];
 
 const Services = () => {
+    const router = useRouter();
+    const servicesRef = useRef<HTMLDivElement>(null);
     const [selectedService, setSelectedService] = useState<number | null>(0);
 
+    useEffect(() => {
+        const { selectedService: querySelectedService } = router.query;
+        if (querySelectedService) {
+            setSelectedService(parseInt(querySelectedService as string, 10));
+
+            if (servicesRef.current) {
+                servicesRef.current.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                });
+
+                const offset = 70;
+                const targetScrollPosition =
+                    servicesRef.current.offsetTop - offset;
+
+                window.scrollTo({
+                    top: targetScrollPosition,
+                    behavior: "smooth",
+                });
+            }
+        }
+    }, [router.query]);
     const handleServiceClick = (index: any, event: React.MouseEvent) => {
         setSelectedService(index);
         event.preventDefault();
@@ -102,7 +127,7 @@ const Services = () => {
 
     return (
         <>
-            <div className={styles.helpContainer}>
+            <div className={styles.helpContainer} ref={servicesRef}>
                 <h2 className={`${styles.heading} ${roboto.className}`}>
                     My services
                 </h2>
