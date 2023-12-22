@@ -27,7 +27,7 @@ const servicesData = [
         title: "Breathe New Life into Your Website: Modern Upgrades for Maximum Impact",
         description:
             "Is your website feeling outdated or failing to convert? We breathe new life into tired online presences, revamping your website for enhanced performance, user engagement, and bottom-line benefits.",
-        image: "/hello.svg",
+        image: "/redesign.svg",
         extraParagraph:
             "Don't settle for a website that's holding you back. Our website redesign solutions unlock your online potential, attracting new customers, boosting engagement, and driving real results. Let's transform your website into a powerful asset that fuels your business growth.",
         listItems: [

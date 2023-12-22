@@ -1,6 +1,7 @@
 import { inter, roboto } from "@/app/layout";
 import styles from "./AboutMeHero.module.scss";
 import Link from "next/link";
+import HeroCta from "@/app/components/HeroCTA/HeroCta";
 
 type aboutMeHeroPrope = {
     title?: string;
@@ -26,9 +27,7 @@ const AboutMeHero: React.FC<aboutMeHeroPrope> = ({
                 <div className={styles.contentWrapper}>
                     <h1 className={roboto.className}>{title}</h1>
                     <p>{description}</p>
-                    <Link className={styles.contact} href="/contact">
-                        Contact me
-                    </Link>
+                    <HeroCta linkPath="/contact" linkText="kontaktirajte me" />
                 </div>
             </div>
         </div>

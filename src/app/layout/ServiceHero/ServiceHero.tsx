@@ -2,6 +2,7 @@ import { inter, roboto } from "@/app/layout";
 import React from "react";
 import styles from "./ServiceHero.module.scss";
 import Link from "next/link";
+import HeroCta from "@/app/components/HeroCTA/HeroCta";
 
 const ServiceHero = () => {
     return (
@@ -13,9 +14,7 @@ const ServiceHero = () => {
                 Full-stack development that bridges the gap between code and
                 creativity.
             </p>
-            <Link className={styles.contact} href="/contact">
-                Contact me
-            </Link>
+            <HeroCta linkPath="/contact" linkText="kontaktirajte me" />
 
             <img className={styles.heroImage} src={"/code.jpg"}></img>
         </div>

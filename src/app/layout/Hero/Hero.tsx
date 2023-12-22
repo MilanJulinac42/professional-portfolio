@@ -2,6 +2,7 @@ import { inter, roboto } from "@/app/layout";
 import React from "react";
 import styles from "./Hero.module.scss";
 import Link from "next/link";
+import HeroCta from "@/app/components/HeroCTA/HeroCta";
 
 const Hero = () => {
     return (
@@ -17,9 +18,7 @@ const Hero = () => {
                 prodaju. Od elegantnog dizajna do besprekornog korisničkog
                 iskustva, oživljavam vašu viziju.
             </p>
-            <Link className={styles.contact} href="/contact">
-                Kontaktirajte me
-            </Link>
+            <HeroCta linkPath="/contact" linkText="kontaktirajte me" />
             <img className={styles.heroImage} src={"/stock.jpg"}></img>
         </div>
     );

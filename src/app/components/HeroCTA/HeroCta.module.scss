@@ -1,0 +1,18 @@
+.link {
+    box-shadow: none;
+    padding: 20px 30px;
+    color: white;
+    background-color: #333;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    width: fit-content;
+    border-radius: 45px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background-color: #4c46b7c4;
+    }
+}
