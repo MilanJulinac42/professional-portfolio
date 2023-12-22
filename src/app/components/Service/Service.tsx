@@ -18,7 +18,7 @@ const Service: React.FC<ServiceProps> = ({
     return (
         <div className={styles.container}>
             <div className={styles.wrapper}>
-                <img src={image} />
+                <img src={image} alt="service img" />
                 <div className={styles.contentWrapper}>
                     <h5>{title}</h5>
                     <p>{description}</p>

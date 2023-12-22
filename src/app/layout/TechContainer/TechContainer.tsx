@@ -5,7 +5,6 @@ import {
     faJs,
     faNodeJs,
     faAws,
-    faHtml5,
     faDrupal,
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";

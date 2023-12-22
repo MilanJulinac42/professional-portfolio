@@ -1,26 +1,13 @@
-import Image from "next/image";
 import styles from "./page.module.scss";
 import Nav from "./layout/Nav/Nav";
 import Hero from "./layout/Hero/Hero";
 import Container from "./layout/Container/Container";
-import HeroCard from "./components/HeroCard/HeroCard";
-import Break from "./components/Break/Break";
 import TechStack from "./layout/TechStack/TechStack";
 import HelpCard from "./components/HelpCard/HelpCard";
-import HeroWork from "./layout/HeroWork/HeroWork";
-import WorkContainer from "./layout/WorkContainer/WorkContainer";
 import Footer from "./layout/Footer/Footer";
-import NavMobile from "./layout/Nav/NavMobile";
 import WhatIDo from "./layout/WhatIDo/WhatIDo";
-import Services from "./layout/Services/Services";
 import PopCard from "./components/PopCard/PopCard";
-import {
-    faCoins,
-    faGear,
-    faGears,
-    faHandshake,
-    faMoneyBill,
-} from "@fortawesome/free-solid-svg-icons";
+import { faGears, faHandshake } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
     return (
@@ -43,7 +30,7 @@ export default function Home() {
             <Container title={"Moje usluge"} background="#f0f0fa">
                 <div className={styles.containerWrapperHelp}>
                     <HelpCard
-                        title={"Websajt dizajn"}
+                        title={"Dizajn sajta"}
                         image={"/dizajn.svg"}
                         description={
                             "Iskoristite moć podataka uz napredna analitička rešenja prilagođena vašim poslovnim potrebama. Otkrijte vredne uvide, donesite informisane odluke i podstaknite strateški rast kroz vladanje strategijama baziranim na podacima."

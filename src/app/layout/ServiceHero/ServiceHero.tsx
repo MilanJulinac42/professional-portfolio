@@ -1,7 +1,6 @@
 import { inter, roboto } from "@/app/layout";
 import React from "react";
 import styles from "./ServiceHero.module.scss";
-import Link from "next/link";
 import HeroCta from "@/app/components/HeroCTA/HeroCta";
 
 const ServiceHero = () => {
@@ -16,7 +15,11 @@ const ServiceHero = () => {
             </p>
             <HeroCta linkPath="/contact" linkText="kontaktirajte me" />
 
-            <img className={styles.heroImage} src={"/code.jpg"}></img>
+            <img
+                className={styles.heroImage}
+                src={"/code.jpg"}
+                alt="hero img"
+            ></img>
         </div>
     );
 };

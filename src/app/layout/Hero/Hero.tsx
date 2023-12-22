@@ -1,7 +1,6 @@
 import { inter, roboto } from "@/app/layout";
 import React from "react";
 import styles from "./Hero.module.scss";
-import Link from "next/link";
 import HeroCta from "@/app/components/HeroCTA/HeroCta";
 
 const Hero = () => {

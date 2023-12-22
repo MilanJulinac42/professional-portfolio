@@ -1,6 +1,5 @@
 "use client";
 import { inter, roboto } from "@/app/layout";
-import ContactTextBox from "../ContactTextBox/ContactTextBox";
 import styles from "./ContactForm.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

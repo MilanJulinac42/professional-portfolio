@@ -1,6 +1,4 @@
 import { useState } from "react";
-import HelpCard from "@/app/components/HelpCard/HelpCard";
-import Container from "../Container/Container";
 import styles from "./Services.module.scss";
 import Break from "@/app/components/Break/Break";
 import { roboto } from "@/app/layout";

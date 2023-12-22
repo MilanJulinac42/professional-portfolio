@@ -3,7 +3,6 @@ import Footer from "@/app/layout/Footer/Footer";
 import TechContainer from "@/app/layout/TechContainer/TechContainer";
 import "../src/app/page.module.scss";
 import "../src/app/globals.css";
-import ContactHero from "@/app/layout/ContactHero/ContactHero";
 import AboutMeHero from "@/app/layout/AboutMeHero/AboutMeHero";
 import AboutMeCards from "@/app/layout/AboutMeCards/AboutMeCards";
 import PopCard from "@/app/components/PopCard/PopCard";

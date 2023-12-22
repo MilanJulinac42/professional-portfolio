@@ -1,6 +1,5 @@
 import { inter, roboto } from "@/app/layout";
 import styles from "./AboutMeHero.module.scss";
-import Link from "next/link";
 import HeroCta from "@/app/components/HeroCTA/HeroCta";
 
 type aboutMeHeroPrope = {
