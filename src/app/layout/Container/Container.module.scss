@@ -20,6 +20,8 @@
         font-size: 24px;
         margin-bottom: 30px;
         border-bottom: 5px solid #b2afe7;
+        text-align: center;
+        padding-bottom: 10px;
 
         @include breakpoint(medium) {
             font-size: 36px;

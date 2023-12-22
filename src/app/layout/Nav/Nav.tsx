@@ -19,6 +19,7 @@ const Navbar: React.FC<NavbarProps> = ({ transparent }) => {
     const navClass = `${styles.nav} ${isScrolled ? styles.fixed : ""} ${
         transparent ? styles.transparent : ""
     }`;
+
     const navContainerClass = `${styles.navContainer} ${
         transparent ? styles.transparent : ""
     }`;
@@ -70,7 +71,7 @@ const Navbar: React.FC<NavbarProps> = ({ transparent }) => {
                                     Home
                                 </Link>
                             </li>
-                            <li
+                            {/* <li
                                 className={
                                     isLinkActive("/portfolio")
                                         ? styles.active
@@ -83,7 +84,7 @@ const Navbar: React.FC<NavbarProps> = ({ transparent }) => {
                                 >
                                     Portfolio
                                 </Link>
-                            </li>
+                            </li> */}
                             <li
                                 className={
                                     isLinkActive("/services")

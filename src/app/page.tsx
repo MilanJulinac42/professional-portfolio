@@ -14,23 +14,29 @@ import NavMobile from "./layout/Nav/NavMobile";
 import WhatIDo from "./layout/WhatIDo/WhatIDo";
 import Services from "./layout/Services/Services";
 import PopCard from "./components/PopCard/PopCard";
-import { faCoins, faMoneyBill } from "@fortawesome/free-solid-svg-icons";
+import {
+    faCoins,
+    faGear,
+    faGears,
+    faHandshake,
+    faMoneyBill,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
     return (
         <main className={styles.main}>
             <Nav />
             <Hero />
-            <Container title={"What I do"}>
+            <Container title={"Let's Build Your Vision. Together."}>
                 <WhatIDo />
             </Container>
             <PopCard
-                title="Build your vision. Boost your business."
-                description="We’re software development partners working at the cutting edge of digital product development. Our clients love us for our technical expertise, deep sector knowledge, and relentless passion – all the ingredients your business needs to thrive."
-                icon={faCoins}
+                title="Craft your dream website. Supercharge your online presence."
+                description="I'm not just a developer, I'm your digital growth partner. We'll collaborate to build a stunning website that attracts customers, drives sales, and skyrockets your business."
+                icon={faHandshake}
                 background="#001E2B"
                 containerBackground="#fff"
-                linkText="Lean more about me"
+                linkText="Discover my expertise"
                 link="/about"
             />
             <TechStack />
@@ -81,9 +87,9 @@ export default function Home() {
                 </div>
             </Container>
             <PopCard
-                title="Innovators, not just problem-solvers"
-                description="We’re not the kind of software partner who just sits back and solves tickets. We take time to learn everything about your business: your dreams, hopes, fears, challenges. And together we find new and inventive ways to solve the problems you face. It leads to innovations that can unlock a whole new future for your business."
-                icon={faMoneyBill}
+                title="Innovator, not just problem-solver"
+                description="Forget cookie-cutter solutions. We work closely with you to uncover hidden opportunities and unlock breakthrough innovations that transform your business. Let's build your future, together."
+                icon={faGears}
                 background="#001e2b"
                 linkText="Check out all of my services"
                 link="/services"

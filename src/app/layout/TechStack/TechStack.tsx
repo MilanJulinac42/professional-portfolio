@@ -15,7 +15,9 @@ import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 const TechStack = () => {
     return (
         <div className={styles.techContainer}>
-            <h3 className={styles.techHeading}>What I know</h3>
+            <h3 className={styles.techHeading}>
+                The Technologies That Power Your Success
+            </h3>
             <p>
                 Our technology stack continuously expands to support our clients
                 and their rapidly-changing working environments:

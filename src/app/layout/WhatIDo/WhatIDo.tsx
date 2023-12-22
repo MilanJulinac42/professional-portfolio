@@ -8,23 +8,23 @@ const WhatIDo = () => {
         <div className={`${styles.containerWrapper} ${inter.className}`}>
             <HeroCard
                 image={"/mobila.svg"}
-                title={"Responsive design"}
+                title={"Unleash Your Digital Potential"}
                 description={
-                    "Make your website fast, easy to find, and reach the widest audience possible."
+                    "I craft captivating websites, implement strategic SEO, and streamline online payments to drive traffic, conversions, and revenue for your business. Let's create digital experiences that make a lasting impact."
                 }
             />
             <HeroCard
                 image={"/htmlcss.svg"}
-                title={"Front-end development"}
+                title={"Transform Ideas into Reality"}
                 description={
-                    "Responsive websites built for an optimal user experience that achieves your business goals."
+                    "I bridge the gap between design and code, delivering pixel-perfect websites that embody your vision and deliver exceptional user experiences across all devices. Every detail matters, and I'm passionate about making your digital presence shine."
                 }
             />
             <HeroCard
                 image={"/analitika.svg"}
-                title={"Business analytics"}
+                title={"Data-Driven Decisions for Growth"}
                 description={
-                    "Make your website fast, easy to find, and reach the widest audience possible. Easy to find, and reach."
+                    "I harness the power of analytics to uncover insights, make informed decisions, and optimize your website for maximum performance. Together, we'll create a data-driven strategy that fuels your online success."
                 }
             />
         </div>

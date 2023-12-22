@@ -14,14 +14,14 @@
     overflow: hidden;
 
     @include breakpoint(small) {
-        height: 200px;
+        height: auto;
     }
 
     @include breakpoint(large) {
         flex-direction: column;
         max-width: 30%;
         padding: 10px 30px;
-        height: 500px;
+        height: auto;
     }
 
     @include breakpoint(xxlarge) {

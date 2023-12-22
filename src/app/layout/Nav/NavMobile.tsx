@@ -5,9 +5,11 @@ import { roboto } from "../../layout";
 import styles from "./NavMobile.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { usePathname } from "next/navigation";
 
 const NavbarMobile = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const router = usePathname();
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -21,6 +23,10 @@ const NavbarMobile = () => {
             body.style.overflow = "visible";
         };
     }, [isMenuOpen]);
+
+    const isLinkActive = (href: string) => {
+        return router === href;
+    };
 
     return (
         <div className={styles.mobileContainer}>
@@ -39,23 +45,34 @@ const NavbarMobile = () => {
             {isMenuOpen && (
                 <div className={styles.overlay} onClick={toggleMenu}>
                     <div className={styles.wrapper}>
-                        <ul className={styles.mobileLinks}>
+                        <ul
+                            className={`${styles.mobileLinks} ${roboto.className}`}
+                        >
                             <li className={styles.active}>
-                                <Link className={roboto.className} href="/">
+                                <Link
+                                    className={
+                                        isLinkActive("/") ? styles.active : ""
+                                    }
+                                    href="/"
+                                >
                                     Home
                                 </Link>
                             </li>
-                            <li>
+                            {/* <li>
                                 <Link
                                     className={roboto.className}
                                     href="/portfolio"
                                 >
                                     Portfolio
                                 </Link>
-                            </li>
+                            </li> */}
                             <li>
                                 <Link
-                                    className={roboto.className}
+                                    className={
+                                        isLinkActive("/services")
+                                            ? styles.active
+                                            : ""
+                                    }
                                     href="/services"
                                 >
                                     Services
@@ -63,7 +80,11 @@ const NavbarMobile = () => {
                             </li>
                             <li>
                                 <Link
-                                    className={roboto.className}
+                                    className={
+                                        isLinkActive("/about")
+                                            ? styles.active
+                                            : ""
+                                    }
                                     href="/about"
                                 >
                                     About
@@ -71,7 +92,11 @@ const NavbarMobile = () => {
                             </li>
                             <li>
                                 <Link
-                                    className={roboto.className}
+                                    className={
+                                        isLinkActive("/contact")
+                                            ? styles.active
+                                            : ""
+                                    }
                                     href="/contact"
                                 >
                                     Contact
