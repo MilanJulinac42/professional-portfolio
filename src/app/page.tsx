@@ -10,6 +10,8 @@ import { faGears, faHandshake } from "@fortawesome/free-solid-svg-icons";
 import AboutMeHero from "./layout/AboutMeHero/AboutMeHero";
 import BenefitCard from "./components/BenefitCard/BenefitCard";
 import Benefits from "./layout/Benefits/Benefits";
+import FaqUnit from "./components/FaqUnit/FaqUnit";
+import FaqSection from "./layout/FaqSection/FaqSection";
 
 export default function Home() {
     return (
@@ -79,9 +81,10 @@ export default function Home() {
                 linkText="Pogledajte sve moje usluge"
                 link="/services"
             />
-            <Container title="Kako cu vam pomoci" background="#F0F0FA">
+            <Container title="Kako ću vam pomoći" background="#F0F0FA">
                 <Benefits />
             </Container>
+            <FaqSection />
             <Footer />
         </main>
     );

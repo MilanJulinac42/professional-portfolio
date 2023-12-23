@@ -1,0 +1,30 @@
+.arrowContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #fff;
+
+    .arrow {
+        transition: transform 0.3s ease-in-out;
+        transform: rotate(0deg);
+    }
+
+    .rotated {
+        transform: rotate(90deg);
+    }
+}
+
+.answer {
+    margin-top: 20px;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.container {
+    background-color: #6c63ff;
+    padding: 20px;
+    color: white;
+}
