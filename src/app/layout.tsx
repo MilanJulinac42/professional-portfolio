@@ -18,7 +18,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <head>
-                <link rel="icon" href="/next.svg" />
+                <link rel="icon" href="/iconF.svg" />
                 <title>
                     Profesionalni dizajn i razvoj web sajtova | Milan Julinac
                 </title>

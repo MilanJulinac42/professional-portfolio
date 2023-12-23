@@ -37,6 +37,7 @@ const services = () => {
         <>
             <Head>
                 <title>Usluge web dizajna i razvoja | Milan Julinac</title>
+                <link rel="icon" href="/iconF.svg" />
                 <meta
                     name="description"
                     content=" Saznajte više o meni, mojoj strasti za web dizajnom i razvojem, i kako mogu pomoći vašem poslovanju da raste online."
