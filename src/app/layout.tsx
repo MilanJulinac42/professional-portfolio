@@ -7,7 +7,7 @@ export const inter = Inter({ subsets: ["latin"] });
 
 const metadata: Metadata = {
     title: "Milan Julinac Portfolio",
-    description: "Portfolio for a full stack developer",
+    description: "Portfolio za full stack developera",
 };
 
 export default function RootLayout({
@@ -19,10 +19,12 @@ export default function RootLayout({
         <html lang="en">
             <head>
                 <link rel="icon" href="/next.svg" />
-                <title>Milan Julinac Portfolio</title>
+                <title>
+                    Profesionalni dizajn i razvoj web sajtova | Milan Julinac
+                </title>
                 <meta
                     name="description"
-                    content="Portfolio for a full stack developer"
+                    content="Kreirajte web sajt koji privlači klijente i pretvara posetioce u kupce. Nudimo dizajn sajta, redizajn, SEO, CMS, online plaćanje i još mnogo toga. Potražite besplatnu ponudu danas!"
                 />
             </head>
             <body className={inter.className}>{children}</body>

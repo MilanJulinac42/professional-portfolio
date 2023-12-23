@@ -15,7 +15,7 @@ const TechContainer = () => {
     return (
         <div className={styles.techContainer}>
             <h2 className={`${styles.heading} ${roboto.className}`}>
-                My tech stack
+                Tehnologije koje znam
             </h2>
             <Break />
             <div className={styles.techWrapper}>

@@ -15,20 +15,15 @@ export default function Home() {
             <Nav />
             <AboutMeHero
                 title="Vaša vizija, Vaš sajt, Vaš put ka uspehu!"
-                description="Zdravo, ja sam Milan, samostalni veb developer koji uživa u
-                pretvaranju digitalnih snova u stvarnost. Specijalizovan sam za
-                kreiranje robusnih i vizuelno privlačnih e-commerce platformi
-                koje ne samo da predstavljaju vaše proizvode, već i povećavaju
-                prodaju. Od elegantnog dizajna do besprekornog korisničkog
-                iskustva, oživljavam vašu viziju."
+                description="Pozdrav, ja sam Milan, samostalni veb developer strastveno posvećen pretvaranju digitalnih ideja u stvarnost. Specijalizovan sam za kreiranje robusnih i vizuelno privlačnih veb stranica koje odražavaju vašu jedinstvenu viziju. Bez obzira da li je reč o ličnom blogu, poslovnom sajtu ili portfolio prezentaciji, radim na oživljavanju vaših digitalnih ambicija."
                 image="/stock.jpg"
             />
             <Container title={"Zajedno gradimo vašu viziju"}>
                 <WhatIDo />
             </Container>
             <PopCard
-                title="Saradite sajt iz snova. Razvitajte svoj digitalni potencijal."
-                description="Nisam samo developer, već i vaš partner u digitalnom rastu. Zajedno kreiramo izuzetan sajt koji privlači klijente, pokreće prodaju i uzdiže vaš biznis."
+                title="Izgradnja Web Stranica po Vašoj Meri"
+                description="Kroz moj rad, pretvaram vaše ideje u vizuelno zadovoljavajuće i funkcionalne veb stranice. Posvećen sam unapređenju vaše online prisutnosti, pružajući vam alate i resurse potrebne za uspeh u digitalnom svetu. Pustite da zajedno izgradimo vašu digitalnu priču."
                 icon={faHandshake}
                 background="#001E2B"
                 containerBackground="#fff"
@@ -49,30 +44,30 @@ export default function Home() {
                         linkPath={"/services?selectedService=1"}
                     />
                     <HelpCard
-                        title={"Optimizacija sajta"}
+                        title={"Optimizacija za pretraživače"}
                         image={"/SEO.svg"}
                         linkPath={"/services?selectedService=2"}
                     />
                     <HelpCard
-                        title={"Servis za upravljanje podatcima"}
+                        title={"Sistem za upravljanje sadržajem"}
                         image={"/cms.svg"}
                         linkPath={"/services?selectedService=3"}
                     />
                     <HelpCard
-                        title={"Online placanja"}
+                        title={"Online plaćanje"}
                         image={"/card.svg"}
                         linkPath={"/services?selectedService=4"}
                     />
                     <HelpCard
-                        title={"Optimizacija sajta i responzivni dizajn"}
+                        title={"Optimizacija sajta i responsivan dizajn"}
                         image={"/turbo.svg"}
                         linkPath={"/services?selectedService=5"}
                     />
                 </div>
             </Container>
             <PopCard
-                title="Više od rešenja problema, inovator"
-                description="Zaboravite na uobičajena rešenja. Zajedno sa vama otkrivamo skrivene potencijale i pokrećemo revolucionarne inovacije koje će transformirati vaše poslovanje. Gradimo vašu budućnost, zajedno."
+                title="Rešenja prilagođena vama."
+                description="Osiguravam personalizovana rešenja koja odgovaraju vašim potrebama. Moj pristup je praktičan i usredsređen na efikasnost, pružajući konkretne odgovore na izazove vašeg poslovanja."
                 icon={faGears}
                 background="#001e2b"
                 containerBackground="#F0F0FA"
