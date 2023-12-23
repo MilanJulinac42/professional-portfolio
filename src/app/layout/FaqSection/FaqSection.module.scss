@@ -1,5 +1,6 @@
 .faqContainer {
     background-color: #e3eff5;
+    background-color: #001e2b;
     padding: 30px 0px;
 }
 
@@ -9,4 +10,10 @@
     display: flex;
     flex-direction: column;
     gap: 50px;
+
+    h3 {
+        text-align: center;
+        color: white;
+        font-size: 32px;
+    }
 }

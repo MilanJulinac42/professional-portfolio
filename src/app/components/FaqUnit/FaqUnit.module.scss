@@ -7,6 +7,10 @@
     padding-bottom: 5px;
     border-bottom: 1px solid #fff;
 
+    span {
+        font-size: 18px;
+    }
+
     .arrow {
         transition: transform 0.3s ease-in-out;
         transform: rotate(0deg);
@@ -24,7 +28,9 @@
 }
 
 .container {
+    background-color: #001e2b;
     background-color: #6c63ff;
     padding: 20px;
     color: white;
+    border-radius: 25px;
 }

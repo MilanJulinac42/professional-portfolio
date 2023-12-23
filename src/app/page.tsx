@@ -13,6 +13,29 @@ import Benefits from "./layout/Benefits/Benefits";
 import FaqUnit from "./components/FaqUnit/FaqUnit";
 import FaqSection from "./layout/FaqSection/FaqSection";
 
+const faqData = [
+    {
+        question: "Kako mogu profitirati od vaših usluga?",
+        answer: "Naša stručna ekipa radi na stvaranju visokokvalitetnih veb sajtova koji ne samo da privlače pažnju, već i pretvaraju posetioce u zadovoljne klijente. Povećajte vidljivost i postignite poslovni uspeh s nama.",
+    },
+    {
+        question: "Koliko dugo traje proces izrade veb sajta?",
+        answer: "Vreme izrade veb sajta zavisi od obima projekta, ali naša posvećenost efikasnosti i kvalitetu znači da ćete imati funkcionalan veb sajt u najkraćem mogućem roku.",
+    },
+    {
+        question: "Da li nudite podršku nakon lansiranja veb sajta?",
+        answer: "Da, naša podrška ne završava sa lansiranjem veb sajta. Pružamo redovnu tehničku podršku i pomažemo vam da održite vaš veb sajt u vrhunskom stanju.",
+    },
+    {
+        question: "Kako mogu dobiti besplatnu procenu za svoj projekat?",
+        answer: "Kontaktirajte nas putem naše kontakt stranice i opišite svoje potrebe. Naš tim će vam pružiti detaljnu procenu i predloge za vaš projekat.",
+    },
+    {
+        question: "Da li radite samo dizajn ili i razvoj veb sajtova?",
+        answer: "Naša usluga obuhvata sve, od dizajna do punog razvoja veb sajtova. Kreiramo kompletna digitalna iskustva koja donose rezultate.",
+    },
+];
+
 export default function Home() {
     return (
         <main className={styles.main}>
@@ -84,7 +107,7 @@ export default function Home() {
             <Container title="Kako ću vam pomoći" background="#F0F0FA">
                 <Benefits />
             </Container>
-            <FaqSection />
+            <FaqSection faqData={faqData} />
             <Footer />
         </main>
     );

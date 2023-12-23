@@ -1,22 +1,26 @@
 import FaqUnit from "@/app/components/FaqUnit/FaqUnit";
 import styles from "./FaqSection.module.scss";
+import { inter, roboto } from "@/app/layout";
 
-const FaqSection = () => {
+type FaqSectionProps = {
+    faqData: {
+        question: string;
+        answer: string;
+    }[];
+};
+
+const FaqSection: React.FC<FaqSectionProps> = ({ faqData }) => {
     return (
-        <div className={styles.faqContainer}>
+        <div className={`${styles.faqContainer} ${inter.className}`}>
             <div className={styles.faqWrapper}>
-                <FaqUnit
-                    question={"Koliko dugo traje izrada sajta?"}
-                    answer={
-                        "Vreme izrade sajta zavisi od njegove kompleksnosti i obima. U proseku, izrada sajta traje od 2 do 4 nedelje."
-                    }
-                />
-                <FaqUnit
-                    question={"Koliko dugo traje izrada sajta?"}
-                    answer={
-                        "Vreme izrade sajta zavisi od njegove kompleksnosti i obima. U proseku, izrada sajta traje od 2 do 4 nedelje.Vreme izrade sajta zavisi od njegove kompleksnosti i obima. U proseku, izrada sajta traje od 2 do 4 nedelje.Vreme izrade sajta zavisi od njegove kompleksnosti i obima. U proseku, izrada sajta traje od 2 do 4 nedelje.Vreme izrade sajta zavisi od njegove kompleksnosti i obima. U proseku, izrada sajta traje od 2 do 4 nedelje."
-                    }
-                />
+                <h3 className={roboto.className}>Često postavljena pitanja</h3>
+                {faqData.map((faq, index) => (
+                    <FaqUnit
+                        key={index}
+                        question={faq.question}
+                        answer={faq.answer}
+                    />
+                ))}
             </div>
         </div>
     );
