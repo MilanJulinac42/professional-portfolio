@@ -1,0 +1,38 @@
+@import "../../mixins.scss";
+
+.benefitCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 30%;
+
+    @include breakpoint(medium) {
+        width: 30%;
+    }
+
+    @include breakpoint(large) {
+        width: 25%;
+    }
+
+    .benefitIcon {
+        font-size: 24px;
+        color: white;
+        width: fit-content;
+    }
+
+    p {
+        text-align: center;
+        color: #333333be;
+    }
+}
+
+.iconWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #6c63ff;
+}

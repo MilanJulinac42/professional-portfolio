@@ -8,6 +8,8 @@ import WhatIDo from "./layout/WhatIDo/WhatIDo";
 import PopCard from "./components/PopCard/PopCard";
 import { faGears, faHandshake } from "@fortawesome/free-solid-svg-icons";
 import AboutMeHero from "./layout/AboutMeHero/AboutMeHero";
+import BenefitCard from "./components/BenefitCard/BenefitCard";
+import Benefits from "./layout/Benefits/Benefits";
 
 export default function Home() {
     return (
@@ -77,6 +79,9 @@ export default function Home() {
                 linkText="Pogledajte sve moje usluge"
                 link="/services"
             />
+            <Container title="Kako cu vam pomoci" background="#F0F0FA">
+                <Benefits />
+            </Container>
             <Footer />
         </main>
     );
