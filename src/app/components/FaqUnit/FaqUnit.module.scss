@@ -1,11 +1,17 @@
+@import "../../mixins.scss";
+
 .arrowContainer {
     display: flex;
     align-items: center;
     gap: 20px;
-    font-size: 24px;
     cursor: pointer;
     padding-bottom: 5px;
     border-bottom: 1px solid #fff;
+    font-size: 14px;
+
+    @include breakpoint(medium) {
+        font-size: 24px;
+    }
 
     span {
         font-size: 18px;
@@ -23,8 +29,18 @@
 
 .answer {
     margin-top: 20px;
-    padding-left: 20px;
-    font-size: 18px;
+    padding-left: 0px;
+    font-size: 14px;
+
+    @include breakpoint(medium) {
+        font-size: 18px;
+        padding-left: 20px;
+    }
+
+    @include breakpoint(xlarge) {
+        font-size: 20px;
+        padding-left: 20px;
+    }
 }
 
 .container {
