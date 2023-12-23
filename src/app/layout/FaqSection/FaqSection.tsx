@@ -7,13 +7,15 @@ type FaqSectionProps = {
         question: string;
         answer: string;
     }[];
+    heading?: string;
+    id: string;
 };
 
-const FaqSection: React.FC<FaqSectionProps> = ({ faqData }) => {
+const FaqSection: React.FC<FaqSectionProps> = ({ faqData, heading, id }) => {
     return (
-        <div className={`${styles.faqContainer} ${inter.className}`}>
+        <div id={id} className={`${styles.faqContainer} ${inter.className}`}>
             <div className={styles.faqWrapper}>
-                <h3 className={roboto.className}>Često postavljena pitanja</h3>
+                <h3 className={roboto.className}>{heading}</h3>
                 {faqData.map((faq, index) => (
                     <FaqUnit
                         key={index}

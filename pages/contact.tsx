@@ -49,7 +49,11 @@ const contact = () => {
                 ctaVisible={false}
             />
             <ContactForm />
-            <FaqSection faqData={contactFaqData} />
+            <FaqSection
+                id={"faq-contact"}
+                heading="Pitanja o kontaktiranju i saradnji"
+                faqData={contactFaqData}
+            />
             <Footer />
         </>
     );

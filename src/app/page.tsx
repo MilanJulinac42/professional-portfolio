@@ -107,7 +107,11 @@ export default function Home() {
             <Container title="Kako ću vam pomoći" background="#F0F0FA">
                 <Benefits />
             </Container>
-            <FaqSection faqData={faqData} />
+            <FaqSection
+                id={"faq-home"}
+                heading={"Često postavljena pitanja o mom radu"}
+                faqData={faqData}
+            />
             <Footer />
         </main>
     );

@@ -1,3 +1,4 @@
+"use client";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faFacebook,
@@ -9,8 +10,22 @@ import styles from "./Footer.module.scss";
 import Link from "next/link";
 import { inter, roboto } from "@/app/layout";
 import { faEnvelope, faHome, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 const Footer = () => {
+    // const router = usePathname();
+
+    // useEffect(() => {
+    //     const hash = window.location.hash;
+    //     if (hash) {
+    //         const element = document.querySelector(hash);
+    //         if (element) {
+    //             element.scrollIntoView({ behavior: "smooth" });
+    //         }
+    //     }
+    // }, [router]);
+
     return (
         <div className={`${styles.footerContainer} ${inter.className}`}>
             <div className={styles.social}>
@@ -127,6 +142,37 @@ const Footer = () => {
                         <li>
                             <Link href={"/services?selectedService=5"}>
                                 Optimizacija sajta i responsivan dizajn
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+                <div className={styles.services}>
+                    <ul className={styles.footerList}>
+                        <li>
+                            <h5 className={roboto.className}>Pitanja</h5>
+                            <span className={styles.border}></span>
+                        </li>
+                        <li>
+                            <Link href={"/#faq-home"} scroll={false}>
+                                Pitanja o mom radu
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                href={"/services#faq-services"}
+                                scroll={false}
+                            >
+                                Pitanja o pruženim uslugama
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href={"/about#faq-about"} scroll={false}>
+                                Pitanja o mom iskustvu i pristupu
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href={"/contact#faq-contact"} scroll={false}>
+                                Pitanja o kontaktiranju i saradnji
                             </Link>
                         </li>
                     </ul>

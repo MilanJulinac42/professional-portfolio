@@ -64,7 +64,11 @@ const about = () => {
                     background="#001E2B"
                 />
                 <TechContainer />
-                <FaqSection faqData={aboutMeFaqData} />
+                <FaqSection
+                    id={"faq-about"}
+                    heading="Pitanja o mom iskustvu i pristupu"
+                    faqData={aboutMeFaqData}
+                />
                 <Footer />
             </div>
         </>

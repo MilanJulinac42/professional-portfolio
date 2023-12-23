@@ -55,7 +55,11 @@ const services = () => {
                     background="#001E2B"
                     containerBackground="#f0f0fa"
                 />
-                <FaqSection faqData={servicesFaqData} />
+                <FaqSection
+                    id={"faq-services"}
+                    heading="Pitanja o pruženim uslugama"
+                    faqData={servicesFaqData}
+                />
                 <Footer />
             </div>
         </>
