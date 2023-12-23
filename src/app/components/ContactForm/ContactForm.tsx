@@ -67,8 +67,7 @@ const ContactForm = () => {
                 </h3>
                 <div className={styles.socialContainer}>
                     <p>
-                        Uglavnom se družim u svojoj Facebook grupi, ali možete
-                        me pronaći i ovde:
+                        Možete me pronaći na nekoj od sledećih platformi ispod:
                     </p>
                     <div className={styles.social}>
                         <span>

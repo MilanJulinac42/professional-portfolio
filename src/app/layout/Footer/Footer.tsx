@@ -116,7 +116,7 @@ const Footer = () => {
                         </li>
                         <li>
                             <Link href={"/services?selectedService=3"}>
-                                Servis za upravljanje podatcima
+                                Sistem za upravljanje sadržajem
                             </Link>
                         </li>
                         <li>
@@ -126,7 +126,7 @@ const Footer = () => {
                         </li>
                         <li>
                             <Link href={"/services?selectedService=5"}>
-                                Optimizacija sajta i responzivni dizajn
+                                Optimizacija sajta i responsivan dizajn
                             </Link>
                         </li>
                     </ul>

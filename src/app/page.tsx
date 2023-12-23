@@ -17,6 +17,9 @@ export default function Home() {
                 title="Vaša vizija, Vaš sajt, Vaš put ka uspehu!"
                 description="Pozdrav, ja sam Milan, samostalni veb developer strastveno posvećen pretvaranju digitalnih ideja u stvarnost. Specijalizovan sam za kreiranje robusnih i vizuelno privlačnih veb stranica koje odražavaju vašu jedinstvenu viziju. Bez obzira da li je reč o ličnom blogu, poslovnom sajtu ili portfolio prezentaciji, radim na oživljavanju vaših digitalnih ambicija."
                 image="/stock.jpg"
+                ctaLink="/contact"
+                ctaText="kontaktirajte me"
+                ctaVisible
             />
             <Container title={"Zajedno gradimo vašu viziju"}>
                 <WhatIDo />

@@ -16,7 +16,7 @@ const ServiceHero = () => {
                 vašem jedinstvenom brendu, a svaki projekat je prilika za
                 digitalnu transformaciju.
             </p>
-            <HeroCta linkPath="/contact" linkText="kontaktirajte me" />
+            <HeroCta linkPath="/contact" linkText="zakažite konsultaciju" />
 
             <img
                 className={styles.heroImage}

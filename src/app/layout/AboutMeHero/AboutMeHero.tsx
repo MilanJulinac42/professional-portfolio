@@ -8,12 +8,18 @@ type aboutMeHeroPrope = {
     title?: string;
     image?: string;
     description?: string;
+    ctaText: string;
+    ctaLink: string;
+    ctaVisible: boolean;
 };
 
 const AboutMeHero: React.FC<aboutMeHeroPrope> = ({
     title,
     image,
     description,
+    ctaLink,
+    ctaText,
+    ctaVisible,
 }) => {
     const containerVariants = {
         hidden: { opacity: 0 },
@@ -59,7 +65,11 @@ const AboutMeHero: React.FC<aboutMeHeroPrope> = ({
                 >
                     <h1 className={roboto.className}>{title}</h1>
                     <p>{description}</p>
-                    <HeroCta linkPath="/contact" linkText="kontaktirajte me" />
+                    {ctaVisible ? (
+                        <HeroCta linkPath={ctaLink} linkText={ctaText} />
+                    ) : (
+                        ""
+                    )}
                 </motion.div>
             </motion.div>
         </motion.div>

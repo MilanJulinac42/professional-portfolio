@@ -23,14 +23,17 @@ const about = () => {
             <div className={inter.className}>
                 <Navbar />
                 <AboutMeHero
-                    title="Sanjari, upoznajte realizatora."
-                    description="Imate veliku ideju? Mi smo tu da je pretvorimo u stvarnost. Prilagođavamo se vašim potrebama, bilo da vam treba nekoliko stručnjaka za proširenje kapaciteta ili želite da sastavite ceo tim za razvoj proizvoda za sledeći veliki hit. Šta god da je, imamo stručnjake koji će to ostvariti."
+                    title="Zajedno gradimo vaš jedinstveni veb svet."
+                    description="Moj cilj je da vam pružim personalizovana rešenja koja odražavaju vaše jedinstvene potrebe. Bez obzira da li gradimo sajt za vaš hobi, portfolio ili mali biznis, zajedno ćemo stvoriti online prisustvo koje se ističe."
                     image="/hello.svg"
+                    ctaLink="/contact"
+                    ctaText="Započnite vaš projekat"
+                    ctaVisible
                 />
                 <AboutMeCards />
                 <PopCard
                     title="Spremni za saradnju? Izgradićemo nešto neverovatno zajedno!"
-                    description="Strastveno stvaram ideje kroz strateški dizajn, upečatljiv brending i inovativni veb razvoj. Moje vrednosti su tačnost, jasna komunikacija i proaktivno rešavanje problema, što osigurava glatko i uspešno partnerstvo. Razgovarajmo o vašem projektu i otključajmo njegov puni potencijal."
+                    description="Strastveno stvaram ideje kroz strateški dizajn, upečatljiv brending i inovativni veb razvoj. Moje vrednosti su tačnost, jasna komunikacija i proaktivno rešavanje problema, što osigurava uspešno partnerstvo. Razgovarajmo o vašem projektu i otključajmo njegov puni potencijal."
                     icon={faPuzzlePiece}
                     linkText="Kontaktirajte me odmah!"
                     link="/kontakt"

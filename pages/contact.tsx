@@ -17,9 +17,12 @@ const contact = () => {
             </Head>
             <Navbar />
             <AboutMeHero
-                title="Kontaktirajte me"
-                description="Imate veliku ideju? Ja sam tu da je pretvorimo u stvarnost. Prilagođavam se vašim potrebama, bilo da vam treba nekoliko stručnjaka za proširenje kapaciteta ili želite da sastavite ceo tim za razvoj proizvoda za sledeći veliki hit. Šta god da je, imamo stručnjake koji će to ostvariti."
+                title="Imate projekat na umu?"
+                description="Razgovarajmo o tome kako mogu da vam pomognem pretvoriti vašu ideju u stvarnost.Prilagodiću se vašim potrebama. Spreman sam da zajedno radimo na postizanju vaših ciljeva."
                 image="/contact.jpg"
+                ctaLink="#"
+                ctaText=""
+                ctaVisible={false}
             />
             <ContactForm />
             <Footer />

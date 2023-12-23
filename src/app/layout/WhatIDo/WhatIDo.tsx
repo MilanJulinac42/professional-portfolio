@@ -26,7 +26,7 @@ const WhatIDo = () => {
                 image={"/analitika.svg"}
                 title={"Odluke zasnovane na podacima za rast vašeg biznisa"}
                 description={
-                    "Koristim moć analitike da otkrijem ključne uvide, donesem informisane odluke i optimiziram vaš veb sajt za maksimalne performanse. Zajedno ćemo kreirati strategiju baziranu na podacima koja će podstaknuti vaš uspeh na internetu."
+                    "Koristim moć analitike da otkrijem ključne uvide, donesem informisane odluke i optimizujem vaš veb sajt za maksimalne performanse. Zajedno ćemo kreirati strategiju baziranu na podacima koja će podstaknuti vaš uspeh na internetu."
                 }
                 delay={0.9}
             />

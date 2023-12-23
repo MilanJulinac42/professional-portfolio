@@ -58,7 +58,7 @@ const TechContainer = () => {
                     background="#009cde"
                     tech="Drupal"
                     icon={faDrupal}
-                    description="Omogućite svojim klijentima da lako upravljaju svojim sadržajem. Drupal, vodeći open-source CMS, pruža platformu jednostavnu za korišćenje za izgradnju i održavanje veb sajtova i veb aplikacija. Sa opsežnim opcijama za prilagođavanje i živahnom zajednicom, Drupal vam daje moć da kreirate moćna i skalabilna iskustva sadržaja."
+                    description="Omogućite svojim klijentima da lako upravljaju svojim sadržajem. Drupal, vodeći open-source sistem za upravljanje sadržajem, pruža platformu jednostavnu za korišćenje za izgradnju i održavanje veb sajtova i veb aplikacija. Sa opsežnim opcijama za prilagođavanje i živahnom zajednicom, Drupal vam daje moć da kreirate moćna i skalabilna iskustva sadržaja."
                     delay={1.2}
                 />
             </div>
