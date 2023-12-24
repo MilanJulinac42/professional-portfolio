@@ -34,7 +34,6 @@ const contact = () => {
         <>
             <Head>
                 <title>Kontaktirajte me | Milan Julinac</title>
-                <link rel="icon" href="/iconF.svg" />
                 <meta
                     name="description"
                     content="Spremni za saradnju na vašem web projektu? Kontaktirajte me već danas za besplatnu konsultaciju i ponudu."

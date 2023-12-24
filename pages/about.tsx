@@ -13,12 +13,12 @@ import FaqSection from "@/app/layout/FaqSection/FaqSection";
 
 const aboutMeFaqData = [
     {
-        question: "Koje su tvoje stručnosti u web dizajnu i razvoju?",
-        answer: "Specijalizovan sam za kreiranje vizuelno privlačnih veb stranica i razvoj funkcionalnih rešenja. Posedujem iskustvo u dizajniranju i implementaciji sajtova za različite potrebe.",
+        question: "Koje su tvoje stručnosti u veb dizajnu i razvoju?",
+        answer: "Specijalizovan sam za kreiranje vizuelno privlačnih veb stranica i razvoj funkcionalnih rešenja. Posedujem iskustvo u gradnjenju i implementaciji sajtova za različite potrebe.",
     },
     {
-        question: "Šta te motiviše u radu na projektima?",
-        answer: "Moja motivacija dolazi iz želje da pomognem klijentima ostvarivanjem njihove vizije. Radim strastveno i posvećeno, fokusiran na stvaranje jedinstvenih digitalnih iskustava.",
+        question: "Kako se moj pristup razlikuje od drugih u industriji?",
+        answer: "Moja jedinstvena snaga leži u kreativnom spoju tehnologije i empatije. Angažujem se na dubljem nivou kako bih razumeo vaše poslovanje i ciljeve. Ovladavanjem inovativnim tehnologijama, stvaram rešenja koja ne samo da zadovoljavaju očekivanja, već i prevazilaze granice konvencionalnog dizajna i razvoja.",
     },
     {
         question: "Kakav je tvoj pristup izgradnji online prisustva?",
@@ -39,7 +39,6 @@ const about = () => {
         <>
             <Head>
                 <title>O meni | Milan Julinac</title>
-                <link rel="icon" href="/iconF.svg" />
                 <meta
                     name="description"
                     content="Saznajte više o meni, mojoj strasti za web dizajnom i razvojem, i kako mogu pomoći vašem poslovanju da raste online."

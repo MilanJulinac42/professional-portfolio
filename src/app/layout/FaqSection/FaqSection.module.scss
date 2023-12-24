@@ -3,7 +3,7 @@
 .faqContainer {
     background-color: #e3eff5;
     background-color: #001e2b;
-    padding: 30px 0px;
+    padding: 60px 0px;
 }
 
 .faqWrapper {
@@ -11,6 +11,7 @@
     margin: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
 
     @include breakpoint(large) {
@@ -26,6 +27,9 @@
         text-align: center;
         color: white;
         font-size: 24px;
+        border-bottom: 5px solid white;
+        width: fit-content;
+        padding-bottom: 10px;
 
         @include breakpoint(large) {
             font-size: 32px;

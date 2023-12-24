@@ -8,31 +8,29 @@ import WhatIDo from "./layout/WhatIDo/WhatIDo";
 import PopCard from "./components/PopCard/PopCard";
 import { faGears, faHandshake } from "@fortawesome/free-solid-svg-icons";
 import AboutMeHero from "./layout/AboutMeHero/AboutMeHero";
-import BenefitCard from "./components/BenefitCard/BenefitCard";
 import Benefits from "./layout/Benefits/Benefits";
-import FaqUnit from "./components/FaqUnit/FaqUnit";
 import FaqSection from "./layout/FaqSection/FaqSection";
 
 const faqData = [
     {
         question: "Kako mogu profitirati od vaših usluga?",
-        answer: "Naša stručna ekipa radi na stvaranju visokokvalitetnih veb sajtova koji ne samo da privlače pažnju, već i pretvaraju posetioce u zadovoljne klijente. Povećajte vidljivost i postignite poslovni uspeh s nama.",
+        answer: "Radim na stvaranju visokokvalitetnih veb sajtova koji ne samo da privlače pažnju, već i pretvaraju posetioce u zadovoljne klijente. Povećajte vidljivost i postignite poslovni uspeh.",
     },
     {
         question: "Koliko dugo traje proces izrade veb sajta?",
-        answer: "Vreme izrade veb sajta zavisi od obima projekta, ali naša posvećenost efikasnosti i kvalitetu znači da ćete imati funkcionalan veb sajt u najkraćem mogućem roku.",
+        answer: "Vreme izrade veb sajta zavisi od obima projekta, ali moja posvećenost i efikasnosti znači da ćete imati funkcionalan veb sajt u najkraćem mogućem roku.",
     },
     {
         question: "Da li nudite podršku nakon lansiranja veb sajta?",
-        answer: "Da, naša podrška ne završava sa lansiranjem veb sajta. Pružamo redovnu tehničku podršku i pomažemo vam da održite vaš veb sajt u vrhunskom stanju.",
+        answer: "Da, podrška ne završava sa lansiranjem veb sajta. Pružam redovnu tehničku podršku i pomažem vam da održite vaš veb sajt u vrhunskom stanju.",
     },
     {
         question: "Kako mogu dobiti besplatnu procenu za svoj projekat?",
-        answer: "Kontaktirajte nas putem naše kontakt stranice i opišite svoje potrebe. Naš tim će vam pružiti detaljnu procenu i predloge za vaš projekat.",
+        answer: "Kontaktirajte me putem moje kontakt stranice i opišite svoje potrebe. Ja ću vam pružiti detaljnu procenu i predloge za vaš projekat.",
     },
     {
         question: "Da li radite samo dizajn ili i razvoj veb sajtova?",
-        answer: "Naša usluga obuhvata sve, od dizajna do punog razvoja veb sajtova. Kreiramo kompletna digitalna iskustva koja donose rezultate.",
+        answer: "Moja usluga obuhvata sve, od dizajna do punog razvoja veb sajtova. Kreiram kompletna digitalna iskustva koja donose rezultate.",
     },
 ];
 

@@ -10,22 +10,8 @@ import styles from "./Footer.module.scss";
 import Link from "next/link";
 import { inter, roboto } from "@/app/layout";
 import { faEnvelope, faHome, faPhone } from "@fortawesome/free-solid-svg-icons";
-import { useEffect } from "react";
-import { usePathname } from "next/navigation";
 
 const Footer = () => {
-    // const router = usePathname();
-
-    // useEffect(() => {
-    //     const hash = window.location.hash;
-    //     if (hash) {
-    //         const element = document.querySelector(hash);
-    //         if (element) {
-    //             element.scrollIntoView({ behavior: "smooth" });
-    //         }
-    //     }
-    // }, [router]);
-
     return (
         <div className={`${styles.footerContainer} ${inter.className}`}>
             <div className={styles.social}>

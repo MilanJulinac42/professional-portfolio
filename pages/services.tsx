@@ -15,16 +15,18 @@ const servicesFaqData = [
         answer: "Izbor prave usluge zavisi od vaših ciljeva i potreba. Kontaktirajte me putem kontakt forme i rado ću vam pomoći u identifikaciji najbolje opcije za vaš projekat.",
     },
     {
-        question: "Koliko traje izrada veb sajta?",
-        answer: "Vreme izrade veb sajta zavisi od obima projekta i specifičnih zahteva. Tokom konsultacija, razgovaraćemo o vašim ciljevima i definisati optimalan vremenski okvir za vaš projekat.",
+        question: "Koje su prednosti redizajna postojećeg veb sajta?",
+        answer: "Redizajn postojećeg veb sajta može poboljšati korisničko iskustvo, povećati funkcionalnost i prilagoditi ga novim tehnologijama. Razgovarajte sa mnom o mogućnostima unapređenja vašeg sajta.",
     },
     {
-        question: "Da li pružate podršku nakon završetka projekta?",
-        answer: "Da, pružam podršku nakon završetka projekta. Obezbeđujem tehničku podršku i održavanje kako biste osigurali dugoročni uspeh vašeg veb sajta.",
+        question:
+            "Na koji način će usluga koju pružate unaprediti moje online prisustvo?",
+        answer: "Svaka usluga ima specifične prednosti za poboljšanje vašeg online prisustva. Razgovarajmo o tome kako implementacija određene usluge može doprineti povećanju vidljivosti, angažovanja korisnika i ostvarivanju vaših poslovnih ciljeva.",
     },
     {
-        question: "Koje vrste projekata obuhvataju tvoje usluge?",
-        answer: "Moje usluge obuhvataju širok spektar projekata, uključujući dizajn i razvoj novih veb sajtova, redizajn postojećih sajtova, optimizaciju za pretraživače, implementaciju sistema za upravljanje sadržajem i više.",
+        question:
+            "Da li postoji mogućnost prilagođavanja usluga prema specifičnim zahtevima mog projekta?",
+        answer: "Da, pružam prilagođene usluge prema specifičnim zahtevima projekta. Razgovarajmo o vašim posebnim potrebama kako bismo osigurali da usluge budu savršeno prilagođene vašem projektu.",
     },
     {
         question: "Kako mogu zakazati sastanak radi konsultacija?",
@@ -37,7 +39,6 @@ const services = () => {
         <>
             <Head>
                 <title>Usluge web dizajna i razvoja | Milan Julinac</title>
-                <link rel="icon" href="/iconF.svg" />
                 <meta
                     name="description"
                     content=" Saznajte više o meni, mojoj strasti za web dizajnom i razvojem, i kako mogu pomoći vašem poslovanju da raste online."

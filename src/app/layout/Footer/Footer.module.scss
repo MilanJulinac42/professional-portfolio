@@ -24,6 +24,12 @@
     }
 }
 
+.socialIcon {
+    &:hover {
+        scale: 1.2;
+    }
+}
+
 .socialList {
     display: flex;
     gap: 20px;
