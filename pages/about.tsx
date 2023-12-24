@@ -66,7 +66,7 @@ const about = () => {
                 <TechContainer />
                 <FaqSection
                     id={"faq-about"}
-                    heading="Pitanja o mom iskustvu i pristupu"
+                    heading="Često postavljena pitanja o mom iskustvu i pristupu"
                     faqData={aboutMeFaqData}
                 />
                 <Footer />

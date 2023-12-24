@@ -59,7 +59,7 @@ const services = () => {
                 />
                 <FaqSection
                     id={"faq-services"}
-                    heading="Pitanja o pruženim uslugama"
+                    heading="Često postavljena pitanja o pruženim uslugama"
                     faqData={servicesFaqData}
                 />
                 <Footer />

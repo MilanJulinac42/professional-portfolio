@@ -51,7 +51,7 @@ const contact = () => {
             <ContactForm />
             <FaqSection
                 id={"faq-contact"}
-                heading="Pitanja o kontaktiranju i saradnji"
+                heading="Često postavljena pitanja o kontaktiranju i saradnji"
                 faqData={contactFaqData}
             />
             <Footer />
