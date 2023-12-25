@@ -16,6 +16,7 @@ const ContactForm = () => {
     const [formData, setFormData] = useState({
         name: "",
         companyName: "",
+        subject: "",
         website: "",
         email: "",
         message: "",
@@ -33,13 +34,17 @@ const ContactForm = () => {
         e.preventDefault();
 
         try {
-            const response = await fetch("/api/send-email", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(formData),
-            });
+            console.log(formData);
+            const response = await fetch(
+                "http://localhost:3001/api/send-email",
+                {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(formData),
+                }
+            );
 
             if (response.ok) {
                 console.log("Email sent successfully!");
@@ -117,89 +122,91 @@ const ContactForm = () => {
                     </span>{" "}
                     i odgovoriću vam u roku od 2 dana.
                 </p>
-                <div
-                    className={`${styles.contactTextBoxContainer} ${inter.className}`}
-                >
-                    <label className={styles.contactLabel} htmlFor="name">
-                        Ime <span>(potrebno)</span>
-                    </label>
-                    <input
-                        className={styles.contactInput}
-                        type="text"
-                        name="name"
-                        id="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        required
-                    />
-                </div>
-                <div
-                    className={`${styles.contactTextBoxContainer} ${inter.className}`}
-                >
-                    <label className={styles.contactLabel} htmlFor="name">
-                        Ime kompanije
-                    </label>
-                    <input
-                        className={styles.contactInput}
-                        type="text"
-                        name="name"
-                        id="name"
-                        value={formData.companyName}
-                        onChange={handleChange}
-                    />
-                </div>
-                <div
-                    className={`${styles.contactTextBoxContainer} ${inter.className}`}
-                >
-                    <label className={styles.contactLabel} htmlFor="name">
-                        Vaš vebsajt
-                    </label>
-                    <input
-                        className={styles.contactInput}
-                        type="text"
-                        name="name"
-                        id="name"
-                        value={formData.website}
-                        onChange={handleChange}
-                    />
-                </div>
-                <div
-                    className={`${styles.contactTextBoxContainer} ${inter.className}`}
-                >
-                    <label className={styles.contactLabel} htmlFor="name">
-                        E-mail <span>(potrebno)</span>
-                    </label>
-                    <input
-                        className={styles.contactInput}
-                        type="text"
-                        name="name"
-                        id="name"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                    />
-                </div>
-                <div
-                    className={`${styles.contactTextBoxContainer} ${inter.className}`}
-                >
-                    <label className={styles.contactLabel} htmlFor="name">
-                        Kako mogu da vam pomognem? <span>(potrebno)</span>
-                    </label>
-                    <textarea
-                        className={styles.contactTextArea}
-                        name="name"
-                        id="name"
-                        rows={5}
-                        value={formData.message}
-                        onChange={handleChange}
-                        required
-                    />
-                </div>
-                <button
-                    className={`${styles.submitButton} ${roboto.className}`}
-                >
-                    kontaktirajte me
-                </button>
+                <form className={styles.form} onSubmit={handleSubmit}>
+                    <div
+                        className={`${styles.contactTextBoxContainer} ${inter.className}`}
+                    >
+                        <label className={styles.contactLabel} htmlFor="name">
+                            Ime <span>(potrebno)</span>
+                        </label>
+                        <input
+                            className={styles.contactInput}
+                            type="text"
+                            name="name"
+                            id="name"
+                            value={formData.name}
+                            onChange={handleChange}
+                            required
+                        />
+                    </div>
+                    <div
+                        className={`${styles.contactTextBoxContainer} ${inter.className}`}
+                    >
+                        <label className={styles.contactLabel} htmlFor="name">
+                            Ime kompanije
+                        </label>
+                        <input
+                            className={styles.contactInput}
+                            type="text"
+                            name="subject"
+                            id="subject"
+                            value={formData.subject}
+                            onChange={handleChange}
+                        />
+                    </div>
+                    <div
+                        className={`${styles.contactTextBoxContainer} ${inter.className}`}
+                    >
+                        <label className={styles.contactLabel} htmlFor="name">
+                            Vaš vebsajt
+                        </label>
+                        <input
+                            className={styles.contactInput}
+                            type="text"
+                            name="website"
+                            id="website"
+                            value={formData.website}
+                            onChange={handleChange}
+                        />
+                    </div>
+                    <div
+                        className={`${styles.contactTextBoxContainer} ${inter.className}`}
+                    >
+                        <label className={styles.contactLabel} htmlFor="name">
+                            E-mail <span>(potrebno)</span>
+                        </label>
+                        <input
+                            className={styles.contactInput}
+                            type="text"
+                            name="email"
+                            id="email"
+                            value={formData.email}
+                            onChange={handleChange}
+                            required
+                        />
+                    </div>
+                    <div
+                        className={`${styles.contactTextBoxContainer} ${inter.className}`}
+                    >
+                        <label className={styles.contactLabel} htmlFor="name">
+                            Kako mogu da vam pomognem? <span>(potrebno)</span>
+                        </label>
+                        <textarea
+                            className={styles.contactTextArea}
+                            name="message"
+                            id="message"
+                            rows={5}
+                            value={formData.message}
+                            onChange={handleChange}
+                            required
+                        />
+                    </div>
+                    <button
+                        className={`${styles.submitButton} ${roboto.className}`}
+                    >
+                        kontaktirajte me
+                    </button>
+                </form>
             </div>
         </div>
     );
