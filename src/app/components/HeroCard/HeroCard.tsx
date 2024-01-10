@@ -1,5 +1,5 @@
 "use client";
-import { roboto } from "@/app/layout";
+import { Roboto, Inter } from "next/font/google";
 import styles from "./HeroCard.module.scss";
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
@@ -10,6 +10,9 @@ type HeroCardProps = {
     description?: string;
     delay: number;
 };
+
+const roboto = Roboto({ weight: "700", subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 const HeroCard: React.FC<HeroCardProps> = ({
     title,

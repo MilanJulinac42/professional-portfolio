@@ -1,10 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./Services.module.scss";
 import Break from "@/app/components/Break/Break";
-import { roboto } from "@/app/layout";
 import Link from "next/link";
 import Service from "@/app/components/Service/Service";
 import { useRouter } from "next/router";
+import { Roboto, Inter } from "next/font/google";
+
+const roboto = Roboto({ weight: "700", subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 const servicesData = [
     {

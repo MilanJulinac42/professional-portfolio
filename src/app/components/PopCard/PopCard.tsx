@@ -1,4 +1,4 @@
-import { roboto } from "@/app/layout";
+import { Roboto, Inter } from "next/font/google";
 import styles from "./PopCard.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
@@ -12,6 +12,9 @@ type PopCardProps = {
     linkText?: string;
     containerBackground?: string;
 };
+
+const roboto = Roboto({ weight: "700", subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 const PopCard: React.FC<PopCardProps> = ({
     title,

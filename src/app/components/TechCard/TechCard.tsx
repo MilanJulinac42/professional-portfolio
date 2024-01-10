@@ -1,7 +1,7 @@
 "use client";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./TechCard.module.scss";
-import { inter, roboto } from "@/app/layout";
+import { Roboto, Inter } from "next/font/google";
 import {
     faArrowLeftLong,
     faArrowRight,
@@ -16,6 +16,9 @@ type TechCardProps = {
     description: string;
     delay: number;
 };
+
+const roboto = Roboto({ weight: "700", subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 const TechCard: React.FC<TechCardProps> = ({
     tech,

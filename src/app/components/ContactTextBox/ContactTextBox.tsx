@@ -1,5 +1,8 @@
-import { inter } from "@/app/layout";
+import { Roboto, Inter } from "next/font/google";
 import styles from "./ContactTextBox.module.scss";
+
+const roboto = Roboto({ weight: "700", subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 const ContactTextBox = () => {
     return (

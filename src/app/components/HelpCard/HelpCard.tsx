@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { roboto } from "@/app/layout";
+import { Roboto, Inter } from "next/font/google";
 import styles from "./HelpCard.module.scss";
 import Link from "next/link";
 
@@ -9,6 +9,9 @@ type HelpCardProps = {
     image?: string;
     linkPath: string;
 };
+
+const roboto = Roboto({ weight: "700", subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 const HelpCard: React.FC<HelpCardProps> = ({ image, title, linkPath }) => {
     const [isOverlayOpen, setIsOverlayOpen] = useState(false);

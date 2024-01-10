@@ -2,12 +2,15 @@ import Navbar from "@/app/layout/Nav/Nav";
 import Footer from "@/app/layout/Footer/Footer";
 import ServiceHero from "@/app/layout/ServiceHero/ServiceHero";
 import Services from "@/app/layout/Services/Services";
-import { inter } from "@/app/layout";
+import { Roboto, Inter } from "next/font/google";
 import "../src/app/globals.css";
 import PopCard from "@/app/components/PopCard/PopCard";
 import { faRocket } from "@fortawesome/free-solid-svg-icons";
 import Head from "next/head";
 import FaqSection from "@/app/layout/FaqSection/FaqSection";
+
+const roboto = Roboto({ weight: "700", subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 const servicesFaqData = [
     {

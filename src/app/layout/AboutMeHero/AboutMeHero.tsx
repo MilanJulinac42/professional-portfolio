@@ -1,5 +1,5 @@
 "use client";
-import { inter, roboto } from "@/app/layout";
+import { Roboto, Inter } from "next/font/google";
 import styles from "./AboutMeHero.module.scss";
 import HeroCta from "@/app/components/HeroCTA/HeroCta";
 import { motion } from "framer-motion";
@@ -12,6 +12,9 @@ type aboutMeHeroPrope = {
     ctaLink: string;
     ctaVisible: boolean;
 };
+
+const roboto = Roboto({ weight: "700", subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 const AboutMeHero: React.FC<aboutMeHeroPrope> = ({
     title,

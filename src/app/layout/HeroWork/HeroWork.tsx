@@ -1,6 +1,9 @@
-import { roboto } from "@/app/layout";
 import styles from "./HeroWork.module.scss";
 import Link from "next/link";
+import { Roboto, Inter } from "next/font/google";
+
+const roboto = Roboto({ weight: "700", subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 type HeroWorkProps = {
     projectTitle?: string;

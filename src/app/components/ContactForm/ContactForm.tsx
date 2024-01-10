@@ -1,5 +1,5 @@
 "use client";
-import { inter, roboto } from "@/app/layout";
+import { Roboto, Inter } from "next/font/google";
 import styles from "./ContactForm.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -12,6 +12,9 @@ import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import Link from "next/link";
 import Toast from "../Toast/Toast";
+
+const roboto = Roboto({ weight: "700", subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({

@@ -1,9 +1,12 @@
 import "../src/app/globals.css";
 import Navbar from "@/app/layout/Nav/Nav";
 import Footer from "@/app/layout/Footer/Footer";
-import { inter } from "@/app/layout";
+import { Roboto, Inter } from "next/font/google";
 import PopCard from "@/app/components/PopCard/PopCard";
 import { faGears } from "@fortawesome/free-solid-svg-icons";
+
+const roboto = Roboto({ weight: "700", subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 const portfolio = () => {
     return (

@@ -1,11 +1,14 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { roboto } from "../../layout";
 import styles from "./NavMobile.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { usePathname } from "next/navigation";
+import { Roboto, Inter } from "next/font/google";
+
+const roboto = Roboto({ weight: "700", subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 const NavbarMobile = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);

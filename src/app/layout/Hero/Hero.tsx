@@ -1,7 +1,10 @@
-import { inter, roboto } from "@/app/layout";
 import React from "react";
 import styles from "./Hero.module.scss";
 import HeroCta from "@/app/components/HeroCTA/HeroCta";
+import { Roboto, Inter } from "next/font/google";
+
+const roboto = Roboto({ weight: "700", subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 const Hero = () => {
     return (

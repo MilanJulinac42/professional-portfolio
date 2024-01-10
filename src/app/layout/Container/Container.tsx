@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
 import styles from "./Container.module.scss";
-import { roboto } from "@/app/layout";
+import { Roboto, Inter } from "next/font/google";
 
 type ContainerProps = {
     children: ReactNode;
@@ -8,6 +8,9 @@ type ContainerProps = {
     background?: string;
     clippy?: boolean;
 };
+
+const roboto = Roboto({ weight: "700", subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 const Container: React.FC<ContainerProps> = ({
     children,

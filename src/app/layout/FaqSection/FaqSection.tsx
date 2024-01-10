@@ -1,6 +1,6 @@
 import FaqUnit from "@/app/components/FaqUnit/FaqUnit";
 import styles from "./FaqSection.module.scss";
-import { inter, roboto } from "@/app/layout";
+import { Roboto, Inter } from "next/font/google";
 
 type FaqSectionProps = {
     faqData: {
@@ -10,6 +10,9 @@ type FaqSectionProps = {
     heading?: string;
     id: string;
 };
+
+const roboto = Roboto({ weight: "700", subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 const FaqSection: React.FC<FaqSectionProps> = ({ faqData, heading, id }) => {
     return (

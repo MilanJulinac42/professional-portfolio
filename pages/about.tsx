@@ -7,7 +7,7 @@ import AboutMeHero from "@/app/layout/AboutMeHero/AboutMeHero";
 import AboutMeCards from "@/app/layout/AboutMeCards/AboutMeCards";
 import PopCard from "@/app/components/PopCard/PopCard";
 import { faPuzzlePiece } from "@fortawesome/free-solid-svg-icons";
-import { inter } from "@/app/layout";
+import { Roboto, Inter } from "next/font/google";
 import Head from "next/head";
 import FaqSection from "@/app/layout/FaqSection/FaqSection";
 
@@ -25,14 +25,17 @@ const aboutMeFaqData = [
         answer: "Prilagođavam se potrebama klijenata i stvaram personalizovana rešenja. Posvećen sam jasnoj komunikaciji, tačnosti i rešavanju problema kako bih postigao uspešno partnerstvo.",
     },
     {
-        question: "Šta moji klijenti mogu očekivati tokom saradnje s tobom?",
+        question: "Šta klijenti mogu očekivati tokom saradnje sa tobom?",
         answer: "Klijenti mogu očekivati strateški dizajn, upečatljiv brending i inovativni veb razvoj. Pružam tačnost, jasnu komunikaciju i proaktivno rešavanje problema kako bih otključao puni potencijal svakog projekta.",
     },
     {
-        question: "Kako mogu započeti projekat s tobom?",
+        question: "Kako mogu započeti projekat sa tobom?",
         answer: "Za započinjanje projekta, jednostavno posetite moju stranicu za kontakt. Tu možete pronaći sve potrebne informacije kako bismo razgovarali o vašim idejama i ciljevima.",
     },
 ];
+
+const roboto = Roboto({ weight: "700", subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 const about = () => {
     return (

@@ -1,4 +1,4 @@
-import { inter, roboto } from "@/app/layout";
+import { Roboto, Inter } from "next/font/google";
 import styles from "./ContactHero.module.scss";
 import Link from "next/link";
 
@@ -7,6 +7,9 @@ type contactHeroProps = {
     image?: string;
     description?: string;
 };
+
+const roboto = Roboto({ weight: "700", subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 const ContactHero: React.FC<contactHeroProps> = ({
     title,

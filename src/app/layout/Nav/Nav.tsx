@@ -2,10 +2,13 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import styles from "./Nav.module.scss";
-import { roboto } from "../../layout";
 import NavbarMobile from "./NavMobile";
 import { usePathname } from "next/navigation";
 import useWindowSize from "@/app/hooks/useWindowSize";
+import { Roboto, Inter } from "next/font/google";
+
+const roboto = Roboto({ weight: "700", subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 type NavbarProps = {
     transparent?: boolean;

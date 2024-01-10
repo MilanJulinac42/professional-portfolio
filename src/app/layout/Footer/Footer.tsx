@@ -8,8 +8,11 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import styles from "./Footer.module.scss";
 import Link from "next/link";
-import { inter, roboto } from "@/app/layout";
 import { faEnvelope, faHome, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { Roboto, Inter } from "next/font/google";
+
+const roboto = Roboto({ weight: "700", subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 const Footer = () => {
     return (

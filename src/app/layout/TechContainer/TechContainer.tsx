@@ -8,8 +8,11 @@ import {
     faNode,
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
-import { roboto } from "@/app/layout";
 import Break from "@/app/components/Break/Break";
+import { Roboto, Inter } from "next/font/google";
+
+const roboto = Roboto({ weight: "700", subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 const TechContainer = () => {
     return (

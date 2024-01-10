@@ -1,7 +1,10 @@
 import HeroCard from "@/app/components/HeroCard/HeroCard";
 import Container from "../Container/Container";
 import styles from "./AboutMeCards.module.scss";
-import { inter } from "@/app/layout";
+import { Roboto, Inter } from "next/font/google";
+
+const roboto = Roboto({ weight: "700", subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 const AboutMeCards = () => {
     return (
