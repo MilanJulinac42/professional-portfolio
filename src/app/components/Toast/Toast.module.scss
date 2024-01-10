@@ -1,0 +1,40 @@
+.toastContainer {
+    position: fixed;
+    top: 200px;
+    left: 0;
+    width: 100vw;
+    height: 100px;
+    background-color: #2b9b27;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.toast {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.toastText {
+    margin-right: 10px;
+    font-size: 36px;
+}
+
+.closeButton {
+    background-color: #ffffff;
+    color: #41973e;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+.closeButton:hover {
+    background-color: #e0e0e0;
+}

@@ -11,6 +11,7 @@ import {
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import Link from "next/link";
+import Toast from "../Toast/Toast";
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -21,6 +22,9 @@ const ContactForm = () => {
         email: "",
         message: "",
     });
+
+    const [toastMessage, setToastMessage] = useState("");
+    const [showToast, setShowToast] = useState(false);
 
     const handleChange = (e: any) => {
         const { name, value } = e.target;
@@ -47,13 +51,23 @@ const ContactForm = () => {
             );
 
             if (response.ok) {
+                setToastMessage("Email je uspešno poslat!");
+                setShowToast(true);
                 console.log("Email sent successfully!");
             } else {
+                setToastMessage("Greška prilikom slanja emaila!");
+                setShowToast(true);
                 console.error("Error sending email");
             }
-        } catch (error) {
+        } catch (error: any) {
+            setToastMessage("Error: " + error.message);
+            setShowToast(true);
             console.error("Error:", error);
         }
+    };
+
+    const closeToast = () => {
+        setShowToast(false);
     };
 
     return (
@@ -207,6 +221,9 @@ const ContactForm = () => {
                         kontaktirajte me
                     </button>
                 </form>
+                {showToast && (
+                    <Toast text={toastMessage} onClose={closeToast} />
+                )}
             </div>
         </div>
     );
