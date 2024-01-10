@@ -1,3 +1,5 @@
+@import "../../mixins";
+
 .toastContainer {
     position: fixed;
     top: 200px;
@@ -22,7 +24,11 @@
 
 .toastText {
     margin-right: 10px;
-    font-size: 36px;
+    font-size: 18px;
+
+    @include breakpoint(medium) {
+        font-size: 36px;
+    }
 }
 
 .closeButton {
@@ -31,8 +37,12 @@
     border: none;
     padding: 8px 16px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 14px;
     border-radius: 4px;
+
+    @include breakpoint(medium) {
+        font-size: 20px;
+    }
 }
 
 .closeButton:hover {
