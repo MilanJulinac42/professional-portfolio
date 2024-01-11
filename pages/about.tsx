@@ -12,6 +12,7 @@ import Head from "next/head";
 import FaqSection from "@/app/layout/FaqSection/FaqSection";
 import { NextSeo } from "next-seo";
 import Helmet from "react-helmet";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 
 const aboutMeFaqData = [
     {

@@ -9,6 +9,7 @@ import { faRocket } from "@fortawesome/free-solid-svg-icons";
 import FaqSection from "@/app/layout/FaqSection/FaqSection";
 import { NextSeo } from "next-seo";
 import Head from "next/head";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 
 const roboto = Roboto({ weight: "700", subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"] });

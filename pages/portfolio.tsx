@@ -4,6 +4,7 @@ import Footer from "@/app/layout/Footer/Footer";
 import { Roboto, Inter } from "next/font/google";
 import PopCard from "@/app/components/PopCard/PopCard";
 import { faGears } from "@fortawesome/free-solid-svg-icons";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 
 const roboto = Roboto({ weight: "700", subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"] });

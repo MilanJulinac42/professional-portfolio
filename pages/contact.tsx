@@ -6,6 +6,7 @@ import AboutMeHero from "@/app/layout/AboutMeHero/AboutMeHero";
 import Head from "next/head";
 import FaqSection from "@/app/layout/FaqSection/FaqSection";
 import { NextSeo } from "next-seo";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 
 const contactFaqData = [
     {
