@@ -8,6 +8,7 @@ import PopCard from "@/app/components/PopCard/PopCard";
 import { faRocket } from "@fortawesome/free-solid-svg-icons";
 import FaqSection from "@/app/layout/FaqSection/FaqSection";
 import { NextSeo } from "next-seo";
+import Head from "next/head";
 
 const roboto = Roboto({ weight: "700", subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"] });
@@ -38,6 +39,35 @@ const servicesFaqData = [
 ];
 
 const services = () => {
+    const structuredData = {
+        "@context": "https://schema.org/",
+        "@type": "Person",
+        name: "Milan Julinac",
+        jobTitle: "Web dizajner i developer",
+        skill: [
+            "Dizajn web sajta",
+            "Redizajn web sajta",
+            "Optimizacija za pretrazivace",
+            "Sistem za upravljanje sadrzajem",
+            "Online plcanje",
+            "Optimizacija sajta i responsivan dizajn",
+        ],
+        description:
+            "Strastveno stvaram ideje kroz strateški dizajn, upečatljiv brending i inovativni veb razvoj. Pomažem klijentima da izgrade i poboljšaju svoje online prisustvo i postignu njihove ciljeve.",
+        hasOccupation: {
+            "@type": "Occupation",
+            name: "Web dizajner i developer",
+        },
+        experienceYears: 5,
+        url: "https://www.wedelop.rs/services",
+        sameAs: [
+            "https://www.linkedin.com/in/milanjulinac/",
+            "https://www.instagram.com/milanjulinac/",
+            "https://www.facebook.com/milan.julinac.9/",
+            "https://github.com/MilanJulinac42",
+        ],
+    };
+
     return (
         <>
             <NextSeo
@@ -49,6 +79,14 @@ const services = () => {
                     locale: "sr_RS",
                 }}
             />
+            <Head>
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify(structuredData),
+                    }}
+                />
+            </Head>
             <div className={inter.className}>
                 <Navbar />
                 <ServiceHero />

@@ -31,6 +31,35 @@ const contactFaqData = [
 ];
 
 const contact = () => {
+    const structuredData = {
+        "@context": "https://schema.org/",
+        "@type": "Person",
+        name: "Milan Julinac",
+        jobTitle: "Web dizajner i developer",
+        skill: [
+            "Dizajn web sajta",
+            "Redizajn web sajta",
+            "Optimizacija za pretrazivace",
+            "Sistem za upravljanje sadrzajem",
+            "Online plcanje",
+            "Optimizacija sajta i responsivan dizajn",
+        ],
+        description:
+            "Strastveno stvaram ideje kroz strateški dizajn, upečatljiv brending i inovativni veb razvoj. Pomažem klijentima da izgrade i poboljšaju svoje online prisustvo i postignu njihove ciljeve.",
+        hasOccupation: {
+            "@type": "Occupation",
+            name: "Web dizajner i developer",
+        },
+        experienceYears: 5,
+        url: "https://www.wedelop.rs/contact",
+        sameAs: [
+            "https://www.linkedin.com/in/milanjulinac/",
+            "https://www.instagram.com/milanjulinac/",
+            "https://www.facebook.com/milan.julinac.9/",
+            "https://github.com/MilanJulinac42",
+        ],
+    };
+
     return (
         <>
             <NextSeo
@@ -42,6 +71,14 @@ const contact = () => {
                     locale: "sr_RS",
                 }}
             />
+            <Head>
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify(structuredData),
+                    }}
+                />
+            </Head>
             <Navbar />
             <AboutMeHero
                 title="Imate projekat na umu?"
