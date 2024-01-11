@@ -23,7 +23,7 @@ export default function RootLayout({
                     Profesionalni dizajn i razvoj web sajtova | Milan Julinac
                 </title>
                 <meta
-                    name="description"
+                    name="Milan Julinac Portfolio"
                     content="Kreirajte web sajt koji privlači klijente i pretvara posetioce u kupce. Nudimo dizajn sajta, redizajn, SEO, CMS, online plaćanje i još mnogo toga. Potražite besplatnu ponudu danas!"
                 />
             </head>

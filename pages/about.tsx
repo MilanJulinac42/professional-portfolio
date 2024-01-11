@@ -10,6 +10,7 @@ import { faPuzzlePiece } from "@fortawesome/free-solid-svg-icons";
 import { Roboto, Inter } from "next/font/google";
 import Head from "next/head";
 import FaqSection from "@/app/layout/FaqSection/FaqSection";
+import { NextSeo } from "next-seo";
 
 const aboutMeFaqData = [
     {
@@ -40,13 +41,15 @@ const inter = Inter({ subsets: ["latin"] });
 const about = () => {
     return (
         <>
-            <Head>
-                <title>O meni | Milan Julinac</title>
-                <meta
-                    name="description"
-                    content="Saznajte više o meni, mojoj strasti za web dizajnom i razvojem, i kako mogu pomoći vašem poslovanju da raste online."
-                />
-            </Head>
+            <NextSeo
+                title="Milan Julinac - Web dizajner i developer koji gradi jedinstvene web svetove."
+                description="Strastveno stvaram ideje kroz strateški dizajn, upečatljiv brending i inovativni web razvoj. Sarađujem blisko sa klijentima da bih razumeo njihove potrebe i izgradio personalizovana rešenja koja donose rezultate."
+                canonical="/about"
+                openGraph={{
+                    type: "website",
+                    locale: "sr_RS",
+                }}
+            />
             <div className={inter.className}>
                 <Navbar />
                 <AboutMeHero

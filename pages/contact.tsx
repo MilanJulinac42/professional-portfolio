@@ -5,6 +5,7 @@ import ContactForm from "@/app/components/ContactForm/ContactForm";
 import AboutMeHero from "@/app/layout/AboutMeHero/AboutMeHero";
 import Head from "next/head";
 import FaqSection from "@/app/layout/FaqSection/FaqSection";
+import { NextSeo } from "next-seo";
 
 const contactFaqData = [
     {
@@ -32,13 +33,15 @@ const contactFaqData = [
 const contact = () => {
     return (
         <>
-            <Head>
-                <title>Kontaktirajte me | Milan Julinac</title>
-                <meta
-                    name="description"
-                    content="Spremni za saradnju na vašem web projektu? Kontaktirajte me već danas za besplatnu konsultaciju i ponudu."
-                />
-            </Head>
+            <NextSeo
+                title="Kontaktirajte Milana Julinca za web dizajn i razvoj | Usluge i konsultacije."
+                description="Potrebna vam je pomoć oko web dizajna ili razvoja? Kontaktirajte me i razgovarajmo o vašem projektu. Spreman sam da ostvarimo vaše ciljeve zajedno."
+                canonical="/contact"
+                openGraph={{
+                    type: "website",
+                    locale: "sr_RS",
+                }}
+            />
             <Navbar />
             <AboutMeHero
                 title="Imate projekat na umu?"

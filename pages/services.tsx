@@ -6,8 +6,8 @@ import { Roboto, Inter } from "next/font/google";
 import "../src/app/globals.css";
 import PopCard from "@/app/components/PopCard/PopCard";
 import { faRocket } from "@fortawesome/free-solid-svg-icons";
-import Head from "next/head";
 import FaqSection from "@/app/layout/FaqSection/FaqSection";
+import { NextSeo } from "next-seo";
 
 const roboto = Roboto({ weight: "700", subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"] });
@@ -40,13 +40,15 @@ const servicesFaqData = [
 const services = () => {
     return (
         <>
-            <Head>
-                <title>Usluge web dizajna i razvoja | Milan Julinac</title>
-                <meta
-                    name="description"
-                    content=" Saznajte više o meni, mojoj strasti za web dizajnom i razvojem, i kako mogu pomoći vašem poslovanju da raste online."
-                />
-            </Head>
+            <NextSeo
+                title="Usluge web dizajna i razvoja | Milan Julinac"
+                description="Profesionalne usluge web dizajna i razvoja za stvaranje modernih, funkcionalnih i efikasnih web sajtova koji pomažu vašem poslovanju da raste online."
+                canonical="/services"
+                openGraph={{
+                    type: "website",
+                    locale: "sr_RS",
+                }}
+            />
             <div className={inter.className}>
                 <Navbar />
                 <ServiceHero />

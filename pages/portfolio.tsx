@@ -10,19 +10,21 @@ const inter = Inter({ subsets: ["latin"] });
 
 const portfolio = () => {
     return (
-        <div className={inter.className}>
-            <Navbar />
-            <PopCard
-                title="Rešenja prilagođena vama."
-                description="Osiguravam personalizovana rešenja koja odgovaraju vašim potrebama. Moj pristup je praktičan i usredsređen na efikasnost, pružajući konkretne odgovore na izazove vašeg poslovanja."
-                icon={faGears}
-                background="#001e2b"
-                containerBackground="#F0F0FA"
-                linkText="Pogledajte sve moje usluge"
-                link="/services"
-            />
-            <Footer />
-        </div>
+        <>
+            <div className={inter.className}>
+                <Navbar />
+                <PopCard
+                    title="Rešenja prilagođena vama."
+                    description="Osiguravam personalizovana rešenja koja odgovaraju vašim potrebama. Moj pristup je praktičan i usredsređen na efikasnost, pružajući konkretne odgovore na izazove vašeg poslovanja."
+                    icon={faGears}
+                    background="#001e2b"
+                    containerBackground="#F0F0FA"
+                    linkText="Pogledajte sve moje usluge"
+                    link="/services"
+                />
+                <Footer />
+            </div>
+        </>
     );
 };
 
