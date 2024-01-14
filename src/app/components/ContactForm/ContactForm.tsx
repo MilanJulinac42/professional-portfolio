@@ -136,7 +136,7 @@ const ContactForm = () => {
                         <FontAwesomeIcon icon={faEnvelope} />{" "}
                         milanjulinac996@gmail.com
                     </span>{" "}
-                    and I'll get back to you within 2 days.
+                    and I will get back to you within 2 days.
                 </p>
                 <form className={styles.form} onSubmit={handleSubmit}>
                     <div
