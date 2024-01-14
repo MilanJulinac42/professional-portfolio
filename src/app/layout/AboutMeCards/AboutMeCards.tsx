@@ -9,25 +9,25 @@ const inter = Inter({ subsets: ["latin"] });
 const AboutMeCards = () => {
     return (
         <Container
-            title="Građenje poverenja: Moja Posvećenost i Veštine"
+            title="Building Trust: My Commitment and Skills"
             background="#F0F0FA"
         >
             <div className={`${styles.containerWrapper} ${inter.className}`}>
                 <HeroCard
-                    title="Tačnost i posvećenost"
-                    description="Redovno poštujem rokove, stavljajući efikasnost i organizaciju na prvo mesto. Moja posvećenost održava fokus i osigurava da svaki zadatak dobije punu pažnju."
+                    title="Accuracy and Dedication"
+                    description="I consistently meet deadlines, prioritizing efficiency and organization. My dedication maintains focus and ensures that every task receives full attention."
                     image="/commit.svg"
                     delay={0.3}
                 />
                 <HeroCard
-                    title="Komunikacija i saradnja"
-                    description="Gradim jake veze sa kolegama i klijentima, podstičući otvorenu komunikaciju i zajedničko rešavanje problema. Moja jasna i koncizna komunikacija osigurava da su svi na istoj strani."
+                    title="Communication and Collaboration"
+                    description="I build strong relationships with colleagues and clients, fostering open communication and collaborative problem-solving. My clear and concise communication ensures that everyone is on the same page."
                     image="/agreement.svg"
                     delay={0.6}
                 />
                 <HeroCard
-                    title="Rešenje problema i inicijativa"
-                    description="Prepreke savladavam inovativnim rešenjima, razmišljajući izvan okvira i osmišljavajući efikasne strategije. Moj proaktivni pristup održava napredak projekata."
+                    title="Problem Solving and Initiative"
+                    description="I overcome obstacles with innovative solutions, thinking outside the box and devising effective strategies. My proactive approach sustains project progress."
                     image="/lightbulb.svg"
                     delay={0.9}
                 />

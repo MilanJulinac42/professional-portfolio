@@ -10,24 +10,24 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 
 const contactFaqData = [
     {
-        question: "Kako mogu zakazati sastanak radi konsultacija?",
-        answer: "Za zakazivanje sastanka ili konsultacija, posetite moju stranicu za kontakt. Tamo možete pronaći informacije o tome kako me možete kontaktirati i postaviti pitanja ili zakazati sastanak.",
+        question: "How can I schedule a meeting for consultations?",
+        answer: "To schedule a meeting or consultations, visit my contact page. There, you can find information on how to reach out to me, ask questions, or schedule a meeting.",
     },
     {
-        question: "Koji su koraci za početak saradnje na projektu?",
-        answer: "Početak saradnje uključuje prvi kontakt putem kontakt forme. Nakon toga, razgovaraćemo o detaljima vašeg projekta, ciljevima i resursima kako bismo zajedno postigli najbolje rezultate.",
+        question: "What are the steps to initiate collaboration on a project?",
+        answer: "Initiating collaboration involves the first contact through the contact form. After that, we'll discuss the details of your project, goals, and resources to achieve the best results together.",
     },
     {
-        question: "Koliko traje proces ocenjivanja projekta?",
-        answer: "Proces ocenjivanja projekta zavisi od kompleksnosti projekta i vaših specifičnih zahteva. Brzo ću odgovoriti na vaš upit i pružiti vam detaljnu procenu što je pre moguće.",
+        question: "How long does the project assessment process take?",
+        answer: "The project assessment process depends on the project's complexity and your specific requirements. I will respond to your inquiry quickly and provide you with a detailed estimate as soon as possible.",
     },
     {
-        question: "Da li je inicijalna konsultacija besplatna?",
-        answer: "Da, inicijalna konsultacija je besplatna. Ova sesija omogućava nam da bolje razumemo vaše potrebe i ciljeve, i zajedno odredimo najbolji pristup za vaš projekat.",
+        question: "Is the initial consultation free?",
+        answer: "Yes, the initial consultation is free. This session allows us to better understand your needs and goals, and together determine the best approach for your project.",
     },
     {
-        question: "Kako ću znati da li ste pravi izbor za moj projekat?",
-        answer: "Pre nego što se obavežete na saradnju, možemo organizovati neformalni razgovor kako bismo razjasnili očekivanja i procenili kako mogu najbolje doprineti vašem projektu. Važno je uspostaviti jasnu komunikaciju i razumevanje pre nego što počnemo raditi zajedno.",
+        question: "How will I know if you are the right choice for my project?",
+        answer: "Before committing to collaboration, we can arrange an informal conversation to clarify expectations and assess how I can best contribute to your project. Establishing clear communication and understanding is important before we start working together.",
     },
 ];
 
@@ -82,8 +82,8 @@ const contact = () => {
             </Head>
             <Navbar />
             <AboutMeHero
-                title="Imate projekat na umu?"
-                description="Razgovarajmo o tome kako mogu da vam pomognem pretvoriti vašu ideju u stvarnost.Prilagodiću se vašim potrebama. Spreman sam da zajedno radimo na postizanju vaših ciljeva."
+                title="Have a Project in Mind?"
+                description="Let's talk about how I can help turn your idea into reality. I'll tailor my approach to your needs. I'm ready to work together to achieve your goals."
                 image="/contact.jpg"
                 ctaLink="#"
                 ctaText=""
@@ -92,7 +92,7 @@ const contact = () => {
             <ContactForm />
             <FaqSection
                 id={"faq-contact"}
-                heading="Često postavljena pitanja o kontaktiranju i saradnji"
+                heading="Frequently Asked Questions About Contact and Collaboration"
                 faqData={contactFaqData}
             />
             <Footer />

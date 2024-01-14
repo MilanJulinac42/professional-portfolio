@@ -10,16 +10,16 @@ const ServiceHero = () => {
     return (
         <div className={`${styles.container} ${inter.className}`}>
             <h1 className={roboto.className}>
-                Vaše digitalno iskustvo počinje ovde. Izgradnja inovativnih
-                rešenja.
+                Your digital experience starts here. Building innovative
+                solutions.
             </h1>
             <p className={styles.heroParagraph}>
-                Sa strašću za inovacijama i preciznošću razvoja, stvaram
-                digitalna iskustva. Svaka linija koda nosi sa sobom priču o
-                vašem jedinstvenom brendu, a svaki projekat je prilika za
-                digitalnu transformaciju.
+                With a passion for innovation and precision in development, I
+                create digital experiences. Each line of code carries a story
+                about your unique brand, and every project is an opportunity for
+                digital transformation.
             </p>
-            <HeroCta linkPath="/contact" linkText="zakažite konsultaciju" />
+            <HeroCta linkPath="/contact" linkText="schedule a consultation" />
 
             <img
                 className={styles.heroImage}

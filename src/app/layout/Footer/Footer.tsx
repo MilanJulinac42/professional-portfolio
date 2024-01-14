@@ -18,7 +18,7 @@ const Footer = () => {
     return (
         <div className={`${styles.footerContainer} ${inter.className}`}>
             <div className={styles.social}>
-                <p>Povežite se sa mnom na društvenim mrežama</p>
+                <p>Connect with me on social media</p>
                 <ul className={styles.socialList}>
                     <li>
                         <Link
@@ -77,60 +77,58 @@ const Footer = () => {
                 <div className={styles.links}>
                     <ul className={styles.footerList}>
                         <li>
-                            <h5 className={roboto.className}>
-                                Korisni linkovi
-                            </h5>
+                            <h5 className={roboto.className}>Useful Links</h5>
                             <span className={styles.border}></span>
                         </li>
                         <li className={inter.className}>
-                            <Link href={"/"}>Početna </Link>
+                            <Link href={"/"}>Home</Link>
                         </li>
                         {/* <li>Portfolio</li> */}
                         <li>
-                            <Link href={"/services"}>Usluge</Link>
+                            <Link href={"/services"}>Services</Link>
                         </li>
                         <li>
-                            <Link href={"/about"}>O meni</Link>
+                            <Link href={"/about"}>About Me</Link>
                         </li>
                         <li>
-                            <Link href={"/contact"}>Kontakt</Link>
+                            <Link href={"/contact"}>Contact</Link>
                         </li>
                     </ul>
                 </div>
                 <div className={styles.services}>
                     <ul className={styles.footerList}>
                         <li>
-                            <h5 className={roboto.className}>Moje usluge</h5>
+                            <h5 className={roboto.className}>My Services</h5>
                             <span className={styles.border}></span>
                         </li>
                         <li>
                             <Link href={"/services?selectedService=0"}>
-                                Dizajn sajta
+                                Website Design
                             </Link>
                         </li>
                         <li>
                             <Link href={"/services?selectedService=1"}>
-                                Redizajn sajta
+                                Website Redesign
                             </Link>
                         </li>
                         <li>
                             <Link href={"/services?selectedService=2"}>
-                                Optimizacija sajta
+                                Website Optimization
                             </Link>
                         </li>
                         <li>
                             <Link href={"/services?selectedService=3"}>
-                                Sistem za upravljanje sadržajem
+                                Content Management System
                             </Link>
                         </li>
                         <li>
                             <Link href={"/services?selectedService=4"}>
-                                Online placanja
+                                Online Payments
                             </Link>
                         </li>
                         <li>
                             <Link href={"/services?selectedService=5"}>
-                                Optimizacija sajta i responsivan dizajn
+                                Website Optimization and Responsive Design
                             </Link>
                         </li>
                     </ul>
@@ -138,12 +136,12 @@ const Footer = () => {
                 <div className={styles.services}>
                     <ul className={styles.footerList}>
                         <li>
-                            <h5 className={roboto.className}>Pitanja</h5>
+                            <h5 className={roboto.className}>Questions</h5>
                             <span className={styles.border}></span>
                         </li>
                         <li>
                             <Link href={"/#faq-home"} scroll={false}>
-                                Pitanja o mom radu
+                                Questions about my work
                             </Link>
                         </li>
                         <li>
@@ -151,17 +149,17 @@ const Footer = () => {
                                 href={"/services#faq-services"}
                                 scroll={false}
                             >
-                                Pitanja o pruženim uslugama
+                                Questions about provided services
                             </Link>
                         </li>
                         <li>
                             <Link href={"/about#faq-about"} scroll={false}>
-                                Pitanja o mom iskustvu i pristupu
+                                Questions about my experience and approach
                             </Link>
                         </li>
                         <li>
                             <Link href={"/contact#faq-contact"} scroll={false}>
-                                Pitanja o kontaktiranju i saradnji
+                                Questions about contacting and collaboration
                             </Link>
                         </li>
                     </ul>
@@ -169,7 +167,7 @@ const Footer = () => {
                 <div className={styles.contact}>
                     <ul className={styles.footerList}>
                         <li>
-                            <h5 className={roboto.className}>Kontakt</h5>
+                            <h5 className={roboto.className}>Contact</h5>
                             <span className={styles.border}></span>
                         </li>
                         <li>
@@ -198,7 +196,7 @@ const Footer = () => {
             </div>
             <div className={styles.copyright}>
                 <p className={roboto.className}>
-                    © 2023 Sva prava zadržana: Milan Julinac
+                    © 2023 All rights reserved: Milan Julinac
                 </p>
             </div>
         </div>

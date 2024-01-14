@@ -16,26 +16,26 @@ const inter = Inter({ subsets: ["latin"] });
 
 const servicesFaqData = [
     {
-        question: "Kako mogu izabrati pravu uslugu za svoje potrebe?",
-        answer: "Izbor prave usluge zavisi od vaših ciljeva i potreba. Kontaktirajte me putem kontakt forme i rado ću vam pomoći u identifikaciji najbolje opcije za vaš projekat.",
+        question: "How can I choose the right service for my needs?",
+        answer: "Choosing the right service depends on your goals and requirements. Contact me through the contact form, and I'll gladly help you identify the best option for your project.",
     },
     {
-        question: "Koje su prednosti redizajna postojećeg veb sajta?",
-        answer: "Redizajn postojećeg veb sajta može poboljšati korisničko iskustvo, povećati funkcionalnost i prilagoditi ga novim tehnologijama. Razgovarajte sa mnom o mogućnostima unapređenja vašeg sajta.",
-    },
-    {
-        question:
-            "Na koji način će usluga koju pružate unaprediti moje online prisustvo?",
-        answer: "Svaka usluga ima specifične prednosti za poboljšanje vašeg online prisustva. Razgovarajmo o tome kako implementacija određene usluge može doprineti povećanju vidljivosti, angažovanja korisnika i ostvarivanju vaših poslovnih ciljeva.",
+        question: "What are the benefits of redesigning an existing website?",
+        answer: "Redesigning an existing website can improve user experience, increase functionality, and adapt it to new technologies. Let's discuss the possibilities of enhancing your site.",
     },
     {
         question:
-            "Da li postoji mogućnost prilagođavanja usluga prema specifičnim zahtevima mog projekta?",
-        answer: "Da, pružam prilagođene usluge prema specifičnim zahtevima projekta. Razgovarajmo o vašim posebnim potrebama kako bismo osigurali da usluge budu savršeno prilagođene vašem projektu.",
+            "How will the service you provide enhance my online presence?",
+        answer: "Each service has specific benefits to enhance your online presence. Let's talk about how implementing a particular service can contribute to increased visibility, user engagement, and achieving your business goals.",
     },
     {
-        question: "Kako mogu zakazati sastanak radi konsultacija?",
-        answer: "Za zakazivanje sastanka ili konsultacija, posetite moju stranicu za kontakt. Tamo možete pronaći informacije o tome kako me možete kontaktirati i postaviti pitanja ili zakazati sastanak.",
+        question:
+            "Is there an option to customize services according to the specific requirements of my project?",
+        answer: "Yes, I provide customized services based on the specific requirements of the project. Let's discuss your unique needs to ensure that the services are perfectly tailored to your project.",
+    },
+    {
+        question: "How can I schedule a meeting for consultations?",
+        answer: "To schedule a meeting or consultations, visit my contact page. There, you can find information on how to reach out to me, ask questions, or schedule a meeting.",
     },
 ];
 
@@ -93,9 +93,9 @@ const services = () => {
                 <ServiceHero />
                 <Services />
                 <PopCard
-                    title="Oslobodite punu snagu vašeg veb sajta."
-                    description="Ne zadovoljavajte se prosečnim online prisustvom. Ja kreiramo veb sajtove koji osvajaju publiku, donose rezultate i pokreću uspeh vašeg biznisa. Pričajmo o vašoj viziji i pretvorimo je u stvarnost."
-                    linkText="Započnimo vaš projekat danas"
+                    title="Unleash the Full Power of Your Website."
+                    description="Don't settle for an average online presence. We create websites that captivate audiences, deliver results, and drive the success of your business. Let's talk about your vision and turn it into reality."
+                    linkText="Start Your Project Today"
                     link="/contact"
                     icon={faRocket}
                     background="#001E2B"
@@ -103,9 +103,10 @@ const services = () => {
                 />
                 <FaqSection
                     id={"faq-services"}
-                    heading="Često postavljena pitanja o pruženim uslugama"
+                    heading="Frequently Asked Questions About Provided Services"
                     faqData={servicesFaqData}
                 />
+
                 <Footer />
             </div>
         </>

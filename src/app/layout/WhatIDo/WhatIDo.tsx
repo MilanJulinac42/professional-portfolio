@@ -11,25 +11,25 @@ const WhatIDo = () => {
         <div className={`${styles.containerWrapper} ${inter.className}`}>
             <HeroCard
                 image={"/mobila.svg"}
-                title={"Oslobodite svoj digitalni potencijal"}
+                title={"Unlock Your Digital Potential"}
                 description={
-                    "Kreiram upečatljive veb sajtove, implementiram strateški SEO i pojednostavljujem online plaćanja kako bih povećao saobraćaj, konverzije i prihod vašeg poslovanja. Zajedno ćemo kreirati digitalna iskustva koja ostavljaju snažan utisak."
+                    "I create compelling websites, implement strategic SEO, and simplify online payments to increase traffic, conversions, and your business revenue. Together, we will create digital experiences that leave a lasting impression."
                 }
                 delay={0.3}
             />
             <HeroCard
                 image={"/htmlcss.svg"}
-                title={"Pretvorite ideje u stvarnost"}
+                title={"Turn Ideas into Reality"}
                 description={
-                    "Povezujem dizajn i kod, kreirajući pixel-savršene veb sajtove koji oličavaju vašu viziju i pružaju izuzetno korisničko iskustvo na svim uređajima. Svaki detalj je važan, a ja sam posvećen tome da vaš digitalni identitet zablista."
+                    "I connect design and code, creating pixel-perfect websites that embody your vision and provide an exceptional user experience on all devices. Every detail matters, and I am dedicated to making your digital identity shine."
                 }
                 delay={0.6}
             />
             <HeroCard
                 image={"/analitika.svg"}
-                title={"Odluke zasnovane na podacima za rast vašeg biznisa"}
+                title={"Data-Driven Decisions for Business Growth"}
                 description={
-                    "Koristim moć analitike da otkrijem ključne uvide, donesem informisane odluke i optimizujem vaš veb sajt za maksimalne performanse. Zajedno ćemo kreirati strategiju baziranu na podacima koja će podstaknuti vaš uspeh na internetu."
+                    "I use the power of analytics to discover key insights, make informed decisions, and optimize your website for maximum performance. Together, we will create a data-driven strategy that fuels your success on the internet."
                 }
                 delay={0.9}
             />

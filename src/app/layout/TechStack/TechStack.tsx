@@ -16,13 +16,13 @@ const TechStack = () => {
     return (
         <div className={styles.techContainer}>
             <h3 className={styles.techHeading}>
-                Tehnologije koje pokreću vaš uspeh
+                Technologies Powering Your Success
             </h3>
             <p>
-                Moje tehnološko znanje se konstantno razvija kako bi pružio
-                podršku mojim klijentima i prilagodio se njihovim dinamičnim
-                potrebama:
+                My technological expertise is continually evolving to support my
+                clients and adapt to their dynamic needs:
             </p>
+
             <ul className={styles.techList}>
                 <li className={styles.listItem}>
                     <FontAwesomeIcon

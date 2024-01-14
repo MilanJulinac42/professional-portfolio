@@ -34,7 +34,7 @@ const HelpCard: React.FC<HelpCardProps> = ({ image, title, linkPath }) => {
             <h5 className={roboto.className}>{title}</h5>
             <img src={image} alt={title} />
             <Link href={linkPath} className={roboto.className}>
-                Saznajte više
+                Find out more
             </Link>
 
             {/* {isOverlayOpen && (

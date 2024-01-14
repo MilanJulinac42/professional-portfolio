@@ -71,7 +71,7 @@ const Navbar: React.FC<NavbarProps> = ({ transparent }) => {
                                 }
                             >
                                 <Link className={roboto.className} href="/">
-                                    Početna
+                                    Home
                                 </Link>
                             </li>
                             {/* <li
@@ -99,7 +99,7 @@ const Navbar: React.FC<NavbarProps> = ({ transparent }) => {
                                     className={roboto.className}
                                     href="/services"
                                 >
-                                    Usluge
+                                    Services
                                 </Link>
                             </li>
                             <li
@@ -111,7 +111,7 @@ const Navbar: React.FC<NavbarProps> = ({ transparent }) => {
                                     className={roboto.className}
                                     href="/about"
                                 >
-                                    O meni
+                                    About Me
                                 </Link>
                             </li>
                             <li
@@ -125,7 +125,7 @@ const Navbar: React.FC<NavbarProps> = ({ transparent }) => {
                                     className={roboto.className}
                                     href="/contact"
                                 >
-                                    Kontakt
+                                    Contact
                                 </Link>
                             </li>
                         </ul>

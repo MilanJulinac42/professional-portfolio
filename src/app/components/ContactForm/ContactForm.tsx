@@ -76,20 +76,19 @@ const ContactForm = () => {
     return (
         <div className={`${styles.contactFormContainer} ${inter.className}`}>
             <div className={styles.wrapper}>
-                <h3 className={roboto.className}>Želite da sarađujemo?</h3>
+                <h3 className={roboto.className}>
+                    Interested in Collaboration?
+                </h3>
                 <p>
-                    Slobodno me pozovite u bilo kom trenutku. Moj broj telefona
-                    je:{" "}
+                    Feel free to give me a call anytime. My phone number is:{" "}
                     <span>
                         <FontAwesomeIcon icon={faPhone} /> (+381) 63 83 84 196
                     </span>
                 </p>
-                <h3 className={roboto.className}>
-                    Želite da se družimo online?
-                </h3>
+                <h3 className={roboto.className}>Want to Connect Online?</h3>
                 <div className={styles.socialContainer}>
                     <p>
-                        Možete me pronaći na nekoj od sledećih platformi ispod:
+                        You can find me on one of the following platforms below:
                     </p>
                     <div className={styles.social}>
                         <span>
@@ -130,21 +129,21 @@ const ContactForm = () => {
                         </span>
                     </div>
                 </div>
-                <h3 className={roboto.className}>Imate neko pitanje?</h3>
+                <h3 className={roboto.className}>Have a Question?</h3>
                 <p>
-                    Popunite formular ispod ili mi pošaljite email na{" "}
+                    Fill out the form below or send me an email at{" "}
                     <span>
                         <FontAwesomeIcon icon={faEnvelope} />{" "}
                         milanjulinac996@gmail.com
                     </span>{" "}
-                    i odgovoriću vam u roku od 2 dana.
+                    and I'll get back to you within 2 days.
                 </p>
                 <form className={styles.form} onSubmit={handleSubmit}>
                     <div
                         className={`${styles.contactTextBoxContainer} ${inter.className}`}
                     >
                         <label className={styles.contactLabel} htmlFor="name">
-                            Ime <span>(potrebno)</span>
+                            Name <span>(required)</span>
                         </label>
                         <input
                             className={styles.contactInput}
@@ -160,7 +159,7 @@ const ContactForm = () => {
                         className={`${styles.contactTextBoxContainer} ${inter.className}`}
                     >
                         <label className={styles.contactLabel} htmlFor="name">
-                            Ime kompanije
+                            Company Name
                         </label>
                         <input
                             className={styles.contactInput}
@@ -175,7 +174,7 @@ const ContactForm = () => {
                         className={`${styles.contactTextBoxContainer} ${inter.className}`}
                     >
                         <label className={styles.contactLabel} htmlFor="name">
-                            Vaš vebsajt
+                            Your Website
                         </label>
                         <input
                             className={styles.contactInput}
@@ -190,7 +189,7 @@ const ContactForm = () => {
                         className={`${styles.contactTextBoxContainer} ${inter.className}`}
                     >
                         <label className={styles.contactLabel} htmlFor="name">
-                            E-mail <span>(potrebno)</span>
+                            Email <span>(required)</span>
                         </label>
                         <input
                             className={styles.contactInput}
@@ -206,7 +205,7 @@ const ContactForm = () => {
                         className={`${styles.contactTextBoxContainer} ${inter.className}`}
                     >
                         <label className={styles.contactLabel} htmlFor="name">
-                            Kako mogu da vam pomognem? <span>(potrebno)</span>
+                            How can I help you? <span>(required)</span>
                         </label>
                         <textarea
                             className={styles.contactTextArea}
@@ -221,9 +220,10 @@ const ContactForm = () => {
                     <button
                         className={`${styles.submitButton} ${roboto.className}`}
                     >
-                        kontaktirajte me
+                        Contact Me
                     </button>
                 </form>
+
                 {showToast && (
                     <Toast text={toastMessage} onClose={closeToast} />
                 )}

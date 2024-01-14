@@ -14,24 +14,24 @@ const Benefits = () => {
         <div className={styles.container}>
             <BenefitCard
                 icon={faThumbsUp}
-                text="Privucite klijente koji cene kvalitet"
+                text="Attract clients who appreciate quality"
             />
-            <BenefitCard icon={faClock} text="Više vremena za poslovanje" />
+            <BenefitCard icon={faClock} text="More time for your business" />
             <BenefitCard
                 icon={faEuroSign}
-                text="Pretvorite posetioce u klijente"
+                text="Convert visitors into clients"
             />
             <BenefitCard
                 icon={faPeopleGroup}
-                text="Privucite veći broj klijenata"
+                text="Attract a larger clientele"
             />
             <BenefitCard
                 icon={faSuitcase}
-                text="Posedujte predivan veb sajt koji radi 24/7"
+                text="Own a stunning website that works 24/7"
             />
             <BenefitCard
                 icon={faHandshake}
-                text="Sagradite poverenje sa klijentima"
+                text="Build trust with your clients"
             />
         </div>
     );

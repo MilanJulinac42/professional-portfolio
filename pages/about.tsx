@@ -16,24 +16,24 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 
 const aboutMeFaqData = [
     {
-        question: "Koje su tvoje stručnosti u veb dizajnu i razvoju?",
-        answer: "Specijalizovan sam za kreiranje vizuelno privlačnih veb stranica i razvoj funkcionalnih rešenja. Posedujem iskustvo u gradnjenju i implementaciji sajtova za različite potrebe.",
+        question: "What are your expertise in web design and development?",
+        answer: "I specialize in creating visually appealing websites and developing functional solutions. I have experience in building and implementing websites for various needs.",
     },
     {
-        question: "Kako se moj pristup razlikuje od drugih u industriji?",
-        answer: "Moja jedinstvena snaga leži u kreativnom spoju tehnologije i empatije. Angažujem se na dubljem nivou kako bih razumeo vaše poslovanje i ciljeve. Ovladavanjem inovativnim tehnologijama, stvaram rešenja koja ne samo da zadovoljavaju očekivanja, već i prevazilaze granice konvencionalnog dizajna i razvoja.",
+        question: "How does my approach differ from others in the industry?",
+        answer: "My unique strength lies in the creative blend of technology and empathy. I engage on a deeper level to understand your business and goals. By mastering innovative technologies, I create solutions that not only meet expectations but also surpass the boundaries of conventional design and development.",
     },
     {
-        question: "Kakav je tvoj pristup izgradnji online prisustva?",
-        answer: "Prilagođavam se potrebama klijenata i stvaram personalizovana rešenja. Posvećen sam jasnoj komunikaciji, tačnosti i rešavanju problema kako bih postigao uspešno partnerstvo.",
+        question: "What is your approach to building an online presence?",
+        answer: "I adapt to clients' needs and create personalized solutions. I am committed to clear communication, accuracy, and problem-solving to achieve a successful partnership.",
     },
     {
-        question: "Šta klijenti mogu očekivati tokom saradnje sa tobom?",
-        answer: "Klijenti mogu očekivati strateški dizajn, upečatljiv brending i inovativni veb razvoj. Pružam tačnost, jasnu komunikaciju i proaktivno rešavanje problema kako bih otključao puni potencijal svakog projekta.",
+        question: "What can clients expect during collaboration with you?",
+        answer: "Clients can expect strategic design, impactful branding, and innovative web development. I provide accuracy, clear communication, and proactive problem-solving to unlock the full potential of each project.",
     },
     {
-        question: "Kako mogu započeti projekat sa tobom?",
-        answer: "Za započinjanje projekta, jednostavno posetite moju stranicu za kontakt. Tu možete pronaći sve potrebne informacije kako bismo razgovarali o vašim idejama i ciljevima.",
+        question: "How can I start a project with you?",
+        answer: "To initiate a project, simply visit my contact page. There, you can find all the necessary information for us to discuss your ideas and goals.",
     },
 ];
 
@@ -92,26 +92,26 @@ const about = () => {
             <div className={inter.className}>
                 <Navbar />
                 <AboutMeHero
-                    title="Zajedno gradimo vaš jedinstveni veb svet."
-                    description="Moj cilj je da vam pružim personalizovana rešenja koja odražavaju vaše jedinstvene potrebe. Bez obzira da li gradimo sajt za vaš hobi, portfolio ili mali biznis, zajedno ćemo stvoriti online prisustvo koje se ističe."
+                    title="Building Your Unique Web World Together."
+                    description="My goal is to provide you with personalized solutions that reflect your unique needs. Whether we are building a website for your hobby, portfolio, or small business, together we will create an online presence that stands out."
                     image="/hello.svg"
                     ctaLink="/contact"
-                    ctaText="Započnite vaš projekat"
+                    ctaText="Start Your Project"
                     ctaVisible
                 />
                 <AboutMeCards />
                 <PopCard
-                    title="Spremni za saradnju? Izgradićemo nešto neverovatno zajedno!"
-                    description="Strastveno stvaram ideje kroz strateški dizajn, upečatljiv brending i inovativni veb razvoj. Moje vrednosti su tačnost, jasna komunikacija i proaktivno rešavanje problema, što osigurava uspešno partnerstvo. Razgovarajmo o vašem projektu i otključajmo njegov puni potencijal."
+                    title="Ready to Collaborate? Let's Build Something Amazing Together!"
+                    description="Passionately crafting ideas through strategic design, impactful branding, and innovative web development. My values include accuracy, clear communication, and proactive problem-solving, ensuring a successful partnership. Let's discuss your project and unlock its full potential."
                     icon={faPuzzlePiece}
-                    linkText="Kontaktirajte me odmah!"
-                    link="/kontakt"
+                    linkText="Contact Me Now!"
+                    link="/contact"
                     background="#001E2B"
                 />
                 <TechContainer />
                 <FaqSection
                     id={"faq-about"}
-                    heading="Često postavljena pitanja o mom iskustvu i pristupu"
+                    heading="Frequently Asked Questions About My Experience and Approach"
                     faqData={aboutMeFaqData}
                 />
                 <Footer />

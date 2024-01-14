@@ -13,24 +13,24 @@ import FaqSection from "./layout/FaqSection/FaqSection";
 
 const faqData = [
     {
-        question: "Kako mogu profitirati od vaših usluga?",
-        answer: "Radim na stvaranju visokokvalitetnih veb sajtova koji ne samo da privlače pažnju, već i pretvaraju posetioce u zadovoljne klijente. Povećajte vidljivost i postignite poslovni uspeh.",
+        question: "How can I benefit from your services?",
+        answer: "I focus on creating high-quality websites that not only attract attention but also turn visitors into satisfied clients. Increase visibility and achieve business success.",
     },
     {
-        question: "Koliko dugo traje proces izrade veb sajta?",
-        answer: "Vreme izrade veb sajta zavisi od obima projekta, ali moja posvećenost i efikasnosti znači da ćete imati funkcionalan veb sajt u najkraćem mogućem roku.",
+        question: "How long does the website creation process take?",
+        answer: "The time it takes to create a website depends on the scope of the project, but my dedication and efficiency mean you'll have a functional website in the shortest possible time.",
     },
     {
-        question: "Da li nudite podršku nakon lansiranja veb sajta?",
-        answer: "Da, podrška ne završava sa lansiranjem veb sajta. Pružam redovnu tehničku podršku i pomažem vam da održite vaš veb sajt u vrhunskom stanju.",
+        question: "Do you offer support after the website is launched?",
+        answer: "Yes, support doesn't end with the website launch. I provide regular technical support and help you maintain your website in top-notch condition.",
     },
     {
-        question: "Kako mogu dobiti besplatnu procenu za svoj projekat?",
-        answer: "Kontaktirajte me putem moje kontakt stranice i opišite svoje potrebe. Ja ću vam pružiti detaljnu procenu i predloge za vaš projekat.",
+        question: "How can I get a free estimate for my project?",
+        answer: "Contact me through my contact page and describe your needs. I will provide you with a detailed estimate and suggestions for your project.",
     },
     {
-        question: "Da li radite samo dizajn ili i razvoj veb sajtova?",
-        answer: "Moja usluga obuhvata sve, od dizajna do punog razvoja veb sajtova. Kreiram kompletna digitalna iskustva koja donose rezultate.",
+        question: "Do you only do design, or also website development?",
+        answer: "My service covers everything, from design to full website development. I create complete digital experiences that deliver results.",
     },
 ];
 
@@ -39,75 +39,75 @@ export default function Home() {
         <main className={styles.main}>
             <Nav />
             <AboutMeHero
-                title="Vaša vizija, Vaš sajt, Vaš put ka uspehu!"
-                description="Pozdrav, ja sam Milan, samostalni veb developer strastveno posvećen pretvaranju digitalnih ideja u stvarnost. Specijalizovan sam za kreiranje robusnih i vizuelno privlačnih veb stranica koje odražavaju vašu jedinstvenu viziju. Bez obzira da li je reč o ličnom blogu, poslovnom sajtu ili portfolio prezentaciji, radim na oživljavanju vaših digitalnih ambicija."
+                title="Your Vision, Your Website, Your Path to Success!"
+                description="Hello, I'm Milan, an independent web developer passionately dedicated to turning digital ideas into reality. I specialize in creating robust and visually appealing websites that reflect your unique vision. Whether it's a personal blog, a business site, or a portfolio presentation, I work on bringing your digital ambitions to life."
                 image="/stock.jpg"
                 ctaLink="/contact"
-                ctaText="kontaktirajte me"
+                ctaText="contact me"
                 ctaVisible
             />
-            <Container title={"Zajedno gradimo vašu viziju"}>
+            <Container title={"Building Your Vision Together"}>
                 <WhatIDo />
             </Container>
             <PopCard
-                title="Izgradnja Web Stranica po Vašoj Meri"
-                description="Kroz moj rad, pretvaram vaše ideje u vizuelno zadovoljavajuće i funkcionalne veb stranice. Posvećen sam unapređenju vaše online prisutnosti, pružajući vam alate i resurse potrebne za uspeh u digitalnom svetu. Pustite da zajedno izgradimo vašu digitalnu priču."
+                title="Building Custom Websites"
+                description="Through my work, I transform your ideas into visually appealing and functional websites. I am dedicated to enhancing your online presence, providing you with the tools and resources needed for success in the digital world. Let's build your digital story together."
                 icon={faHandshake}
                 background="#001E2B"
                 containerBackground="#fff"
-                linkText="Otkrijte moju stručnost"
+                linkText="Discover My Expertise"
                 link="/about"
             />
             <TechStack />
-            <Container title={"Moje usluge"} background="#f0f0fa">
+            <Container title={"My services"} background="#f0f0fa">
                 <div className={styles.containerWrapperHelp}>
                     <HelpCard
-                        title={"Dizajn sajta"}
+                        title={"Website Design"}
                         image={"/dizajn.svg"}
                         linkPath={"/services?selectedService=0"}
                     />
                     <HelpCard
-                        title={"Redizajn sajta"}
+                        title={"Website Redesign"}
                         image={"/redesign.svg"}
                         linkPath={"/services?selectedService=1"}
                     />
                     <HelpCard
-                        title={"Optimizacija za pretraživače"}
+                        title={"Search Engine Optimization"}
                         image={"/SEO.svg"}
                         linkPath={"/services?selectedService=2"}
                     />
                     <HelpCard
-                        title={"Sistem za upravljanje sadržajem"}
+                        title={"Content Management System"}
                         image={"/cms.svg"}
                         linkPath={"/services?selectedService=3"}
                     />
                     <HelpCard
-                        title={"Online plaćanje"}
+                        title={"Online Payments"}
                         image={"/card.svg"}
                         linkPath={"/services?selectedService=4"}
                     />
                     <HelpCard
-                        title={"Optimizacija sajta i responsivan dizajn"}
+                        title={"Site Optimization and Responsive Design"}
                         image={"/turbo.svg"}
                         linkPath={"/services?selectedService=5"}
                     />
                 </div>
             </Container>
             <PopCard
-                title="Rešenja prilagođena vama."
-                description="Osiguravam personalizovana rešenja koja odgovaraju vašim potrebama. Moj pristup je praktičan i usredsređen na efikasnost, pružajući konkretne odgovore na izazove vašeg poslovanja."
+                title="Tailored Solutions for You."
+                description="I provide personalized solutions that cater to your needs. My approach is practical and efficiency-focused, offering concrete answers to the challenges of your business."
                 icon={faGears}
                 background="#001e2b"
                 containerBackground="#F0F0FA"
-                linkText="Pogledajte sve moje usluge"
+                linkText="Explore All My Services"
                 link="/services"
             />
-            <Container title="Kako ću vam pomoći" background="#F0F0FA">
+            <Container title="How I Will Help You" background="#F0F0FA">
                 <Benefits />
             </Container>
             <FaqSection
                 id={"faq-home"}
-                heading={"Često postavljena pitanja o mom radu"}
+                heading={"Frequently Asked Questions About My Work"}
                 faqData={faqData}
             />
             <Footer />

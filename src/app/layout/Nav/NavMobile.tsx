@@ -58,7 +58,7 @@ const NavbarMobile = () => {
                                     }
                                     href="/"
                                 >
-                                    Početna
+                                    Home
                                 </Link>
                             </li>
                             {/* <li>
@@ -78,7 +78,7 @@ const NavbarMobile = () => {
                                     }
                                     href="/services"
                                 >
-                                    Usluge
+                                    Services
                                 </Link>
                             </li>
                             <li>
@@ -90,7 +90,7 @@ const NavbarMobile = () => {
                                     }
                                     href="/about"
                                 >
-                                    O meni
+                                    About Me
                                 </Link>
                             </li>
                             <li>
@@ -102,7 +102,7 @@ const NavbarMobile = () => {
                                     }
                                     href="/contact"
                                 >
-                                    Kontakt
+                                    Contact
                                 </Link>
                             </li>
                         </ul>

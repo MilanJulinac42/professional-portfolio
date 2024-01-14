@@ -11,87 +11,87 @@ const inter = Inter({ subsets: ["latin"] });
 
 const servicesData = [
     {
-        heading: "Dizajn veb sajta",
-        title: "Oblikujte veb sajt iz snova: Dizajn koji povezuje i pretvara posetioce u klijente",
+        heading: "Website Design",
+        title: "Shape Your Dream Website: Design that Connects and Converts Visitors into Clients",
         description:
-            "Ne pravim samo veb sajtove, već stvaram digitalna iskustva koja osvajaju pažnju vaše publike i donose konkretne rezultate. Od sofisticiranih modernih dizajna do korisnički prijatne navigacije i rasporeda koji podstiču konverzije, pretvaram vaše ideje u stvarnost.",
+            "I don't just create websites; I build digital experiences that capture your audience's attention and deliver tangible results. From sophisticated modern designs to user-friendly navigation and layouts that drive conversions, I turn your ideas into reality.",
         image: "/dizajn.svg",
         extraParagraph:
-            "Vaš veb sajt je vaša digitalna prodavnica, vaš 24/7 prodavac i vaš prozor u svet. Ja ne izrađujemo samo veb sajtove, već i moćne alate koji pokreću vaše poslovanje napred. Hajde da kreiramo veb sajt koji pretvara posetioce u lojalne klijente i premašuje vaša očekivanja.",
+            "Your website is your digital storefront, your 24/7 salesperson, and your window to the world. I don't just create websites; I craft powerful tools that propel your business forward. Let's create a website that turns visitors into loyal clients and exceeds your expectations.",
         listItems: [
-            "Strateški dizajn: Razumem vašu ciljnu publiku, poslovne ciljeve i identitet brenda kako bismo kreirali veb sajt koji rezonira i podstiče akciju.",
-            "Savršen dizajn: Doživite zadivljujuće vizuelne efekte, intuitivne rasporede i besprekorna korisnička iskustva koja ostavljaju trajan utisak.",
-            "Optimizacija fokusirana na konverzije: Dizajniram za rezultate, osiguravajući da vaš veb sajt vodi posetioce ka željenim rezultatima.",
+            "Strategic Design: Understand your target audience, business goals, and brand identity to create a website that resonates and inspires action.",
+            "Perfect Design: Experience stunning visual effects, intuitive layouts, and flawless user experiences that leave a lasting impression.",
+            "Conversion-Focused Optimization: Design for results, ensuring your website guides visitors to desired outcomes.",
         ],
     },
     {
-        heading: "Redizajn veb sajta",
-        title: "Zaboravite na zastareli veb sajt koji ne donosi rezultate! Udahnimo mu novi život modernim dizajnom za bolje rezultate, zadovoljnije korisnike i puno procenata na vašem brojaču.",
+        heading: "Website Redesign",
+        title: "Forget About Outdated Websites That Don't Deliver Results! Let's Breathe New Life into It with Modern Design for Better Results, Satisfied Users, and Tons of Metrics on Your Counter.",
         description:
-            "Da li ti je veb sajt zastareo i više ne privlači ili zadržava klijente? Ja udišem novi dah u umorne online prezentacije, modernizujući vaš veb sajt za poboljšane performanse, veće uključivanje korisnika i konkretne koristi za vaš biznis.",
+            "Is your website outdated and no longer attracting or retaining clients? I breathe new life into tired online presentations by modernizing your website for improved performance, increased user engagement, and tangible benefits for your business.",
         image: "/redesign.svg",
         extraParagraph:
-            "Niste zadovoljni veb sajtom koji vas koči. Moja rešenja za preoblikovanje veb sajtova otključavaju vaš online potencijal, privlače nove klijente, podižu angažman i donose stvarne rezultate. Hajde da pretvorimo vaš veb sajt u moćno oružje koje će pokrenuti rast vašeg biznisa.",
+            "Not satisfied with a website that holds you back? My website redesign solutions unlock your online potential, attract new clients, boost engagement, and deliver real results. Let's turn your website into a powerful tool that drives the growth of your business.",
         listItems: [
-            "Sveže i moderno: Obnavljam vaš veb sajt savremenim estetskim izgledom koji se uklapa sa vašim brendom i osvaja vašu ciljnu publiku.",
-            "Besprekorno korisničko iskustvo: Optimizujem navigaciju, protok i funkcionalnost kako bi stvorili prilagođeno korisničko iskustvo koje će zadržati posetioce.",
-            "Strategije za poboljšanje konverzija: Analiziram podatke vašeg postojećeg veb sajta i trendove u industriji kako bih implementirao ciljane promene koje podižu konverzije i povratak na uložena sredstva.",
+            "Fresh and Modern: Revitalize your website with a contemporary aesthetic that aligns with your brand and captivates your target audience.",
+            "Seamless User Experience: Optimize navigation, flow, and functionality to create a tailored user experience that retains visitors.",
+            "Conversion Improvement Strategies: Analyze data from your existing website and industry trends to implement targeted changes that boost conversions and deliver a return on investment.",
         ],
     },
     {
-        heading: "Optimizacija za pretraživače",
-        title: "Lansiram vaš veb sajt na vrh, donoseći vam organski promet, privlačeći kvalifikovane potencijalne klijente i podižući vašu online vidljivost pomoću moje optimizacije za pretraživače zasnovane na podacima.",
+        heading: "Search Engine Optimization",
+        title: "Launch Your Website to the Top, Bringing Organic Traffic, Attracting Qualified Potential Clients, and Boosting Your Online Visibility Through My Data-Driven Search Engine Optimization.",
         description:
-            "Zaboravi na skupe oglase i prolazne trendove. Moje strategije donose održiv rast, privlače kvalifikovane potencijalne klijente, neguju odnose sa njima i pokreću organski uspeh vašeg biznisa. Ja sam vaš partner u svetu pretraživača, posvećen sam tome da vaš brend odvedemo na vrh i još dalje.",
+            "Forget about expensive ads and passing trends. My strategies bring sustainable growth, attract qualified potential clients, nurture relationships with them, and drive organic success for your business. I am your partner in the world of search engines, dedicated to taking your brand to the top and beyond.",
         image: "/SEO.svg",
         extraParagraph:
-            "Nema više ignorisanja od strane Google-a. Moje strategije otvaraju vam vrata prema besplatnom prometu i angažovanim posetiocima. Izgradimo solidan temelj sa pravim ključnim rečima, optimizovanim sadržajem i stalnim praćenjem kako bi vaš veb sajt zablistao među zvezdama pretraživača.",
+            "No more being ignored by Google. My strategies open doors to free traffic and engaged visitors. Let's build a solid foundation with the right keywords, optimized content, and constant monitoring to make your website shine among the stars of search engines.",
         listItems: [
-            "Istraživanje i analiza ključnih reči: Otkrivam zlatne reči koje vaša publika traži, gradeći ciljane strategije za maksimalan rezultat u pretraživačima.",
-            "On-page i off-page optimizacija: Prilagođavam sadržaj vašeg veb sajta, tehničku strukturu i profil backlinkova, šaljući pozitivne signale pretraživačima i povećavajući autoritet.",
-            "Kontinuirano praćenje i analiza: Pratim vaš napredak pomoću najsavremenijih alata, prilagođavam strategije na osnovu podataka u realnom vremenu i osiguravam stalni rast i dominaciju u organskoj pretrazi.",
+            "Keyword Research and Analysis: Discovering golden keywords your audience searches for, building targeted strategies for maximum results in search engines.",
+            "On-Page and Off-Page Optimization: Adapting your website's content, technical structure, and backlink profile, sending positive signals to search engines and increasing authority.",
+            "Continuous Monitoring and Analysis: Tracking your progress using state-of-the-art tools, adjusting strategies based on real-time data, and ensuring continuous growth and dominance in organic search.",
         ],
     },
     {
-        heading: "Sistem za upravljanje sadržajem",
-        title: "Preuzmite kontrolu nad svojim sadržajem: Osnažite se sistemom za upravljanje sadržajem.",
+        heading: "Content Management System",
+        title: "Take Control of Your Content: Empower Yourself with a Content Management System.",
         description:
-            "Kažite zbogom zamršenim interfejsima i tehničkim preprekama! Ja rušim barijere u upravljanju sadržajem i pomažem vam da preuzmete kontrolu nad vašim veb sajtom, sa lakoćom objavljujete sveže sadržaje i bez napora angažujete publiku. Hajde da zajedno otključamo puni potencijal vašeg sadržaja sa savršenim sistemom za upravljanje sadržajem.",
+            "Say goodbye to complex interfaces and technical obstacles! I break down barriers in content management, helping you take control of your website, easily publish fresh content, and effortlessly engage your audience. Let's unlock the full potential of your content together with the perfect content management system.",
         image: "/cms.svg",
         extraParagraph:
-            "Oprostite se od haosa! Moje rešenje vam daje ključeve za uređivanje, ažuriranje i objavu sadržaja na lak način, da ispričate vašu priču i postignete željene rezultate. Vi upravljate, a ja pružam podršku i savet da vaš veb sajt sjaji.",
+            "Bid farewell to chaos! My solution gives you the keys for editing, updating, and publishing content effortlessly, so you can tell your story and achieve desired results. You manage, and I provide support and advice to make your website shine.",
         listItems: [
-            "Izbor i implementacija sistema za upravljanje sadržajem: Plovićemo kroz svet platforma i preporučujem savršenu za vaše potrebe, veštine i budžet, osiguravajući bezproblemnu implementaciju.",
-            "Prilagođavanje i obuka: Prilagođavam vaše iskustvo, personalizujući interfejs, tok rada i uloge korisnika, i nudim detaljne obuke za lako upravljanje sadržajem.",
-            "Kontinuirana podrška i optimizacija: Ja sam vaš partner i uvek blizu za podršku, optimizaciju performansi i strateške savete kako bi maksimizirali potencijal vašeg sistema za upravljanje sadržajem.",
+            "Selection and Implementation of Content Management System: We'll navigate the world of platforms, and I recommend the perfect one for your needs, skills, and budget, ensuring a seamless implementation.",
+            "Customization and Training: I tailor your experience, personalizing the interface, workflow, and user roles, and offering detailed training for easy content management.",
+            "Continuous Support and Optimization: I am your partner, always close by for support, performance optimization, and strategic advice to maximize the potential of your content management system.",
         ],
     },
     {
-        heading: "Online plaćanje",
-        title: "Neka plaćanje bude uživanje! Integrišem sigurne i jednostavne platforme za online plaćanje koje grade poverenje kod klijenata, ubrzavaju transakcije i otvaraju nove izvore prihoda za vaš biznis.",
+        heading: "Online Payment",
+        title: "Let Payment Be a Pleasure! I integrate secure and user-friendly online payment platforms that build trust with clients, expedite transactions, and open new revenue streams for your business.",
         description:
-            "Zaboravite na komplikovane procese. Omogućavam besprekorno online plaćanje, gradeći poverenje, povećavajući konverzije i otvarajući nove staze za rast vašeg biznisa. Hajde da zajedno oblikujemo jednostavno plaćanje koje će oduševiti vaše klijente i osigurati uspeh vašeg poslovanja.",
+            "Forget about complicated processes. I enable seamless online payments, fostering trust, increasing conversions, and opening new paths for your business growth. Let's shape a straightforward payment experience that delights your customers and ensures the success of your business.",
         image: "/card.svg",
         extraParagraph:
-            "Neka vaše plaćanje bude brzo i sigurano! Povezujem vas sa vrhunskim procesorima plaćanja, obezbeđujući da klijenti imaju jednostavan i bezbedan način za obavljanje kupovine. Zajedno gradimo lojalnost i otvaramo vrata novim profitima.",
+            "Let your payment be fast and secure! I connect you with top-notch payment processors, ensuring clients have a simple and secure way to make purchases. Together, we build loyalty and open doors to new profits.",
         listItems: [
-            "Raznolikost platforme za plaćanje: Povezujemo vas sa različitim poverljivim platformama i processorima, prilagođavajući se željama vaših klijenata i povećavajući njihovo zadovoljstvo.",
-            "Glatko i brzo iskustvo plaćanja: Dizajniram i sprovodim bezbedne procese plaćanja, optimizujući svaki korak od odabira proizvoda do potvrde, vodeći ka većim profitima.",
-            "Povećana sigurnost i zaštita od prevara: Sigurnost je moj prioritet. Koristim najsavremenije šifrovanje i mere zaštite od prevara kako bi transakcije bile sigurne i bezbedne i za vas i za vaše klijente.",
+            "Payment Platform Diversity: I connect you with various trustworthy platforms and processors, adapting to your clients' preferences and increasing their satisfaction.",
+            "Smooth and Swift Payment Experience: I design and implement secure payment processes, optimizing every step from product selection to confirmation, leading to greater profits.",
+            "Enhanced Security and Fraud Protection: Security is my priority. I use state-of-the-art encryption and anti-fraud measures to ensure transactions are secure and safe for both you and your clients.",
         ],
     },
     {
-        heading: "Optimizacija sajta i responsivan dizajn",
-        title: "Ubrzajte vaš sajt i postignite sjajan izgled na svim ekranima? To je magija optimizacije!",
+        heading: "Website Optimization and Responsive Design",
+        title: "Speed up your site and achieve a stunning appearance on all screens? That's the magic of optimization!",
         description:
-            "Zaboravite na sporost i frustraciju prilikom pregleda vašeg sajta! Otključavam puni potencijal vašeg veb sajta sa stručnom optimizacijom brzine i besprekornom prilagođavanju za mobilne uređaje.",
+            "Forget about slowness and frustration when browsing your site! I unlock the full potential of your website with expert speed optimization and seamless adaptation for mobile devices.",
         image: "/turbo.svg",
         extraParagraph:
-            "Neka vaš veb sajt leti! Moja optimizacija brzine i mobilna magija idu dalje od tehničkih trikova. Razumem vezu između performansi veb sajta, korisničkog iskustva i uspeha biznisa. Pretvorimo vaš veb sajt u mašinu za konverzije koja će pritegnuti posetioce, pretvoriti ih u klijente i gurnuti vaš biznis napred. Vaš online uspeh počinje sa odličnim veb sajtom, a mi smo tu da to ostvarimo.",
+            "Let your website soar! My speed optimization and mobile magic go beyond technical tricks. I understand the connection between website performance, user experience, and business success. Let's turn your website into a conversion machine that captivates visitors, turns them into clients, and propels your business forward. Your online success begins with an excellent website, and we're here to make that happen.",
         listItems: [
-            "Munjevita brzina učitavanja: Držite posetioce angažovanim i smanjite gubite sa veb sajtom koji leti.",
-            "Besprekorno iskustvo na mobilnim uređajima: Dajte svakom klijentu sjajan doživljaj, bez obzira na uređaj, sa veb sajtom koji sjaji na svakom ekranu.",
-            "Više konverzija: Pretvorite vaš veb sajt u mašinu za konverzije sa optimizovanom navigacijom i glatkim korisničkim iskustvom.",
+            "Lightning-fast loading speed: Keep visitors engaged and reduce bounce rates with a website that flies.",
+            "Seamless experience on mobile devices: Provide every client with a brilliant experience, regardless of the device, with a website that shines on every screen.",
+            "Increased conversions: Transform your website into a conversion machine with optimized navigation and a smooth user experience.",
         ],
     },
 ];
@@ -132,7 +132,7 @@ const Services = () => {
         <>
             <div className={styles.helpContainer} ref={servicesRef}>
                 <h2 className={`${styles.heading} ${roboto.className}`}>
-                    Moje usluge
+                    My services
                 </h2>
                 <ul className={styles.serviceList}>
                     {servicesData.map((service, index) => (
