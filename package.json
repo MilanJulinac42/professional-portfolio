@@ -1,36 +1,40 @@
 {
-  "name": "portfolio",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.5.1",
-    "@fortawesome/free-brands-svg-icons": "^6.5.1",
-    "@fortawesome/free-solid-svg-icons": "^6.5.1",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "@types/react-helmet": "^6.1.11",
-    "framer-motion": "^10.16.16",
-    "next": "14.0.4",
-    "next-seo": "^6.4.0",
-    "react": "^18",
-    "react-collapsible": "^2.10.0",
-    "react-dom": "^18",
-    "react-helmet": "^6.1.0",
-    "react-intersection-observer": "^9.5.3",
-    "sass": "^1.69.5"
-  },
-  "devDependencies": {
-    "@types/next-seo": "^2.1.2",
-    "@types/node": "^20",
-    "@types/react": "^18.2.45",
-    "@types/react-dom": "^18.2.17",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.4",
-    "typescript": "^5"
-  }
+    "name": "portfolio",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "generate-sitemap": "node scripts/generate-sitemap.js",
+        "postbuild": "npm run generate-sitemap && next export"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^6.5.1",
+        "@fortawesome/free-brands-svg-icons": "^6.5.1",
+        "@fortawesome/free-solid-svg-icons": "^6.5.1",
+        "@fortawesome/react-fontawesome": "^0.2.0",
+        "@types/react-helmet": "^6.1.11",
+        "framer-motion": "^10.16.16",
+        "next": "14.0.4",
+        "next-seo": "^6.4.0",
+        "react": "^18",
+        "react-collapsible": "^2.10.0",
+        "react-dom": "^18",
+        "react-helmet": "^6.1.0",
+        "react-intersection-observer": "^9.5.3",
+        "sass": "^1.69.5"
+    },
+    "devDependencies": {
+        "@types/next-seo": "^2.1.2",
+        "@types/node": "^20",
+        "@types/react": "^18.2.45",
+        "@types/react-dom": "^18.2.17",
+        "eslint": "^8",
+        "eslint-config-next": "14.0.4",
+        "typescript": "^5",
+        "xmlbuilder": "^15.1.1",
+        "xmlbuilder2": "^3.1.1"
+    }
 }
