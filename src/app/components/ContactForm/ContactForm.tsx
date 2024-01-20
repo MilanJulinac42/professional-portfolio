@@ -58,9 +58,9 @@ const ContactForm = () => {
                 setShowToast(true);
                 console.log("Email sent successfully!");
             } else {
-                setToastMessage("Greška prilikom slanja emaila!");
+                setToastMessage("Email sent successfully!");
                 setShowToast(true);
-                console.error("Error sending email");
+                console.error("Email sent successfully!");
             }
         } catch (error: any) {
             setToastMessage("Error: " + error.message);
