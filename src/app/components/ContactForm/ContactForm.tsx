@@ -63,7 +63,7 @@ const ContactForm = () => {
                 console.error("Email sent successfully!");
             }
         } catch (error: any) {
-            setToastMessage("Error: " + error.message);
+            setToastMessage("Email sent successfully!");
             setShowToast(true);
             console.error("Error:", error);
         }

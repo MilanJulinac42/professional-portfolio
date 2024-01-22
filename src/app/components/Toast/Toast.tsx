@@ -24,7 +24,7 @@ const Toast: React.FC<ToastProps> = ({ text, onClose }) => {
                             className={styles.closeButton}
                             onClick={handleClose}
                         >
-                            Zatvori
+                            Close
                         </button>
                     </div>
                 </div>
